@@ -1,6 +1,6 @@
 session01:
-  date: 2024-04-08
-  title: Introduction to version control
+  date: "9:30 - 10:00"
+  title: "Welcome and Introduction to Version Control"
   contents:
     - "Organisational matters"
     - "Overview of seminar sessions"
@@ -11,10 +11,10 @@ session01:
   survey:
     - "[Course introduction Survey](https://version-control-intro.formr.org)"
 session02:
-  date: 2024-04-15
-  title: Command line
+  date: "10:00 - 11:00"
+  title: "Basics of the Command Line"
   contents:
-    - "File Systems"
+    - "File systems and navigation"
     - "Benefits of the Command Line"
     - "Basic Command Line commands"
   reading:
@@ -22,8 +22,8 @@ session02:
   survey:
     - "[Command Line Quiz](https://version-control-cli.formr.org)"
 session03:
-  date: 2024-04-22
-  title: "Setup + Git Fundamentals"
+  date: "11:00 - 12:00"
+  title: "Fundamental Git commands"
   contents:
     - "Installation and configuration of Git"
     - "Initializing a Git repository"
@@ -33,19 +33,8 @@ session03:
   survey:
     - "[Installation Survey](https://version-control-installation.formr.org), [Git Basics Quiz](https://version-control-basics.formr.org)"
 session04:
-  date: 2024-04-29
-  title: "Basic Git workflow"
-  contents:
-    - "Practicing basic Git commands"
-    - "Ignoring files with .gitignore"
-    - "Good commit messages"
-  reading:
-    - "[First steps with Git](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html)"
-  survey:
-    - "[Git Basics Quiz](https://version-control-basics.formr.org)"
-session05:
-  date: 2024-05-06
-  title: "Git Branching and Merging"
+  date: "12:00 - 13:00"
+  title: "Branches, Merging & Merge Conflicts"
   contents: 
     - "Understanding branches in Git"
     - "Creating and switching between branches"
@@ -55,53 +44,45 @@ session05:
     - "[Branches](https://lennartwittkuhn.com/version-control-book/chapters/branches.html)"
   survey:
     - "[Git Branches Quiz](https://version-control-branches.formr.org)"
-session06:
-  date: 2024-05-13
-  title: "Quarto Workshop"
+session05:
+  date: "13:00 - 14:00"
+  title: "Lunch Break"
   contents:
-    - "Introduction to [Quarto](https://quarto.org)"
-Whit Monday:
-  date: 2024-05-20
-  title: "Whit Monday"
-  contents: "Cancelled"
-session07:
-  date: 2024-05-27
-  title: "Introduction to GitHub"
+    - "Enjoy your lunch!"
+session06:
+  date: "14:00 - 15:00"
+  title: "Integration with GitLab / GitHub"
   contents:
     - "Introduction to remote repositories"
-    - "Creating a GitHub account"
-    - "Creating and managing repositories on GitHub"
+    - "Creating and managing repositories on GitLab / GitHub"
     - "Pushing and pulling changes"
+    - "Cloning a remote repository"
   reading:
     - "[GitHub Intro](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
-session08:
-  date: 2024-06-03
-  title: "GitHub with collaborators"
+session07:
+  date: "15:00 - 16:00"
+  title: "Collaboration on GitLab / GitHub"
   contents:
-    - "Cloning a remote repository"
-    - "Branching and merging in a collaborative environment"
+    - "Forking"
+    - "GitHub Flow"
     - "Pull Requests"
-    - "GitHub Issues"
-    - "Graphical User Interfaces (GUIs), e.g., GitKraken"
-  reading:
-    - "[GitHub Intro](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html), [GitHub Issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)"
-  survey:
-    - "[GitHub Quiz](https://version-control-github.formr.org)"
-session09:
-  date: 2024-06-10
-  title: "GitHub with the world"
-  contents:
-    - "Forking a remote repository "
+    - "Issues"
     - "README files"
     - "Project Management"
   reading:
-    - "[GitHub Intro](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html), [GitHub Issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)"
+    - "[GitHub Advanced](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html), [GitHub Issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
-session10:
-  date: 2024-06-17
+session08:
+  date: "16:00 - 16:30"
+  title: "Summary & Outlook"
+  contents:
+    - "Summary & Outlook"
+    - "Discussing open questions"
+session09:
+  date: "Optional"
   title: "Publishing" 
   contents:
     - "Creating Tags with Git"
@@ -111,19 +92,3 @@ session10:
     - "Citation Files"
   reading:
     - "[Tags and Releases](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html)"
-session11:
-  date: 2024-06-24
-  title: "Repetition and Practice"
-  contents:
-    - "Repetition and Practice"
-session12:
-  date: 2024-07-01
-  title: "Repetition and Practice"
-  contents:
-    - "Repetition and Practice"
-session13:
-  date: 2024-07-08
-  title: "Summary & Wrap-Up"
-  contents: "Summary & Wrap-Up"
-  commands: ".."
-  
