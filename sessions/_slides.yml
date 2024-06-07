@@ -29,7 +29,7 @@ authors:
       corresponding: false
       equal-contributor: false
 from: markdown+emoji
-date-format: long
+date-format: "HH:mm"
 format:
   revealjs:
     theme: [default, slides.scss]
