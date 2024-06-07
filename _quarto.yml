@@ -12,7 +12,6 @@ project:
 website:
   title: "Version Control with Git"
   favicon: images/git-logo.png
-  description: "Website for a full-semester course at University of Hamburg on version control of code and data"
   site-url: "https://lennartwittkuhn.com/version-control-course-mpib-2024/"
   repo-url: "https://github.com/lnnrtwttkhn/version-control-course-mpib-2024/"
   open-graph: false
