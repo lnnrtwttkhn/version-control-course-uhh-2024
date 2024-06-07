@@ -54,9 +54,9 @@ website:
     border: true
     left: |
       © {{< var years >}} [Dr. Lennart Wittkuhn]({{< var team.lennart.website >}})
-    center:
-      - text: "Acknowledgements"
-        href: acknowledgements.qmd
+    # center:
+    #   - text: "Acknowledgements"
+    #     href: acknowledgements.qmd
     right: |
       License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
