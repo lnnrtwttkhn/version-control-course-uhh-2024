@@ -18,16 +18,16 @@ authors:
     attributes:
       corresponding: true
       equal-contributor: true
-  - id: pagenstedt
-    name:
-      given: Konrad
-      family: Pagenstedt
-      literal: Konrad Pagenstedt
-    email: konrad.pagenstedt@uni-hamburg.de
-    orcid: 0009-0000-6867-1546
-    attributes:
-      corresponding: false
-      equal-contributor: false
+  # - id: pagenstedt
+  #   name:
+  #     given: Konrad
+  #     family: Pagenstedt
+  #     literal: Konrad Pagenstedt
+  #   email: konrad.pagenstedt@uni-hamburg.de
+  #   orcid: 0009-0000-6867-1546
+  #   attributes:
+  #     corresponding: false
+  #     equal-contributor: false
 from: markdown+emoji
 date-format: "HH:mm"
 format:
