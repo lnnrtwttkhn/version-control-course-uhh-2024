@@ -1,7 +1,7 @@
 During this course, we want to ensure a safe, productive, and welcoming environment for everyone who attends.
 All participants and speakers are expected to abide by this code of conduct.
 We do not tolerate any form of discrimination or harassment in any form or by any means.
-If you experience harassment or hear of any incidents of unacceptable behavior, please reach out to the course instructor, Lennart Wittkuhn ([{{< var team.lennart.email >}}]({{< var team.lennart.mailto >}})), so that we can take the appropriate action.
+If you experience harassment or hear of any incidents of unacceptable behavior, please reach out to the course instructor, {{< var project.instructors >}} ([{{< var team.lennart.email >}}]({{< var team.lennart.mailto >}})), so that we can take the appropriate action.
 
 Unacceptable behavior is defined as:
 
