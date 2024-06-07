@@ -41,7 +41,7 @@ years: "2023 -- 2025"
 team:
   lennart:
     id: lennart
-    email: lennart.wittkuhn@uni-hamburg.de
+    email: lennart.wittkuhn@tutanota.com
     mailto: "mailto:{{< var team.lennart.email >}}"
     website: https://lennartwittkuhn.com/
     github: https://github.com/lnnrtwttkhn
