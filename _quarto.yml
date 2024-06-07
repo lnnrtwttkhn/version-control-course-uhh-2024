@@ -31,8 +31,8 @@ website:
         href: sessions/index.qmd
       # - text: "{{< fa wrench >}} Tools"
       #   href: tools.qmd
-      - text: "{{< fa chalkboard-user >}} Team"
-        href: team.qmd
+      # - text: "{{< fa chalkboard-user >}} Team"
+      #   href: team.qmd
       # - text: "{{< fa gem >}} Resources"
       #  href: resources.qmd
       - text: "{{< fa gear >}} Mechanics"
