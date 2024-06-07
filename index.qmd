@@ -1,6 +1,6 @@
 ---
 title: "{{< var project.title >}}"
-subtitle: "A full-semester course at the University of Hamburg"
+subtitle: "{{< var project.subtitle >}}"
 image: "images/version_control_scriberia.jpg"
 toc: false
 about:
@@ -11,19 +11,17 @@ about:
 
 ### Welcome!
 
-This is the website for the full-semester course "{{< var project.title >}}" at {{< var project.where-institution >}}, instructed by {{< var project.instructors >}}.
+This is the website for the {{< var project.duration >}} course "{{< var project.title >}}" at the {{< var project.where-institution >}}, instructed by {{< var project.instructors >}}.
 
 ---
 
-{{< fa circle-info >}} **What?** Full-semester course on version control
+{{< fa circle-info >}} **What?** A {{< var project.duration >}} course on version control with Git
 
 {{< fa calendar-days >}} **When?** {{< var project.when-short >}}
 
 {{< fa building-columns >}} **Where?** {{< var project.where-short >}}
 
 {{< fa user-group >}} **Who?** {{< var project.target-group >}}
-
-{{< fa gear >}} **How?** Read about [how this course will work](mechanics.qmd)
 
 ---
 
@@ -32,8 +30,6 @@ This is the website for the full-semester course "{{< var project.title >}}" at 
 {{< fa bug >}} **Bug?** Open an [issue]({{< var links.issues >}}) or send an [email]({{< var links.mailto >}})!
 
 {{< fa circle-question >}} **Questions?** Open an [issue]({{< var links.issues >}}) or send an [email]({{< var links.mailto >}})!
-
-{{< fa heart >}} **Thanks!** Thanks to our [supporters](acknowledgements.qmd)!
 
 ---
 

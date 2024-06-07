@@ -10,11 +10,10 @@ project:
     navigate: true
 
 website:
-  title: "Version Control of Code and Data"
-  favicon: images/uhh_git_logo.jpg
-  description: "Website for a full-semester course at University of Hamburg on version control of code and data"
-  site-url: "https://lennartwittkuhn.com/version-control-course-uhh-ss24/"
-  repo-url: "https://github.com/lnnrtwttkhn/version-control-course-uhh-ss24/"
+  title: "Version Control with Git"
+  favicon: images/git-logo.png
+  site-url: "https://lennartwittkuhn.com/version-control-course-mpib-2024/"
+  repo-url: "https://github.com/lnnrtwttkhn/version-control-course-mpib-2024/"
   open-graph: false
   navbar:
     background: light
@@ -25,22 +24,22 @@ website:
         href: index.qmd
       - text: "{{< fa circle-info >}} About"
         href: about.qmd
-      - text: "{{< fa clipboard-list >}} Schedule"
-        href: schedule.qmd
-      - text:  "{{< fa list-ol >}} Sessions"
-        href: sessions/index.qmd
+      # - text: "{{< fa clipboard-list >}} Schedule"
+      #   href: schedule.qmd
+      # - text:  "{{< fa list-ol >}} Sessions"
+      #   href: sessions/index.qmd
       # - text: "{{< fa wrench >}} Tools"
       #   href: tools.qmd
-      - text: "{{< fa chalkboard-user >}} Team"
-        href: team.qmd
+      # - text: "{{< fa chalkboard-user >}} Team"
+      #   href: team.qmd
       # - text: "{{< fa gem >}} Resources"
       #  href: resources.qmd
-      - text: "{{< fa gear >}} Mechanics"
-        href: mechanics.qmd
-      - text: "{{< fa circle-exclamation >}} Code of Conduct"
+      # - text: "{{< fa gear >}} Mechanics"
+      #   href: mechanics.qmd
+      - text: "{{< fa handshake >}} Code of Conduct"
         href: code-of-conduct.qmd
-      - text: "{{< fa heart >}} Acknowledgements"
-        href: acknowledgements.qmd
+      # - text: "{{< fa heart >}} Acknowledgements"
+      #   href: acknowledgements.qmd
     right:
       - icon: envelope
         aria-label: Email
@@ -54,9 +53,9 @@ website:
     border: true
     left: |
       © {{< var years >}} [Dr. Lennart Wittkuhn]({{< var team.lennart.website >}})
-    center:
-      - text: "Acknowledgements"
-        href: acknowledgements.qmd
+    # center:
+    #   - text: "Acknowledgements"
+    #     href: acknowledgements.qmd
     right: |
       License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 

@@ -2,23 +2,68 @@
 title: "About"
 ---
 
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
+library("magrittr")
+```
+
+```{r}
+variables <- yaml::read_yaml("_variables.yml")
+dt <- data.table::rbindlist(variables$team, fill=TRUE) %>%
+  data.table::melt(., id.vars = c("id")) %>%
+  .[variable == "email", ":=" (
+    icon = "envelope", text = "Email", href = paste0("mailto:", value), aria_label = "Email"
+  )] %>%
+   .[variable == "website", ":=" (
+    icon = "house-user", text = "Website", href = value, aria_label = "Website"
+  )] %>% 
+   .[variable == "github", ":=" (
+    icon = "brands github", text = "Website", href = value, aria_label = "GitHub"
+  )] %>% 
+   .[variable == "twitter", ":=" (
+    icon = "brands twitter", text = "Twitter", href = value, aria_label = "Twitter"
+   )] %>% 
+  .[variable == "mastodon", ":=" (
+    icon = "brands mastodon", text = "Mastodon", href = value, aria_label = "Mastodon"
+  )] %>% 
+  .[variable == "scholar", ":=" (
+    icon = "graduation-cap", text = "Google Scholar", href = value, aria_label = "Google Scholar"
+  )] %>% 
+  .[variable == "linkedin", ":=" (
+    icon = "brands linkedin", text = "LinkedIn", href = value, aria_label = "LinkedIn"
+  )] %>%
+  .[complete.cases(.[, "value"])] %>%
+  .[, button := sprintf('{{< fa %s >}} [%s](%s){target="_blank"}', icon, text, href)] %>%
+  .[, button_icon := sprintf('[{{< fa %s >}}](%s){target="_blank"}', icon, href)]
+
+create_grid = function(buttons) {
+  content <- sprintf(" %s ", buttons)
+  n_char <- unlist(lapply(content, function(x) nchar(x)))
+  content <- paste0("|", paste(content, collapse = "|"), "|")
+  n_buttons <- length(buttons)
+  border_start <- paste0("+", strrep("-", n_char[1]), "+")
+  border_rest <- paste0(strrep("-", n_char[2:length(n_char)]), rep("+", n_buttons - 1))
+  borders <- paste(c(border_start, border_rest), collapse = "")
+  text <- paste(borders, borders, content, borders, sep = "\n")
+  return(text)
+}
+```
+
 ## Overview
 
-{{< fa circle-info >}} **What?** This is the course website for the full-semester course "{{< var project.title >}}"
+{{< fa circle-info >}} **What?** This is the course website for the {{< var project.duration >}} course "{{< var project.title >}}" at the {{< var project.where-institution >}}
 
 {{< fa calendar-days >}} **When?**  {{< var project.when-long >}} ([detailed schedule](schedule.qmd))
 
 {{< fa building-columns >}} **Where?** {{< var project.where-long >}}
 
-{{< fa user-group >}} **Who?** This course is offered to {{< var project.target-group >}} at {{< var project.where-institution }}.
-
-{{< fa gear >}} **How?** Read more about [how the course will work](mechanics.qmd).
+{{< fa user-group >}} **Who?** This course is offered to {{< var project.target-group >}}
 
 ## Description
 
 ### Content
 
-In today's digital age, the majority of scientific insights in psychological research are gained from the analysis of data using programming code.
+In today's digital age, the majority of scientific insights in research are gained from the analysis of data using programming code.
 Although data and code are integral parts of their work, scientists often handle digital objects on their computers in a somewhat chaotic, unreliable, and irreproducible manner.
 It's not uncommon to hear researchers wondering, "Which version of my data and code did I use to get this result?" or "I found a bug in my code. Since when was it there?" and "This code used to work! What did I change?".
 This not only affects the reproducibility and trustworthiness of science but also frequently leads to frustration, a waste of time, and, at worst, the loss of painstakingly accumulated work.
@@ -28,11 +73,32 @@ In this hands-on course with practical exercises, participants will learn how to
 
 ### Goals
 
-The primary aim of this course is to empower students with the skills to efficiently organize projects on their computers using Git and GitHub.
+The primary aim of this course is to empower course participants with the skills to efficiently organize projects on their computers using Git and GitHub.
 Participants will actively engage in hands-on experiences with these tools, exploring both the command-line and Graphical User Interfaces.
-Proficiency in Git and GitHub not only enhances students' effectiveness in conducting research projects by ensuring organized and reproducible workflows but also elevates their employability.
-The technical skills acquired in this course are increasingly sought after in various work settings, providing students with a competitive edge in today's dynamic job market.
+Proficiency in Git and GitHub not only enhances participants' effectiveness in conducting research projects by ensuring organized and reproducible workflows but also elevates their employability.
+The technical skills acquired in this course are increasingly sought after in various work settings, providing course participants with a competitive edge in today's dynamic job market.
 
 ### Mechanics
 
-Guided by the seminar instructor, participants will receive input while working through a dedicated Git Handbook (<https://lennartwittkuhn.com/version-control-book/>) that is tuned to the structure of the course and needs of the students, as well as engaging in practical hands-on exercises with Git and GitHub.
+Guided by the seminar instructor, participants will engaging in practical hands-on exercises with Git and GitHub while working through a dedicated Git Handbook (<https://lennartwittkuhn.com/version-control-book/>) that is tuned to the structure of the course and needs of the course participants.
+
+## Instructor
+
+::: grid
+::: g-col-4
+![](images/photo-wittkuhn-uhh.jpg){fig-alt="A portrait photo of Lennart Wittkuhn."}
+:::
+
+::: g-col-8
+### Dr. Lennart Wittkuhn
+
+Lennart is a **Postdoctoral Researcher** and **Lab Manager** in the [Research Group "Cognitive Neuroscience of Learning and Change"](https://www.psy.uni-hamburg.de/en/arbeitsbereiche/lern-und-veraenderungsmechanismen.html) at the [University of Hamburg](https://www.uni-hamburg.de/en.html).
+In his scientific work, Lennart investigates **neural replay of task representations** in the human brain using functional magnetic resonance imaging (fMRI).
+He is also passionate about **open science**, **research data management**, **reproducibility** and tools that improve the scientific workflow.
+
+```{r, results='asis', echo=FALSE}
+buttons <- dt %>% .[id == "lennart"] %>% .$button_icon %>% create_grid()
+cat(buttons)
+```
+:::
+:::

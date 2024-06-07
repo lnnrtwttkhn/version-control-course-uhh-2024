@@ -1,22 +1,23 @@
 project:
-  name: "version-control-course-uhh-ss24"
-  title: "Track, organize and share your work: An introduction to Git for psychological research"
+  name: "version-control-course-mpib-2024"
+  title: "Track, organize and share your work: An introduction to Git for research"
+  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, Berlin, Germany on June 21st 2024"
   instructors: "Dr. Lennart Wittkuhn"
-  when-long: "Summer 2024 (April to July), every Monday, 12:15 to 13:45"
-  when-short: "Summer 2024 (Apr-Jul), Mondays, 12:15 - 13:45"
-  when-semester: "Summer semester 2024 (April to July)"
-  when-time: "Mondays, 12:15 - 13:45 (90 Minutes)"
-  where-institution: "University of Hamburg"
-  where-address: "Von-Melle-Park 5"
-  where-room: "Room 3016"
+  when-long: "Friday, June 21st 2024, 9:30 a.m. to 4:30 p.m."
+  when-short: "Friday, June 21st 2024, 9:30 a.m. to 4:30 p.m."
+  when-semester: "Friday, June 21st 2024"
+  when-time: "9:30 a.m. to 4:30 p.m. (6 hours)"
+  where-institution: "Max Planck Institute for Human Development"
+  where-address: "Lentzeallee 94, 14195 Berlin"
+  where-room: "Campus Open Space"
   where-long: "{{< var project.where-institution >}}, {{< var project.where-address >}}, {{< var project.where-room >}}"
-  where-short: "{{< var project.where-institution >}} (VMP 5, 3016)"
-  target-group: "Psychology Master's students"
-  tag: "PsyM14-PsyWB-K04"
-  registration-start: "February 26th 2024 at 9:00"
-  registration-end: "March 07th 2024 at 13:00"
+  where-short: "{{< var project.where-institution >}} ({{< var project.where-room >}})"
+  target-group: "Researchers at the {{< var project.where-institution >}}"
+  registration-start: "June 7th 2024"
+  registration-end: "June 19th 2024"
+  duration: "full-day"
 links:
-  email: "lennart.wittkuhn@uni-hamburg.de"
+  email: "lennart.wittkuhn@tutanota.com"
   mailto: "mailto:{{< var links.email >}}"
   github: "https://github.com/lnnrtwttkhn/{{< var project.name >}}"
   issues: "{{< var links.github >}}/issues"
@@ -36,11 +37,11 @@ links:
   book: https://lennartwittkuhn.com/version-control-book/
   scriberia: "https://www.scriberia.com/"
   ccby40: "https://creativecommons.org/licenses/by/4.0/"
-years: "2023 -- 2025"
+years: "2024"
 team:
   lennart:
     id: lennart
-    email: lennart.wittkuhn@uni-hamburg.de
+    email: lennart.wittkuhn@tutanota.com
     mailto: "mailto:{{< var team.lennart.email >}}"
     website: https://lennartwittkuhn.com/
     github: https://github.com/lnnrtwttkhn
