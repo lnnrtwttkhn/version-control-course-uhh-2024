@@ -23,8 +23,6 @@ This is the website for the {{< var project.duration >}} course "{{< var project
 
 {{< fa user-group >}} **Who?** {{< var project.target-group >}}
 
-{{< fa gear >}} **How?** Read about [how this course will work](mechanics.qmd)
-
 ---
 
 {{< fa brands github >}} **Code?** Find all source code [on GitHub]({{< var links.github >}})!
