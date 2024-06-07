@@ -4,13 +4,13 @@ title: "About"
 
 ## Overview
 
-{{< fa circle-info >}} **What?** This is the course website for the full-semester course "{{< var project.title >}}"
+{{< fa circle-info >}} **What?** This is the course website for the {{< var project.duration >}} course "{{< var project.title >}}" at the {{< var project.where-institution >}}
 
 {{< fa calendar-days >}} **When?**  {{< var project.when-long >}} ([detailed schedule](schedule.qmd))
 
 {{< fa building-columns >}} **Where?** {{< var project.where-long >}}
 
-{{< fa user-group >}} **Who?** This course is offered to {{< var project.target-group >}} at {{< var project.where-institution }}.
+{{< fa user-group >}} **Who?** This course is offered to {{< var project.target-group >}}.
 
 {{< fa gear >}} **How?** Read more about [how the course will work](mechanics.qmd).
 
@@ -18,7 +18,7 @@ title: "About"
 
 ### Content
 
-In today's digital age, the majority of scientific insights in psychological research are gained from the analysis of data using programming code.
+In today's digital age, the majority of scientific insights in research are gained from the analysis of data using programming code.
 Although data and code are integral parts of their work, scientists often handle digital objects on their computers in a somewhat chaotic, unreliable, and irreproducible manner.
 It's not uncommon to hear researchers wondering, "Which version of my data and code did I use to get this result?" or "I found a bug in my code. Since when was it there?" and "This code used to work! What did I change?".
 This not only affects the reproducibility and trustworthiness of science but also frequently leads to frustration, a waste of time, and, at worst, the loss of painstakingly accumulated work.
@@ -28,11 +28,11 @@ In this hands-on course with practical exercises, participants will learn how to
 
 ### Goals
 
-The primary aim of this course is to empower students with the skills to efficiently organize projects on their computers using Git and GitHub.
+The primary aim of this course is to empower course participants with the skills to efficiently organize projects on their computers using Git and GitHub.
 Participants will actively engage in hands-on experiences with these tools, exploring both the command-line and Graphical User Interfaces.
-Proficiency in Git and GitHub not only enhances students' effectiveness in conducting research projects by ensuring organized and reproducible workflows but also elevates their employability.
-The technical skills acquired in this course are increasingly sought after in various work settings, providing students with a competitive edge in today's dynamic job market.
+Proficiency in Git and GitHub not only enhances participants' effectiveness in conducting research projects by ensuring organized and reproducible workflows but also elevates their employability.
+The technical skills acquired in this course are increasingly sought after in various work settings, providing course participants with a competitive edge in today's dynamic job market.
 
 ### Mechanics
 
-Guided by the seminar instructor, participants will receive input while working through a dedicated Git Handbook (<https://lennartwittkuhn.com/version-control-book/>) that is tuned to the structure of the course and needs of the students, as well as engaging in practical hands-on exercises with Git and GitHub.
+Guided by the seminar instructor, participants will engaging in practical hands-on exercises with Git and GitHub while working through a dedicated Git Handbook (<https://lennartwittkuhn.com/version-control-book/>) that is tuned to the structure of the course and needs of the course participants.
