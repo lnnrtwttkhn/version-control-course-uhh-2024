@@ -10,7 +10,7 @@ project:
     navigate: true
 
 website:
-  title: "Version Control of Code and Data"
+  title: "Version Control with Git"
   favicon: images/git-logo.png
   description: "Website for a full-semester course at University of Hamburg on version control of code and data"
   site-url: "https://lennartwittkuhn.com/version-control-course-mpib-2024/"
