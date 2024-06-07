@@ -49,21 +49,21 @@ team:
     mastodon: https://fediscience.org/users/lnnrtwttkhn
     scholar: https://scholar.google.de/citations?user=GXvJB1kAAAAJ&hl=en
     linkedin: https://www.linkedin.com/in/dr-lennart-wittkuhn-6a079a1a8/
-  # nico:
-  #   id: nico
-  #   email: nicolas.schuck@uni-hamburg.de
-  #   mailto: "mailto:{{< var team.nico.email >}}"
-  #   website: https://schucklab.gitlab.io/
-  #   github: https://github.com/nschuck/
-  #   twitter: https://twitter.com/nico_schuck
-  #   mastodon: https://mastodon.online/@nicoschuck
-  #   scholar: https://scholar.google.com/citations?user=n21HDbAAAAAJ&hl=en
-  #   linkedin: https://www.linkedin.com/in/nicolas-schuck-72542247/
-  # konrad:
-  #   id: konrad
-  #   email: konrad.pagenstedt@uni-hamburg.de
-  #   mailto: "mailto:{{< var team.konrad.email >}}"
-  #   github: https://github.com/konradpa
+  nico:
+    id: nico
+    email: nicolas.schuck@uni-hamburg.de
+    mailto: "mailto:{{< var team.nico.email >}}"
+    website: https://schucklab.gitlab.io/
+    github: https://github.com/nschuck/
+    twitter: https://twitter.com/nico_schuck
+    mastodon: https://mastodon.online/@nicoschuck
+    scholar: https://scholar.google.com/citations?user=n21HDbAAAAAJ&hl=en
+    linkedin: https://www.linkedin.com/in/nicolas-schuck-72542247/
+  konrad:
+    id: konrad
+    email: konrad.pagenstedt@uni-hamburg.de
+    mailto: "mailto:{{< var team.konrad.email >}}"
+    github: https://github.com/konradpa
 slides:
   title: "Slide title"
   license-long: "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))"
