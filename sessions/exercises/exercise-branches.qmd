@@ -1,0 +1,25 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+### 1. Create and merge a branch
+
+1. Create a new branch called `feature`.
+1. Switch to the new branch.
+1. Add a new recipe to your `recipes.txt` file.
+1. Stage and commit the changes to your `recipes.txt` file on the `feature` branch.
+1. Switch back to the default branch (`main` or `master`).
+1. Merge the `feature` branch with your default branch.
+1. Delete the `feature` branch.
+
+### 2. Create and resolve a merge conflict
+
+1. Deliberately create a merge conflict by editing the same section of a file on two separate branches and attempting to merge them.
+An example can be found in the Version Control Book chapter.
+1. Resolve the merge conflict.
+1. Delete the feature branch afterwards.
