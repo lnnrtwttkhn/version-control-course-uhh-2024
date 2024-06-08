@@ -1,0 +1,34 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+### Setup
+
+1. Set your Git username and email address.
+1. Change the default name of the initial "branch" to `main`.
+1. :rocket: Optional: Change your default text editor.
+
+### First steps with Git
+
+1. Create a `recipes` folder and turn it into a Git repository.
+1. Add a *short* recipe to `recipes.txt` (any favorite or an intriguing AI-generated one).
+1. Stage and commit your changes to the repository.
+
+### Basic Git workflow
+
+1. Commit at least three additional changes in `recipes.txt`.
+1. Create a `.gitignore` file
+    - Everyone: Create a random file that you want to ignore, for example `random-file.docx`.
+    - Add the random file to the `.gitignore` file, stage and commit your changes.
+    - All macOS users: Let your repository ignore `.DS_Store`.
+1. :rocket: Make at least one commit using `git commit --amend`.
+    - For example, add a recipe without a title first, commit, then add a title and use `git commit --amend` to add the title change to the same commit.
+1. :rocket: Optional: Commit `.gitkeep` in an otherwise empty directory
+
+Note: There are several terms in these instructions that might still be unfamiliar to you, for example "repository", "stage" or "commit".
+Don't worry, you will learn about what these terms mean in the chapters.

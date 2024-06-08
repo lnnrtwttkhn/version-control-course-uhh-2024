@@ -1,7 +1,9 @@
 ---
-title: "First steps with Git"
+title: "Setup & First steps with Git"
 subtitle: "Session 03"
-date: 2024-04-22
+date: 2024-06-21T11:00:00+02:00
+metadata-files:
+  - _sessions.yml
 about:
   id: hero-heading
   template: solana
@@ -9,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/slides_session03.html
+      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session03.html
       aria-label: display
     - icon: book
       text: "Chapter: Installation"
@@ -27,10 +29,10 @@ about:
       text: "Survey: Installation"
       href: https://version-control-installation.formr.org
       aria-label: input-cursor-text
-    # - icon: input-cursor-text
-    #   text: "Survey: Git Basics"
-    #   href: https://version-control-basics.formr.org/
-    #   aria-label: input-cursor-text
+    - icon: input-cursor-text
+      text: "Survey: Git Basics"
+      href: https://version-control-basics.formr.org/
+      aria-label: input-cursor-text
 ---
 
 ::: {#hero-heading}
@@ -52,18 +54,23 @@ As always:
 
 At the end of this session, you should have accomplished the following:
 
-1. You set up Git.
-1. You initialized your `recipes` folder as a Git repository.
-1. You committed your first recipe to the `recipes` repository.
 
 Please keep the `recipes` folder!
 We will continue to use it in the following sessions.
 
 ## Learning objectives
 
+### Setup
+
 {{< include ../objectives/_objectives-setup.qmd >}}
 
+### First steps with Git
+
 {{< include ../objectives/_objectives-firststeps.qmd >}}
+
+## Exercises
+
+{{< include exercises/exercise-git-basics.qmd >}}
 
 ## Slides
 
@@ -71,6 +78,28 @@ We will continue to use it in the following sessions.
 
 ```{=html}
 <iframe width="100%" height=500 src="slides_session03.html"></iframe>
+```
+
+## Cheatsheet
+
+### Configuration
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "config"), format = "markdown", row.names = FALSE)
+```
+
+### Git Basic
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = FALSE)
 ```
 
 ## Email
