@@ -2,7 +2,8 @@
 title: "Welcome & Introduction to Version Control"
 subtitle: "Session 01"
 date: 2024-06-21T09:30:00+02:00
-date-format: "HH:mm"
+metadata-files:
+  - _sessions.yml
 about:
   id: hero-heading
   template: solana
@@ -10,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/slides_session01.html
+      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session01.html
       aria-label: display
     - icon: book
       text: Chapter

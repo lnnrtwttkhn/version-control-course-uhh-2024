@@ -127,6 +127,18 @@ create_schedule()
 Your codeword is then forwarded to us (without your name).
 :::
 
+## Pair Programming (variant)
+
+::::: {.columns}
+:::: {.column width="50%"}
+- Find yourself in pairs of two
+- Complete the exercises together
+::::
+:::: {.column width="40%"}
+![This illustration is created by [Scriberia](https://www.scriberia.com/) with [The Turing Way community](https://the-turing-way.netlify.app/welcome). Used under a [CC-BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/). DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3695300)](../images/turing-way-community.svg)
+::::
+:::::
+
 ## Course exercise: Building an online recipes book
 
 {{< fa display >}} [{{< var links.recipes >}}]({{< var links.recipes >}})
