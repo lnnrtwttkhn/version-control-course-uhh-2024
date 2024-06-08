@@ -42,6 +42,10 @@ jobs:
       - name: Download objectives
         run: |
           make objectives
+          
+      - name: Download cheatsheet
+        run: |
+          make cheatsheet
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
