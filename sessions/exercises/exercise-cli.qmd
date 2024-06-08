@@ -1,0 +1,133 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+### Navigation and setup
+
+Identify a folder on your computer where you (want to) keep course-related files. 
+If you don't have one, choose a suitable location in your file system.
+**Navigate into the chosen location** using the command line.
+Use the command line to **display the path** of your chosen directory.
+What is the output?
+
+::: {.callout-tip title="Solution" collapse="true" appearance="simple"}
+
+For folder navigation, use `cd`.
+To display the contents of a folder, use `ls`.
+To display the path of the current working directory, use `pwd`.
+
+For example, on macOS if you navigated to the `Documents` folder and used `pwd`, the path looks like this:
+
+```{zsh}
+/Users/myusername/Documents
+```
+
+:::
+
+### Creating a folder and a file
+
+Within your chosen folder, create a new subfolder and name it `recipes`.
+Navigate into the `recipes` folder. 
+**Create a new file** and name it `recipes.txt`.
+**Confirm the creation of the file by listing the contents** of the `recipes` folder.
+Which commands did you use?
+
+::: {.callout-tip title="Solution" collapse="true" appearance="simple"}
+
+1. Create a folder called `recipes`:
+
+```{zsh}
+mkdir recipes
+```
+
+2. Navigate into the `recipes` folder:
+
+```{zsh}
+cd recipes
+```
+
+3. Create a file and name it `recipes.txt`:
+
+```{zsh}
+touch recipes.txt
+```
+
+4. List the contents of the `recipes` folder:
+
+```{zsh}
+ls
+```
+
+:::
+
+### Writing and opening files
+
+**Add the title** "My Favorite Recipes" to `recipes.txt`.
+Which command or method did you use?
+
+::: {.callout-tip title="Solution" collapse="true" appearance="simple"}
+
+I added the title to `recipes.txt` by using the following command:
+
+```{zsh}
+echo "My Favorite Recipes" > recipes.txt
+```
+
+This command writes "My Favorite Recipes" to the file, overwriting any existing content.
+
+:::
+
+### Creating multiple files
+
+Go back to your main course-related folder. 
+Using the command line, **create three new files:** `notes.txt`, `assignments.txt`, and `schedule.txt`.
+Provide the command you used.
+
+::: {.callout-tip title="Solution" collapse="true" appearance="simple"}
+
+```{zsh}
+touch notes.txt assignments.txt schedule.txt
+```
+
+:::
+
+### Wildcards
+
+Use a wildcard pattern to **list all `.txt` files** in your folder.
+Which command did you use?
+
+::: {.callout-tip title="Solution" collapse="true" appearance="simple"}
+
+```{zsh}
+ls *.txt
+```
+
+:::
+
+### Bonus question
+
+Imagine, that you are in a folder containing multiple text files with various extensions, including `.txt`, `.md`, and `.docx`.
+You want to move all the `.txt` files to a subfolder named "text_files" while keeping the other file types in the current directory.
+Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.
+Explain each step in your solution.
+
+::: {.callout-tip title="Solution" collapse="true" appearance="simple"}
+
+1. Creating the "text_files" subfolder:
+
+```{zsh}
+mkdir text_files
+```
+
+2. Moving all the `.txt` files to the "text_files" subfolder:
+
+```{zsh}
+mv *.txt text_files
+```
+
+:::

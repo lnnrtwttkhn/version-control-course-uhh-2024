@@ -1,7 +1,9 @@
 ---
-title: "Command Line"
+title: "Basic of the Command Line"
 subtitle: "Session 02"
-date: 2024-04-15
+date: 2024-06-21T10:00:00+02:00
+metadata-files:
+  - _sessions.yml
 about:
   id: hero-heading
   template: solana
@@ -9,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/slides_session02.html
+      href: https://lennartwittkuhn.com/version-control-course-mpib-2024//sessions/slides_session02.html
       aria-label: display
     - icon: book
       text: Chapter
@@ -19,6 +21,8 @@ about:
       text: Exercises
       href: https://version-control-cli.formr.org/
       aria-label: input-cursor-text
+chapter-title: "Command Line"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-line.html
 ---
 
 ::: {#hero-heading}
@@ -26,16 +30,16 @@ about:
 
 ## This session
 
-In this session, you will complete the following tasks:
+{{< include tasks/task-cli.qmd >}}
 
-1. Read the [chapter "Command Line"](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) of the Version Control
-1. Complete the exercises for the [`recipes` project](#recipes-project).
-1. Complete the quiz questions / exercises in the [Command Line survey](https://version-control-cli.formr.org).
+## Learning objectives
 
-As always:
+{{< include _learning-objectives-note.qmd >}}
+{{< include ../objectives/_objectives-cli.qmd >}}
 
-1. Try out the commands in the chapter and play around with them.
-1. Check whether you have achieved the [learning objectives](#learning-objectives).
+## Exercises
+
+{{< include exercises/exercise-cli.qmd >}}
 
 ## `recipes` project
 
@@ -47,14 +51,20 @@ At the end of this session, you should have accomplished the following:
 Please keep the `recipes` folder!
 We will continue to use it in the following sessions.
 
-## Learning objectives
-
-{{< include ../objectives/_objectives-cli.qmd >}}
-
 ## Slides
 
 {{< include _print-to-pdf.qmd >}}
 
 ```{=html}
 <iframe width="100%" height=500 src="slides_session02.html"></iframe>
+```
+
+## Cheatsheet
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FALSE)
 ```
