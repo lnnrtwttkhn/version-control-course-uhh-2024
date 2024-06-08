@@ -82,7 +82,7 @@ We will continue to use it in the following sessions.
 
 ## Cheatsheet
 
-### Configuration
+### Setup
 
 ```{r}
 #| eval: true
@@ -92,7 +92,7 @@ We will continue to use it in the following sessions.
 knitr::kable(table_cheatsheet(name = "config"), format = "markdown", row.names = FALSE)
 ```
 
-### Git Basic
+### First steps with Git
 
 ```{r}
 #| eval: true
