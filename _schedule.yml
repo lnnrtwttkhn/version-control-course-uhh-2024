@@ -44,12 +44,12 @@ session04:
     - "[Branches](https://lennartwittkuhn.com/version-control-book/chapters/branches.html)"
   survey:
     - "[Git Branches Quiz](https://version-control-branches.formr.org)"
-session05:
+lunchbreak:
   date: "13:00 - 14:00"
   title: "Lunch Break"
   contents:
     - "Enjoy your lunch!"
-session06:
+session05:
   date: "14:00 - 15:00"
   title: "Integration with GitLab / GitHub"
   contents:
@@ -61,7 +61,7 @@ session06:
     - "[GitHub Intro](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
-session07:
+session06:
   date: "15:00 - 16:00"
   title: "Collaboration on GitLab / GitHub"
   contents:
@@ -75,13 +75,13 @@ session07:
     - "[GitHub Advanced](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html), [GitHub Issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
-session08:
+session07:
   date: "16:00 - 16:30"
   title: "Summary & Outlook"
   contents:
     - "Summary & Outlook"
     - "Discussing open questions"
-session09:
+session08:
   date: "Optional"
   title: "Publishing" 
   contents:
