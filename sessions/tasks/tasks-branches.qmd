@@ -1,4 +1,4 @@
-In this session, you will complete the following tasks:
+In this session, you will work on the following tasks:
 
 1. {{< fa book-open >}} **Reading**: Read the chapter ["{{< meta chapter-title >}}"]({{< meta chapter-title >}}) in the Version Control Book.
 1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter.
