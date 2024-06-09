@@ -85,6 +85,39 @@ knitr::kable(table_cheatsheet(name = "config"), format = "markdown", row.names =
 knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = FALSE)
 ```
 
+## Important note: Git repository in `user` folder?
+
+::: {.fragment}
+- Please make sure that your `recipes` repository is in a suitable place (for example, in the `Desktop`, `Documents` folders or where you keep your university-related files, ...) and **not** in your user directory!
+- Also: Always remember to `cd` into your repository before you execute Git commands!
+- If your repository is in your user directory, please **tell Lennart** and we can fix it.
+:::
+
+::: {.fragment}
+**Tip:** To prevent ever creating a Git repository inside your `user` folder, you can use:
+
+::: {.columns}
+::: {.column width="40%"}
+```{zsh filename="Code"}
+touch ~/.git
+```
+:::
+:::
+:::
+
+::: {.fragment}
+
+Running `git init` in the `user` directory now results in a (desired) error:
+
+::: {.column width="40%"}
+```{zsh filename="Output"}
+fatal: invalid gitfile format: /Users/user/.git
+```
+:::
+
+Thanks to [Eamon Caddigan](https://social.coop/@eamon/112434377857903339) for the idea!
+:::
+
 ## Your turn
 
 ::: {.incremental}
