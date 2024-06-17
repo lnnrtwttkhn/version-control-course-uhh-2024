@@ -214,8 +214,7 @@ Your codeword is then forwarded to us (without your name).
 
 ## Your turn
 
-1. Read [Chapter 1: "Introduction to Version Control"](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) in the [Version Control Book]({{< var links.book >}})
-1. Discuss the learning objectives with your desk neighbor (quietly)
+{{< include tasks/tasks-intro.qmd >}}
 
 #### Learning objectives
 

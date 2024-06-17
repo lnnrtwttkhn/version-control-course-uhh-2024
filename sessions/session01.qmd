@@ -28,12 +28,7 @@ about:
 
 ## This session
 
-In this session, you will complete the following tasks:
-
-1. Complete the [pre-course survey](https://version-control-intro.formr.org/).
-1. Read the [chapter "Introduction"](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) of the Version Control Book.
-1. Check whether you have achieved the [learning objectives](#learning-objectives).
-1. After the session: complete the [homework](#homework).
+{{< include tasks/tasks-intro.qmd >}}
 
 ## Learning objectives
 
