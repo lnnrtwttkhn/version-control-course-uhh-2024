@@ -21,6 +21,8 @@ about:
       text: Exercises
       href: https://version-control-versioncontrol.formr.org
       aria-label: input-cursor-text
+chapter-title: "Introduction to Version Control"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html
 ---
 
 ::: {#hero-heading}
@@ -52,6 +54,7 @@ We are excited that you have signed up for this course and can't wait to delve i
 
 In preparation for the course, we kindly ask you to **complete two small assignments**: (1) check if you have Git installed, (2) answer a short survey.
 In total, this should **only take about 15 minutes** (not much longer).
+
 
 **1. Check Git installation**
 
