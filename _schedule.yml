@@ -23,15 +23,15 @@ session02:
     - "[Command Line Quiz](https://version-control-cli.formr.org)"
 session03:
   date: "11:00 - 12:00"
-  title: "Fundamental Git commands"
+  title: "Setup & First steps with Git"
   contents:
-    - "Installation and configuration of Git"
+    - "Configuration and setup of Git"
     - "Initializing a Git repository"
     - "Basic Git commands"
   reading:
-    - "[Installation](https://lennartwittkuhn.com/version-control-book/chapters/installation.html), [Setup](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), [First steps with Git](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html)"
+    - "[Setup](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), [First steps with Git](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html)"
   survey:
-    - "[Installation Survey](https://version-control-installation.formr.org), [Git Basics Quiz](https://version-control-basics.formr.org)"
+    - "[Git Basics Quiz](https://version-control-basics.formr.org)"
 session04:
   date: "12:00 - 13:00"
   title: "Branches, Merging & Merge Conflicts"
