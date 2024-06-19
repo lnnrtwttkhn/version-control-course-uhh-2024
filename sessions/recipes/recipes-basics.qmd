@@ -13,5 +13,5 @@ At the end of this session, you should have accomplished the following:
 1. You initialized your `recipes` folder as a Git repository.
 1. You committed your first recipe to the `recipes` repository.
 
-Please keep the recipes folder!
+Please keep the `recipes` folder!
 We will continue to use it in the following sessions.
