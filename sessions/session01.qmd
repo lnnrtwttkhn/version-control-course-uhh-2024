@@ -49,45 +49,48 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 
 Dear course participants,
 
-You are receiving this email because you have signed up for the course "{{< var project.title >}}", taking place {{< var project.when-long >}} at the {{< var project.where-institution >}} ({{< var project.where-room >}}), {{< var project.where-address >}}.
-We are excited that you have signed up for this course and can't wait to delve into the world of version control with you.
+You are receiving this email because you have signed up for the course "{{< var project.title >}}", taking place on {{< var project.when-long >}} at the {{< var project.where-institution >}} ({{< var project.where-room >}}), {{< var project.where-address >}}.
+We are excited that you have signed up for this course and can't wait to delve into the world of version control with you!
 
-In preparation for the course, we kindly ask you to **complete two small assignments**: (1) check if you have Git installed, (2) answer a short survey.
-In total, this should **only take about 15 minutes** (not much longer).
-
+In preparation for the course, we kindly ask you to **complete two short assignments**: (1) check if you have Git installed, (2) answer a short survey.
+In total, this should **take about 15 minutes** (not much longer).
 
 **1. Check Git installation**
 
 Please check if you have Git installed.
-You can find detailed instructions in our course book here: <https://lennartwittkuhn.com/version-control-book/chapters/installation.html>.
+You can find detailed instructions in our online course book here: <https://lennartwittkuhn.com/version-control-book/chapters/installation.html>.
 Windows users: Please install Git for Windows (<https://gitforwindows.org>).
 macOS and Linux users: You likely have Git already installed.
-Open a terminal / command line and enter `git --version`.
+Open the Terminal / Command Line and enter the command `git --version`.
 If a version number is shown, Git is installed. 
-For more details, see the link to the course book above.
+For more details, see the link to the online course book above.
 And please don't forget to bring your laptop, with Git installed, to the course!
 
 **2. Complete short survey** 
 
 In order to tailor the course to your prior experience and needs, we have prepared a **short survey** with a few questions.
-Please **complete the survey before the course**, ideally **by Wednesday evening** (June 19th 2024).
+Please **complete the survey before the course**, ideally **by Thursday at noon** (June 20th 2024).
 This will give us enough time to review your responses before our course on Friday.
 
-The survey can be accessed here: **https://version-control-intro.formr.org**
+The survey can be accessed here: **<https://version-control-intro.formr.org>**.
 
 A few technical remarks about the survey:
 The survey will ask you for two codewords: a **personal codeword** and a **course codeword**.
 
 The **personal codeword** is used to associate your responses with a unique identifier.
 This will allow us to identify and relate your responses across all surveys used in the course while ensuring anonymity.
-By providing a personal codeword, you will allow us to draw more detailed insights from your responses that will help me improve the course for you.
-The survey will contain an explanation of how to generate your personal codeword.
+By providing a personal codeword, you will allow us to draw more detailed insights from your responses that will help us improve the course for you.
+The survey will contain an explanation in the beginning on how to generate your personal codeword.
 
 The **course codeword** is used to tag your responses as coming from a course participant at {{< var project.where-institution >}}.
 We might also use the survey to collect responses from participants in other course settings.
 The course codeword allows us to distinguish responses from different course settings.
 
 **The course codeword is: `--------`** (course password will be announced during the course).
+
+Please note that you might be asked for the codewords repeatedly.
+This is not an error in the survey but the result of combining separate smaller surveys into a longer one.
+If this happens please just re-enter personal and course codeword.
 
 Further information about the course can be found on our course website: [{{< var links.site >}}]({{< var links.site >}}).
 
