@@ -32,6 +32,7 @@ authors:
   #     equal-contributor: false
 from: markdown+emoji
 date-format: "HH:mm"
+published-title: "Starts at:"
 format:
   revealjs:
     theme: [default, slides.scss]

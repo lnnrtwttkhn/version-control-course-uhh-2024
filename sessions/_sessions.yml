@@ -1,4 +1,5 @@
 date-format: "HH:mm"
+published-title: "Starts at:"
 engine: knitr
 execute:
   eval: false
