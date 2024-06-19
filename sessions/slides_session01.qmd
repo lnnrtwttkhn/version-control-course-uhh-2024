@@ -164,6 +164,11 @@ knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = 
 
 {{< include ../_code-of-conduct.qmd >}}
 
+## Breaks
+
+- We will have a one-hour lunch break at 1 p.m.
+- Feel free to take short breaks in-between (sessions) when needed.
+
 # Survey results
 
 ## Expectations
