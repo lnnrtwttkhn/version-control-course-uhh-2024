@@ -1,15 +1,15 @@
 session01:
   date: "9:30 - 10:00"
-  title: "Welcome and Introduction to Version Control"
+  title: "Welcome & Introduction to Version Control"
   contents:
-    - "Organisational matters"
+    - "Logistics and course admin"
     - "Overview of seminar sessions"
     - "Introduction to version control"
     - "Introduction to Git and its advantages"
   reading:
-    - "[Intro to version control](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html)"
+    - "[Introduction to Version Control](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html)"
   survey:
-    - "[Course introduction Survey](https://version-control-intro.formr.org)"
+    - "[Pre-course survey](https://version-control-intro.formr.org)"
 session02:
   date: "10:00 - 11:00"
   title: "Basics of the Command Line"
