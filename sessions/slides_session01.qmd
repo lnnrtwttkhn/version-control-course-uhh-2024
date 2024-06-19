@@ -123,6 +123,23 @@ create_schedule()
 Your codeword is then forwarded to us (without your name).
 :::
 
+## Cheatsheets
+
+- Each session / chapter / slidedeck contains a cheatsheet with relevant commands
+- For an overview of all cheatsheets see <https://lennartwittkuhn.com/version-control-book/misc/cheatsheet.html>.
+
+::: {.fragment}
+### Example cheatsheet: Basic Git commands
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = FALSE)
+```
+:::
+
 ## Pair Programming (variant)
 
 ::::: {.columns}
