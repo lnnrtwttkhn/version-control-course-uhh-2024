@@ -1,5 +1,5 @@
 ---
-title: "Basic of the Command Line"
+title: "Basics of the Command Line"
 subtitle: "Session 02"
 date: 2024-06-21T10:00:00+02:00
 metadata-files:
@@ -21,8 +21,10 @@ about:
       text: Exercises
       href: https://version-control-cli.formr.org/
       aria-label: input-cursor-text
+session-title: "{{< meta.title >}}"
 chapter-title: "Command Line"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-line.html
+quiz-url: https://version-control-cli.formr.org/
 ---
 
 ::: {#hero-heading}
@@ -30,7 +32,7 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-l
 
 ## This session
 
-{{< include tasks/task-cli.qmd >}}
+{{< include tasks/tasks-template.qmd >}}
 
 ## Learning objectives
 

@@ -1,14 +1,16 @@
 ---
-title: "Session 2: Basic of the Command Line"
+title: "Session 2: Basics of the Command Line"
 date: 2024-06-21T10:00:00+02:00
 format: revealjs
 metadata-files:
   - _slides.yml
+session-title: "Basics of the Command Line"
 chapter-title: "Command Line"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-line.html
+quiz-url: https://version-control-cli.formr.org/
 ---
 
-# Admin
+# Logistics & Admin
 
 ## Schedule
 
@@ -28,7 +30,7 @@ create_schedule()
 <iframe width="100%" height="80%" src="{{< var links.recipes >}}" title="Course Website"></iframe>
 ```
 
-# Basics of the Command Line
+# {{< meta session-title >}}
 
 ## This session: The command line
 
@@ -56,13 +58,9 @@ create_schedule()
 knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FALSE)
 ```
 
-## Your turn
+## Tasks
 
-1. {{< fa book-open >}} **Reading**: Read the chapter ["{{< meta chapter-title >}}"]({{< meta chapter-url >}}) in the Version Control Book
-1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter! Play around! Have fun!
-1. {{< fa dumbbell >}} **Exercises**: Complete the exercises in the [survey](https://version-control-cli.formr.org/)
-
-Ask questions!
+{{< include tasks/tasks-template.qmd >}}
 
 ## Exercises
 
