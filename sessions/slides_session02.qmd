@@ -62,6 +62,10 @@ knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FA
 
 {{< include tasks/tasks-template.qmd >}}
 
+## `recipes` project
+
+{{< include recipes/recipes-cli.qmd >}}
+
 ## Exercises
 
 {{< include exercises/exercise-cli.qmd >}}
