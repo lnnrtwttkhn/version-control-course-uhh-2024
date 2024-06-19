@@ -38,6 +38,10 @@ quiz-url: https://version-control-github.formr.org/
 
 {{< include ../objectives/_objectives-github-intro.qmd >}}
 
+## `recipes` project
+
+{{< include recipes/recipes-github-intro.qmd >}}
+
 ## Exercises
 
 {{< include exercises/exercise-github-intro.qmd >}}

@@ -9,11 +9,6 @@ execute:
 
 ### 1. Upload and manage your repository on MPIB GitLab or GitHub
 
-1. You connected your GitHub account to your local Git.
-1. You created a new GitHub repository and uploaded (i.e., "pushed") your `recipes` project.
-1. You cleaned up your project by deleting unnecessary files and branches.
-1. You created a short `README.md` file in your repository.
-
 #### Connect to MPIB GitLab or GitHub
 
 1. Generate a personal access token (PAT) on GitHub
@@ -30,12 +25,11 @@ execute:
 1. Add your partner (desk neighbor) as a collaborator to your `recipes` repository.
 1. Clone your partner's repository.
 1. Create a new branch in your partner's repository.
-1. Add a recipe to your partner's `recipe.qmd` file.
+1. Add a recipe to your partner's `recipe.txt` file.
 1. Add and commit the changes.
 1. Push the changes on the new branch to MPIB GitLab / GitHub.
 1. Create a Merge Request / Pull Request.
-1. Review the PR your partner made in your repository.
-1. Merge the PR into your repository.
+1. Review and merge the PR your partner made in your repository.
 
 ### :rocket: Optional: Create a `README.md` file
 

@@ -1,0 +1,22 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+At the end of this session, you should have accomplished the following:
+
+1. You connected your GitHub account to your local Git.
+1. You created a new GitHub repository and uploaded (i.e., "pushed") your `recipes` project.
+1. You collaborated with a partner via GitHub using "GitHub Flow"
+
+### Optional:
+
+1. You cleaned up your project by deleting unnecessary files and branches.
+1. You created a short `README.md` file in your repository.
+
+Please keep the `recipes` folder!
+We will continue to use it in the following sessions.
