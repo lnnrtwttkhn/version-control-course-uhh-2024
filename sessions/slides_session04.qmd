@@ -7,11 +7,12 @@ metadata-files:
 session-title: "Branches"
 chapter-title: "Branches"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/branches.html
+quiz-url: https://version-control-branches.formr.org/
 ---
 
-# Last session: Setup & first steps with Git
+# Last session: Setup & First steps with Git
 
-## Last sessions's learning objectives
+## Last session: Learning objectives
 
 After the last session, you should now be able to answer the following questions / do the following:
 
@@ -26,6 +27,10 @@ After the last session, you should now be able to answer the following questions
 
 {{< include ../objectives/_objectives-firststeps.qmd >}}
 :::
+
+## Last session: `recipes` project
+
+{{< include recipes/recipes-basics.qmd >}}
 
 # This session: {{< meta session-title >}}
 
@@ -62,6 +67,10 @@ knitr::kable(table_cheatsheet(name = "branches"), format = "markdown", row.names
 ## Tasks
 
 {{< include tasks/tasks-template.qmd >}}
+
+## `recipes` project
+
+{{< include recipes/recipes-branches.qmd >}}
 
 ## Exercises
 

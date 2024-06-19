@@ -20,6 +20,6 @@ execute:
 ### 2. Create and resolve a merge conflict
 
 1. Deliberately create a merge conflict by editing the same section of a file on two separate branches and attempting to merge them.
-An example can be found in the Version Control Book chapter.
+An example can be found in [the Version Control Book chapter](https://lennartwittkuhn.com/version-control-book/chapters/branches.html#example-merge-conflict).
 1. Resolve the merge conflict.
 1. Delete the feature branch afterwards.

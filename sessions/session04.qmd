@@ -38,6 +38,10 @@ quiz-url: https://version-control-branches.formr.org/
 
 {{< include ../objectives/_objectives-branches.qmd >}}
 
+## `recipes` project
+
+{{< include recipes/recipes-branches.qmd >}}
+
 ## Exercises
 
 {{< include exercises/exercise-branches.qmd >}}
