@@ -55,7 +55,7 @@ knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.n
 
 ## Tasks
 
-{{< include tasks/tasks-branches.qmd >}}
+{{< include tasks/tasks-template.qmd >}}
 
 ## Exercises
 

@@ -32,7 +32,7 @@ quiz-url: https://version-control-github.formr.org/
 
 ## This session
 
-{{< include tasks/tasks-branches.qmd >}}
+{{< include tasks/tasks-template.qmd >}}
 
 ## Learning objectives
 

@@ -61,7 +61,7 @@ knitr::kable(table_cheatsheet(name = "github_advanced"), format = "markdown", ro
 
 ## Tasks
 
-{{< include tasks/tasks-branches.qmd >}}
+{{< include tasks/tasks-template.qmd >}}
 
 ## Lennart's `recipes` repo
 
