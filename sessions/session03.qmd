@@ -13,10 +13,10 @@ about:
       text: Slides
       href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session03.html
       aria-label: display
-    - icon: book
-      text: "Chapter: Installation"
-      href: https://lennartwittkuhn.com/version-control-book/chapters/installation.html
-      aria-label: book
+    # - icon: book
+    #   text: "Chapter: Installation"
+    #   href: https://lennartwittkuhn.com/version-control-book/chapters/installation.html
+    #   aria-label: book
     - icon: book
       text: "Chapter: Setup"
       href: https://lennartwittkuhn.com/version-control-book/chapters/setup.html
@@ -25,14 +25,18 @@ about:
       text: "Chapter: First steps with Git"
       href: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
       aria-label: book
-    - icon: input-cursor-text
-      text: "Survey: Installation"
-      href: https://version-control-installation.formr.org
-      aria-label: input-cursor-text
+    # - icon: input-cursor-text
+    #   text: "Survey: Installation"
+    #   href: https://version-control-installation.formr.org
+    #   aria-label: input-cursor-text
     - icon: input-cursor-text
       text: "Survey: Git Basics"
       href: https://version-control-basics.formr.org/
       aria-label: input-cursor-text
+session-title: "{{< meta.title >}}"
+chapter-title: "First steps with Git"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
+quiz-url: https://version-control-basics.formr.org/
 ---
 
 ::: {#hero-heading}
@@ -40,23 +44,19 @@ about:
 
 ## This session
 
-In this session, you will complete the following tasks:
+In this session, you will work on the following tasks:
 
-1. Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
-1. Complete the exercises for the [`recipes` project](#recipes-project) in the ["Setup" chapter](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git" chapter](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book
+1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
+1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter.
+1. {{< fa laptop-code >}} **Exercises**: Work on the [exercises](#exercises) for the [`recipes` project](#recipes-project).
+1. {{< fa clipboard-question >}} **Quiz**: Test your knowledge with the [quiz]({{< meta quiz-url >}}).
 
 As always:
 
-1. Try out the commands in the chapters and play around with them.
+1. Try out the commands of this session and play around with them.
 1. Check whether you have achieved the [learning objectives](#learning-objectives).
-
-## `recipes` project
-
-At the end of this session, you should have accomplished the following:
-
-
-Please keep the `recipes` folder!
-We will continue to use it in the following sessions.
+1. Ask questions!
+1. Let's *git* started!
 
 ## Learning objectives
 
@@ -67,6 +67,10 @@ We will continue to use it in the following sessions.
 ### First steps with Git
 
 {{< include ../objectives/_objectives-firststeps.qmd >}}
+
+## `recipes` project
+
+{{< include recipes/recipes-basics.qmd >}}
 
 ## Exercises
 

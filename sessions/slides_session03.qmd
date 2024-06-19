@@ -6,7 +6,8 @@ metadata-files:
   - _slides.yml
 session-title: "Setup & First steps with Git"
 chapter-title: "First steps with Git"
-chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-line.html
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
+quiz-url: https://version-control-basics.formr.org/
 ---
 
 # Last session: The command line
@@ -15,25 +16,15 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-l
 
 ![Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png) (free license)](../images/command-line.png)
 
-## Last sessions's learning objectives
+## Last session: Learning objectives
 
 After the last session, you should now be able to answer the following questions / do the following:
 
 {{< include ../objectives/_objectives-cli.qmd >}}
 
-::: {.fragment}
+## Last session: `recipes` project
 
-### `recipes` project
-
-At the end of last week's session, you should have accomplished the following:
-
-1. You used the command line to create a folder on your computer called `recipes`.
-1. You used the command line to create a file called `recipes.txt` inside the `recipes` folder.
-
-Please keep the `recipes` folder!
-We will continue to use it in the following sessions.
-
-:::
+{{< include recipes/recipes-cli.qmd >}}
 
 # This session: {{< meta session-title >}}
 
@@ -49,7 +40,7 @@ We will continue to use it in the following sessions.
 
 ::: {.fragment}
 
-### Confguration
+### Setup
 
 {{< include ../objectives/_objectives-setup.qmd >}}
 
@@ -88,9 +79,9 @@ knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = 
 ## Important note: Git repository in `user` folder?
 
 ::: {.fragment}
-- Please make sure that your `recipes` repository is in a suitable place (for example, in the `Desktop`, `Documents` folders or where you keep your university-related files, ...) and **not** in your user directory!
+- Please make sure that your `recipes` folder is in a suitable place (for example, in the `Desktop`, `Documents` folders or where you keep your course-related files, ...) and **not** in your user directory!
 - Also: Always remember to `cd` into your repository before you execute Git commands!
-- If your repository is in your user directory, please **tell Lennart** and we can fix it.
+- If your `recipes` folder is in your user directory, please **tell Lennart** and we can fix it.
 :::
 
 ::: {.fragment}
@@ -118,23 +109,31 @@ fatal: invalid gitfile format: /Users/user/.git
 Thanks to [Eamon Caddigan](https://social.coop/@eamon/112434377857903339) for the idea!
 :::
 
-## Your turn
+## Tasks
 
-::: {.incremental}
-1. {{< fa book-open >}} **Content Review**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book
-1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter! Play around! Have fun!
-1. **Note:** We will do the implementation exercises in class together, step-by-step.
-:::
+In this session, you will work on the following tasks:
 
-::: {.fragment}
-Ask questions!
+1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
+1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter.
+1. {{< fa laptop-code >}} **Exercises**: Work on the [exercises](#exercises) for the [`recipes` project](#recipes-project).
+1. {{< fa clipboard-question >}} **Quiz**: Test your knowledge with the [quiz]({{< meta quiz-url >}}).
 
-Let's *git* started!
-:::
+As always:
+
+1. Try out the commands of this session and play around with them.
+1. Check whether you have achieved the [learning objectives](#learning-objectives).
+1. Ask questions!
+1. Let's *git* started!
+
+## `recipes` project
+
+{{< include recipes/recipes-basics.qmd >}}
 
 ## Exercises
 
 {{< include exercises/exercise-git-basics.qmd >}}
+
+# Appendix
 
 ## Staging and Committing
 
@@ -244,7 +243,7 @@ Yes, commit your project-specific `.gitignore` file.
 <iframe width="100%" height="70%" src="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html#ignoring-files-and-folders-.gitignore" title="Version Control Book"></iframe>
 ```
 
-## Recap: Best practices for commit messages
+## Best practices for commit messages
 
 ::: fragment
 ![](../images/xkcd-git-commit.png)
