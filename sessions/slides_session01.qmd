@@ -15,16 +15,16 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 ## Who are you?
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
 1. Your name?
 1. Your preferred pronouns?
 1. Your research group?
 1. Your research?
-1. Your mood on a rubber duck scale?
+1. Your mood on a sheep scale?
 :::
-::: {.column width="45%"}
+::: {.column width="60%"}
 ::: {.fragment}
-![](../images/mood-rubber-duck.png){fig-alt="Mood on a rubber duck scale."}
+![](../images/mood-sheep.png){fig-alt="Mood on a sheep scale."}
 :::
 :::
 ::::
