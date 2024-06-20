@@ -29,7 +29,7 @@ objectives: objectives.txt
 
 .PHONY: cheatsheet
 cheatsheet:
-	rm -rf .cheatsheet.json
+	rm -rf cheatsheet.json
 	wget $(CHEATSHEET_URL)
 
 .PHONY: clean
