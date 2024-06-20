@@ -47,6 +47,94 @@ quiz-url: https://version-control-cli.formr.org/
 
 {{< include exercises/exercise-cli.qmd >}}
 
+## Solutions
+
+::: {.callout-tip title="Solution: Navigation and setup" collapse="true" appearance="simple"}
+
+For folder navigation, use `cd`.
+To display the contents of a folder, use `ls`.
+To display the path of the current working directory, use `pwd`.
+
+For example, on macOS if you navigated to the `Documents` folder and used `pwd`, the path looks like this:
+
+```{zsh}
+/Users/myusername/Documents
+```
+
+:::
+
+::: {.callout-tip title="Solution: Creating a folder and a file" collapse="true" appearance="simple"}
+
+1. Create a folder called `recipes`:
+
+```{zsh}
+mkdir recipes
+```
+
+2. Navigate into the `recipes` folder:
+
+```{zsh}
+cd recipes
+```
+
+3. Create a file and name it `recipes.txt`:
+
+```{zsh}
+touch recipes.txt
+```
+
+4. List the contents of the `recipes` folder:
+
+```{zsh}
+ls
+```
+
+:::
+
+::: {.callout-tip title="Solution: Writing and opening files" collapse="true" appearance="simple"}
+
+I added the title to `recipes.txt` by using the following command:
+
+```{zsh}
+echo "My Favorite Recipes" > recipes.txt
+```
+
+This command writes "My Favorite Recipes" to the file, overwriting any existing content.
+
+:::
+
+::: {.callout-tip title="Solution: Creating multiple files" collapse="true" appearance="simple"}
+
+```{zsh}
+touch notes.txt assignments.txt schedule.txt
+```
+
+:::
+
+::: {.callout-tip title="Solution: Wildcards" collapse="true" appearance="simple"}
+
+```{zsh}
+ls *.txt
+```
+
+:::
+
+::: {.callout-tip title="Solution: Bonus question" collapse="true" appearance="simple"}
+
+1. Creating the "text_files" subfolder:
+
+```{zsh}
+mkdir text_files
+```
+
+2. Moving all the `.txt` files to the "text_files" subfolder:
+
+```{zsh}
+mv *.txt text_files
+```
+
+:::
+
 ## Slides
 
 {{< include _print-to-pdf.qmd >}}
