@@ -27,27 +27,29 @@ create_schedule()
 
 ## Learning Objectives
 
-### Introduction to Version Control
+### Session 1: Introduction to Version Control
 
 {{< include ../objectives/_objectives-intro.qmd >}}
 
-### Basics of the Command Line
+### Session 2: Basics of the Command Line
 
 {{< include ../objectives/_objectives-cli.qmd >}}
 
-### First steps with Git
+### Session 3: First steps with Git
 
 {{< include ../objectives/_objectives-firststeps.qmd >}}
 
-### Branches
+## Learning Objectives (continued)
+
+### Session 4: Branches
 
 {{< include ../objectives/_objectives-branches.qmd >}}
 
-### Integration with GitLab / GitHub
+### Session 6: Integration with GitLab / GitHub
 
 {{< include ../objectives/_objectives-github-intro.qmd >}}
 
-### Collaboration on GitLab / GitHub
+### Session 7: Collaboration on GitLab / GitHub
 
 {{< include ../objectives/_objectives-github-advanced.qmd >}}
 
