@@ -175,7 +175,7 @@ See our book chapter on ["Tags & Releases"](https://lennartwittkuhn.com/version-
 ::::
 :::::
 
-## Version Control for *Data*: DataLad
+## Version Control for *data*: DataLad
 
 ::::: columns
 :::: {.column width="55%"}

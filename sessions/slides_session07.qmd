@@ -26,7 +26,7 @@ After the last session, you should now be able to answer the following questions
 
 # This session: {{< meta session-title >}}
 
-## {{< meta session-title >}}
+## This session: {{< meta session-title >}}
 
 ![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
 
