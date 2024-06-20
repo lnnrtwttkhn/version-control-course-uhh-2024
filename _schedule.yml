@@ -3,20 +3,20 @@ session01:
   title: "Welcome & Introduction to Version Control"
   contents:
     - "Logistics and course admin"
-    - "Overview of seminar sessions"
-    - "Introduction to version control"
-    - "Introduction to Git and its advantages"
+    - "Results of course survey"
+    - "Introduction to Version Control"
+    - "Introduction to Git"
   reading:
     - "[Introduction to Version Control](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html)"
   survey:
-    - "[Pre-course survey](https://version-control-intro.formr.org)"
+    - "[Course survey](https://version-control-intro.formr.org)"
 session02:
   date: "10:00 - 11:00"
   title: "Basics of the Command Line"
   contents:
     - "File systems and navigation"
-    - "Benefits of the Command Line"
-    - "Basic Command Line commands"
+    - "Benefits of the command line"
+    - "Basic command line commands"
   reading:
     - "[Command Line](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html)"
   survey:
@@ -27,7 +27,7 @@ session03:
   contents:
     - "Configuration and setup of Git"
     - "Initializing a Git repository"
-    - "Basic Git commands"
+    - "Fundamental Git commands"
   reading:
     - "[Setup](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), [First steps with Git](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html)"
   survey:
@@ -44,12 +44,12 @@ session04:
     - "[Branches](https://lennartwittkuhn.com/version-control-book/chapters/branches.html)"
   survey:
     - "[Git Branches Quiz](https://version-control-branches.formr.org)"
-lunchbreak:
+session05:
   date: "13:00 - 14:00"
   title: "Lunch Break"
   contents:
     - "Enjoy your lunch!"
-session05:
+session06:
   date: "14:00 - 15:00"
   title: "Integration with GitLab / GitHub"
   contents:
@@ -61,34 +61,32 @@ session05:
     - "[GitHub Intro](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
-session06:
+session07:
   date: "15:00 - 16:00"
   title: "Collaboration on GitLab / GitHub"
   contents:
-    - "Forking"
-    - "GitHub Flow"
-    - "Pull Requests"
+    - "Forkinga repository"
+    - "Collaboration with GitHub Flow"
+    - "Pull / Merge Requests"
     - "Issues"
     - "README files"
-    - "Project Management"
   reading:
     - "[GitHub Advanced](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html), [GitHub Issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
-session07:
+session08:
   date: "16:00 - 16:30"
   title: "Summary & Outlook"
   contents:
-    - "Summary & Outlook"
+    - "Summary of course contents"
+    - "Outlook to more Git topics"
     - "Discussing open questions"
-session08:
+session09:
   date: "Optional"
   title: "Publishing" 
   contents:
     - "Creating Tags with Git"
     - "Creating Releases with GitHub"
     - "Using [Zenodo](https://zenodo.org) for scientific publishing"
-    - "Licences"
-    - "Citation Files"
   reading:
     - "[Tags and Releases](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html)"
