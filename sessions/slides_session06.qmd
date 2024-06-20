@@ -1,5 +1,5 @@
 ---
-title: "Session 5: {{< meta session-title >}}"
+title: "Session 6: {{< meta session-title >}}"
 date: 2024-06-21T14:00:00+02:00
 format: revealjs
 metadata-files:
