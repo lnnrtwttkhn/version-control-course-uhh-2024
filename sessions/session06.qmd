@@ -48,6 +48,10 @@ quiz-url: https://version-control-github.formr.org/
 
 {{< include ../objectives/_objectives-issues.qmd >}}
 
+## `recipes` project
+
+{{< include recipes/recipes-github-advanced.qmd >}}
+
 ## Exercises
 
 {{< include exercises/exercise-github-advanced.qmd >}}
@@ -69,24 +73,3 @@ quiz-url: https://version-control-github.formr.org/
 #| warning: false
 knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.names = FALSE)
 ```
-
-## Email
-
-Dear course participants,
-
-This is a reminder to help you prepare for our upcoming seminar session on Monday by completing the exercises from the last sessions (if you have not done so yet):
-
-1. Please ensure that you have uploaded ("pushed") your `recipes` repository to GitHub before our next session on Monday. 
-
-2. Files that your repository should include are a `recipe.qmd` file (see exercise in Session 06 on "Quarto"), a `.gitignore` file (see exercise in Session 04 on "Basic Git workflow") and a `README.md` file (see exercise in Session 08 on "GitHub - Intro").
-While this is not mandatory, please try to remove any unnecessary files or clutter, like empty `.txt` files from your repository.
-You can delete files directly on GitHub by clicking on the three dots next to the directory or file and selecting "Delete file," then commit the changes. 
-This effectively runs `git add` and `git commit` on GitHub.
-
-If you encounter any issues or have any questions, feel free to contact us via email.
-
-We look forward to seeing you next Monday!
-
-Best wishes,
-
-Lennart Wittkuhn (Instructor) & Konrad Pagenstedt (Teaching Assistant)

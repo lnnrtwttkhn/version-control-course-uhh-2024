@@ -8,22 +8,33 @@ session-title: "Collaboration on GitLab / GitHub"
 chapter-title: "GitHub - Advanced"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html
 reading: |
-  ["GitHub - Advanced"](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html) and ["Issues"](https://lennartwittkuhn.com/version-control-book/chapters/issues.html) 
+  ["GitHub - Advanced"](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html) and ["Issues"](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)
+quiz-url: https://version-control-github.formr.org/  
 ---
 
 # Last session: Integration with GitLab / GitHub
 
-## Last sessions's learning objectives
+## Last sessions: Learning objectives
 
 After the last session, you should now be able to answer the following questions / do the following:
 
 {{< include ../objectives/_objectives-github-intro.qmd >}}
+
+## Last session: `recipes` project
+
+{{< include recipes/recipes-github-intro.qmd >}}
 
 # This session: {{< meta session-title >}}
 
 ## {{< meta session-title >}}
 
 ![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
+
+## This session: Issues
+
+![](../images/issue-example-recipes-tiramisu.png){width="80%"}
+
+[Link to Issue](https://github.com/lnnrtwttkhn/recipes/issues/1)
 
 ## Reading
 
@@ -50,7 +61,7 @@ After the last session, you should now be able to answer the following questions
 #| echo: false
 #| message: false
 #| warning: false
-knitr::kable(table_cheatsheet(name = "github_advanced"), format = "markdown", row.names = FALSE)
+knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.names = FALSE)
 ```
 
 ## GitHub Flow
@@ -63,18 +74,10 @@ knitr::kable(table_cheatsheet(name = "github_advanced"), format = "markdown", ro
 
 {{< include tasks/tasks-template.qmd >}}
 
-## Lennart's `recipes` repo
+## `recipes` project
 
-{{< fa display >}} [https://lennartwittkuhn.com/recipes/](https://lennartwittkuhn.com/recipes/)
-```{=html}
-<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/recipes/" title="Lennart`s recipe project"></iframe>
-```
+{{< include recipes/recipes-github-advanced.qmd >}}
 
-### Example
-
-![](../images/issue-example.png){width="100%" height="80%"}
-
-[Link to Issue](https://github.com/lnnrtwttkhn/version-control-survey/issues/28)
 
 ## Exercises
 
