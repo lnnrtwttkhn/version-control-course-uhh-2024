@@ -1,104 +1,261 @@
 ---
-title: "Session 3: First steps with Git"
-date: "2024-04-22"
+title: "Session 3: {{< meta session-title >}}"
+date: 2024-06-21T11:00:00+02:00
 format: revealjs
 metadata-files:
   - _slides.yml
+session-title: "Setup & First steps with Git"
+chapter-title: "First steps with Git"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
+quiz-url: https://version-control-basics.formr.org/
 ---
 
-## Schedule
+# Last session: The command line
+
+## Last session: The command line
+
+![Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png) (free license)](../images/command-line.png)
+
+## Last session: Learning objectives
+
+After the last session, you should now be able to answer the following questions / do the following:
+
+{{< include ../objectives/_objectives-cli.qmd >}}
+
+## Last session: `recipes` project
+
+{{< include recipes/recipes-cli.qmd >}}
+
+# This session: {{< meta session-title >}}
+
+## Reading
+
+{{< fa display >}} [{{< meta chapter-url >}}]({{< meta chapter-url >}})
+
+```{=html}
+<iframe width="100%" height="80%" src="{{< meta chapter-url >}}"></iframe>
+```
+
+## Learning objectives
+
+::: {.fragment}
+
+### Setup
+
+{{< include ../objectives/_objectives-setup.qmd >}}
+
+:::
+
+::: {.fragment}
+
+### First steps with Git
+
+{{< include ../objectives/_objectives-firststeps.qmd >}}
+
+:::
+
+## Cheatsheet
+
+### Configuration
 
 ```{r}
 #| eval: true
 #| echo: false
 #| message: false
 #| warning: false
-create_schedule()
+knitr::kable(table_cheatsheet(name = "config"), format = "markdown", row.names = FALSE)
 ```
 
-# Last week: The command line
+### Git Basics
 
-## Last week: The command line
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = FALSE)
+```
 
-![Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png) (free license)](../images/command-line.png)
+## Important note: Git repository in `user` folder?
 
-## Last week's learning objectives
+::: {.fragment}
+- Please make sure that your `recipes` folder is in a suitable place (for example, in the `Desktop`, `Documents` folders or where you keep your course-related files, ...) and **not** in your user directory!
+- Also: Always remember to `cd` into your repository before you execute Git commands!
+- If your `recipes` folder is in your user directory, please **tell Lennart** and we can fix it.
+:::
 
-After the last session, you should now be able to answer the following questions / do the following:
+::: {.fragment}
+**Tip:** To prevent ever creating a Git repository inside your `user` folder, you can use:
 
-{{< include ../objectives/_objectives-cli.qmd >}}
+::: {.columns}
+::: {.column width="40%"}
+```{zsh filename="Code"}
+touch ~/.git
+```
+:::
+:::
+:::
 
 ::: {.fragment}
 
-### `recipes` project
+Running `git init` in the `user` directory now results in a (desired) error:
 
-At the end of last week's session, you should have accomplished the following:
-
-1. You used the command line to create a folder on your computer called `recipes`.
-1. You used the command line to create a file called `recipes.txt` inside the `recipes` folder.
-
-Please keep the `recipes` folder!
-We will continue to use it in the following sessions.
-
+::: {.column width="40%"}
+```{zsh filename="Output"}
+fatal: invalid gitfile format: /Users/user/.git
+```
 :::
 
-## Command Line Quiz Results
+Thanks to [Eamon Caddigan](https://social.coop/@eamon/112434377857903339) for the idea!
+:::
 
-# This week: First steps with Git
+## Tasks
 
-## Today's chapter
+In this session, you will work on the following tasks:
 
-{{< fa display >}} [lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html)
+1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
+1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter.
+1. {{< fa laptop-code >}} **Exercises**: Work on the [exercises](#exercises) for the [`recipes` project](#recipes-project).
+1. {{< fa clipboard-question >}} **Quiz**: Test your knowledge with the [quiz]({{< meta quiz-url >}}).
+
+As always:
+
+1. Try out the commands of this session and play around with them.
+1. Check whether you have achieved the [learning objectives](#learning-objectives).
+1. Ask questions!
+1. Let's *git* started!
+
+## `recipes` project
+
+{{< include recipes/recipes-basics.qmd >}}
+
+## Exercises
+
+{{< include exercises/exercise-git-basics.qmd >}}
+
+# Appendix
+
+## Staging and Committing
+
+::: columns
+::: {.column width="50%"}
+### Staging:
+
+-   Command: `git add`
+-   Purpose: Preparing and organizing files before they are recorded in the repository's history.
+:::
+
+::: {.column width="50%"}
+### Committing:
+
+-   Command: `git commit -m "commit message"`
+-   Purpose: Saving the changes in the staged files to the repository's history, creating a snapshot.
+:::
+:::
+
+::: fragment
+![Source: [git-scm.com](https://git-scm.com/book/en/v2)](../images/git-staging-diagram.png){width="500"}
+:::
+
+## `git log`
+
+::: fragment
+``` bash
+git log
+```
+
+e.g:
+:::
+
+::: columns
+::: {.column width="50%"}
+::: fragment
+``` bash
+
+commit 3f6db14ed93d6e92a207a9a3ac5f8b8c5c5c5c34 (HEAD -> main, origin/master, origin/HEAD)
+Author: Jane Doe <jane@example.com>
+Date:   Tue Apr 24 14:24:48 2024 -0700
+
+    Fix the widget rendering issue in the dashboard
+
+commit a4324f44d3e85723a4d91cb9e07132b7115e4941
+Author: John Smith <john@example.com>
+Date:   Mon Apr 23 16:17:59 2024 -0700
+
+    Update dependencies to newer versions
+
+commit fa204b9145bf7fc7ff226a26b49a567fc2eb1b94
+Author: Alice Johnson <alice@example.com>
+Date:   Sun Apr 22 15:08:43 2024 -0700
+
+    Initial commit of project files
+```
+:::
+:::
+
+::: {.column width="50%"}
+::: fragment
+``` bash
+
+commit b9690b287bdfec6e17af39b7337b84e9ebf6f046
+Author: Lennart Wittkuhn <lennart.wittkuhn@tutanota.com>
+Date:   Fri Mar 22 15:19:43 2024 +0100
+
+    move illustration of bad git commits (xkcd comic) and edit sentence
+
+commit d8d770dd84cd19086f41d8d38752b223c8130859
+Author: konradpa <konrad@pagenstedt.de>
+Date:   Wed Mar 6 13:51:13 2024 +0100
+
+    add image to setup chapter
+
+commit 074c9f6e12dd5fc8cc61de9f31efbdbce41a7583
+Author: konradpa <konrad@pagenstedt.de>
+Date:   Wed Mar 6 13:51:07 2024 +0100
+
+    add image to rewriting history chapter
+```
+:::
+:::
+:::
+
+## Saving command line history?
+
+Use this:
+
+```{zsh}
+history > history.txt
+```
+
+{{< fa display >}} [https://lennartwittkuhn.com/version-control-book/chapters/command-line.html#saving-command-line-history](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html#saving-command-line-history)
 
 ```{=html}
-<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html" title="Version Control Book"></iframe>
+<iframe width="100%" height="70%" src="https://lennartwittkuhn.com/version-control-book/chapters/command-line.html#saving-command-line-history" title="Version Control Book"></iframe>
 ```
 
-## This and next week's learning objectives
+## Commit `.gitignore`?
 
-::: {.fragment}
-### Setup
-{{< include ../objectives/_objectives-setup.qmd >}}
+Yes, commit your project-specific `.gitignore` file.
+
+{{< fa display >}} [https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html#ignoring-files-and-folders-.gitignore](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html#ignoring-files-and-folders-.gitignore)
+
+```{=html}
+<iframe width="100%" height="70%" src="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html#ignoring-files-and-folders-.gitignore" title="Version Control Book"></iframe>
+```
+
+## Best practices for commit messages
+
+::: fragment
+![](../images/xkcd-git-commit.png)
 :::
 
-::: {.fragment}
-### First steps with Git
-{{< include ../objectives/_objectives-firststeps.qmd >}}
-:::
+::: fragment
+- Try to keep commit messages **short** (less than 72 characters)
+- Use **present tense** and start with an **imperative** verb to indicate the purpose of the commit, for example "add", "fix", "improve" (as if you are giving orders to the codebase to change its behavior)
 
-::: {.fragment}
-Note: These are the learning objectives for this and next week.
-:::
+> If applied, this commit will ... [*your commit message*]
 
-## Your turn
-
-::: {.incremental}
-1. {{< fa book-open >}} **Content Review**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book
-1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter! Play around! Have fun!
-1. **Note:** We will do the implementation exercises in class together, step-by-step.
-:::
-
-::: {.fragment}
-Ask questions!
-
-Let's *git* started!
-:::
-
-## Implementation exercises
-
-::: {.fragment}
-:memo: Set your Git username and email address.<br>
-:memo: Change the default name of the initial "branch".<br>
-:rocket: Optional: Change your default text editor.
-:::
-
-::: {.fragment}
-:memo: **Setup:** Create a `recipes` folder and **turn it into a Git repository.** <br>
-:memo: **Add Content:** Write down a *short* recipe (any favorite or an intriguing AI-generated one) in `recipes.txt`. <br>
-:memo: **Save Changes:**  Stage and commit your changes to the repository. <br>
-:::
-
-::: {.fragment}
-Note: There are several terms in these instructions that might still be unfamiliar to you, for example "repository", "stage" or "commit".
-Don't worry, you will learn about what these terms mean in the chapters.
+- Try to describe **why** a change is being made
+- Link specific [issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html) that are addressed by your commit
+- Use the **description** for more explanation and context
 :::

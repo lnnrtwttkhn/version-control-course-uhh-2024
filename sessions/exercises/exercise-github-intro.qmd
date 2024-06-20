@@ -1,0 +1,58 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+### 1. Upload and manage your repository on MPIB GitLab or GitHub
+
+#### Connect to MPIB GitLab or GitHub
+
+1. Generate a personal access token (PAT) on GitHub.
+1. Use the PAT for GitHub authentication.
+
+#### "Push" your repository
+
+1. Create an empty *internal* repository on MPIB GitLab or *private* repository on GitHub.
+1. Set the remote URL for your local `recipes` Git repository.
+1. Push your `main` branch to MPIB GitLab or GitHub.
+
+### 2. "Private" collaboration with pull requests (using "GitHub Flow")
+
+1. Add your partner (desk neighbor) as a collaborator to your `recipes` repository.
+1. Clone your partner's repository.
+1. Create a new branch in your partner's repository.
+1. Add and commit a recipe to your partner's `recipes.txt` file.
+1. Push the changes on the new branch to MPIB GitLab / GitHub.
+1. Create a Merge Request / Pull Request.
+1. Review and merge the PR your partner made in your repository.
+1. :rocket: Optional: Add additional changes on the branch pushed by your collaborator.
+
+### :rocket: Optional: Create a `README.md` file
+
+1. Navigate to your repository on GitHub, click "Add file", and select "Create new file".
+1. Name the file `README.md`, add a brief description of your project, and provide a commit message.
+Play around with [Markdown](https://www.markdownguide.org/) syntax!
+1. Click the green "Commit new file" button to save the `README.md` file to the repository.
+1. Pull the changes to your local repository.
+
+### :rocket: Optional: Manage branches
+
+1. Push another branch (other than the default branch) with changes to MPIB GitLab or GitHub.
+2. Delete any unused or merged branches.
+
+### :rocket: Optional: Clean up your repository on MPIB GitLab or GitHub
+
+1. Delete unnecessary files or add a new recipe directly on MPIB GitLab or GitHub.
+2. Commit changes on MPIB GitLab or GitHub with a message.
+3. Pull the changes to your local repository.
+
+### :rocket: Optional: Clone and sync your repo
+
+1. Clone your repository from MPIB GitLab or GitHub to a different location on your computer.
+2. Stage, commit and push changes in the new location (consider using a new branch).
+3. Pull changes to the repository in the original location.
+4. Delete your newly cloned repository.

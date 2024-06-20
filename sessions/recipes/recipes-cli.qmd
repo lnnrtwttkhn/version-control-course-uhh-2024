@@ -1,0 +1,16 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+At the end of this session, you should have accomplished the following:
+
+1. You used the command line to create a folder on your computer called `recipes`.
+1. You used the command line to create a file called `recipes.txt` inside the `recipes` folder.
+
+Please keep the `recipes` folder!
+We will continue to use it in the following sessions.

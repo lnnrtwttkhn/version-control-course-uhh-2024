@@ -1,7 +1,9 @@
 ---
-title: "Basic Git workflow"
+title: "Branches"
 subtitle: "Session 04"
-date: 2024-04-29
+date: 2024-06-21T12:00:00+02:00
+metadata-files:
+  - _sessions.yml
 about:
   id: hero-heading
   template: solana
@@ -9,16 +11,20 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/slides_session04.html
+      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session04.html
       aria-label: display
     - icon: book
-      text: "Chapter: First steps with Git"
-      href: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
+      text: "Chapter: Branches"
+      href: https://lennartwittkuhn.com/version-control-book/chapters/branches.html
       aria-label: book
     - icon: input-cursor-text
       text: Quiz
-      href: https://version-control-basics.formr.org/
+      href: https://version-control-branches.formr.org/
       aria-label: input-cursor-text
+session-title: "Branches"
+chapter-title: "Branches"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/branches.html
+quiz-url: https://version-control-branches.formr.org/
 ---
 
 ::: {#hero-heading}
@@ -26,35 +32,19 @@ about:
 
 ## This session
 
-In this session, you will complete the following tasks:
-
-1. Complete the chapter ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
-1. Complete the exercises for the [`recipes` project](#recipes-project).
-1. Complete the [quiz](https://version-control-basics.formr.org/).
-
-As always:
-
-1. Try out the commands in the chapter and play around with them.
-1. Check whether you have achieved the [learning objectives](#learning-objectives).
-
-## `recipes` project
-
-At the end of this session, you should have accomplished the following:
-
-1. Commit at least three changes in `recipes.txt`.
-1. Make at least one commit using `git commit --amend`.
-    - For example, add a recipe without a title first, commit, then add a title and use `git commit --amend` to add the title change to the same commit.
-1. Create a `.gitignore` file
-    - Everyone: Create a random file that you want to ignore, for example `random-file.docx`.
-    - All macOS users: Let your repository ignore `.DS_Store`
-1. :rocket: Optional: Commit `.gitkeep` in an otherwise empty directory
-
-Please keep the `recipes` folder!
-We will continue to use it in the following sessions.
+{{< include tasks/tasks-template.qmd >}}
 
 ## Learning objectives
 
-{{< include ../objectives/_objectives-firststeps.qmd >}}
+{{< include ../objectives/_objectives-branches.qmd >}}
+
+## `recipes` project
+
+{{< include recipes/recipes-branches.qmd >}}
+
+## Exercises
+
+{{< include exercises/exercise-branches.qmd >}}
 
 ## Slides
 
@@ -64,3 +54,12 @@ We will continue to use it in the following sessions.
 <iframe width="100%" height=500 src="slides_session04.html"></iframe>
 ```
 
+## Cheatsheet
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "branches"), format = "markdown", row.names = FALSE)
+```

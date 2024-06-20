@@ -1,4 +1,4 @@
-::: {.callout-note title="How can I download the slides as PDF?" collapse="true"}
+::: {.callout-note title="How can I download the slides as a PDF file?" collapse="true" appearance="simple"}
 
 To print the slides to PDF, do the following:
 

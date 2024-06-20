@@ -1,98 +1,30 @@
 ---
-title: "Session 1: Introduction"
-date: "2024-04-08"
+title: "Session 1: Welcome & Introduction to Version Control"
+date: 2024-06-21T09:30:00+02:00
 format: revealjs
 metadata-files:
   - _slides.yml
+chapter-title: "Introduction to Version Control"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html
 ---
 
+# Logistics & Admin
 
-# Logistics and admin
-
-## Team
-
-:::: {.columns}
-::: {.column width="35%"}
-
-### Instructor
-
-![](../images/photo-wittkuhn-uhh.jpg){fig-alt="A portrait photo of Lennart Wittkuhn." width=89%}
-
-#### Dr. Lennart Wittkuhn
-
-{{< fa envelope >}} [{{< var team.lennart.email >}}]({{< var team.lennart.mailto >}})<br>
-{{< fa brands github >}} [GitHub]({{< var team.lennart.github >}})
-{{< fa home-user >}} [lennartwittkuhn.com]({{< var team.lennart.website >}})
-:::
-
-::: {.column width="35%"}
-
-### Teaching Assistant
-
-![](../images/photo_pagenstedt_portrait.jpeg){fig-alt="A portrait photo of Konrad Pagenstedt."}
-
-#### Konrad Pagenstedt
-
-{{< fa envelope >}} [{{< var team.konrad.email >}}]({{< var team.konrad.mailto >}})<br>
-{{< fa brands github >}} [GitHub]({{< var team.konrad.github >}})
-
-:::
-
-::::
-
-## Research on "Mechanisms of Learning & Change"
-::: {.fragment}
-#### How does the brain use past experience to guide future decisions?
-<br>
-:::
-
-::::: {.columns}
-:::: {.column width="60%"}
-::: {.fragment}
-![taken from @lake2016: "Building machines that learn and think like people"](../images/lake-learning.jpeg)
-:::
-::::
-:::: {.column width="40%"}
-::: {.fragment}
-![](../images/research-areas.png)
-:::
-::::
-:::::
-
-::: {.fragment}
-Find out more on our group's website: <https://schucklab.gitlab.io/>
-:::
-
-::: {.notes}
-- we heard a lot about artificial intelligence
-- what does "intelligence" even mean?
-- as psychologists & cognitive neuroscientists we are interested in understanding human "natural" or biological intelligence
-- our group is interested in the convergence between neuroscience and artificial intelligence research ("Neuro AI")
-- e.g., "why are humans so fast in learning a wide range of tasks in complex environments"
-- we use cognitive and psychological approaches, neural measurement using fMRI and EEG and integrate and compare them with computational approaches from reinforcement learning and artificial neural networks
-:::
-
-{{< include _job-advertizement.qmd >}}
+{{< include _about.qmd >}}
 
 ## Who are you?
 
 :::: {.columns}
-::: {.column width="50%"}
-
+::: {.column width="40%"}
 1. Your name?
 1. Your preferred pronouns?
-1. *One* (fun) fact about you? For example:
-    - What did you study before and where?
-    - What do you expect from this course?
-    - What's your hobby?
-    - Do you have a pet?
-    - What's your favorite color?
-    - Your mood on rubber duck scale?
-    
+1. Your research group?
+1. Your research?
+1. Your mood on a sheep scale?
 :::
-::: {.column width="45%"}
+::: {.column width="60%"}
 ::: {.fragment}
-![](../images/mood-rubber-duck.png){fig-alt="Mood on a rubber duck scale."}
+![](../images/mood-sheep.png){fig-alt="Mood on a sheep scale."}
 :::
 :::
 ::::
@@ -103,53 +35,44 @@ Find out more on our group's website: <https://schucklab.gitlab.io/>
 ::: {.column width="50%"}
 - {{< fa calendar-days >}} **Date:** {{< var project.when-semester >}}
 - {{< fa clock >}} **Time:** {{< var project.when-time >}}
-- {{< fa building-columns >}} **Room:** {{< var project.where-address >}}, {{< var project.where-room >}}
-- {{< fa person-chalkboard >}} **Instructor:** [Dr. Lennart Wittkuhn]({{< var team.lennart.website >}})
-- {{< fa user-plus >}} **Assistant:** [Konrad Pagenstedt]({{< var team.konrad.mailto >}})
+- {{< fa building-columns >}} **Room:** {{< var project.where-room >}}
 :::
 ::: {.column width="50%"}
-- {{< fa chalkboard >}} **Event:** Seminar
-- {{< fa gem >}} **Credits:** 4,0 (2 SWS)
+- {{< fa person-chalkboard >}} **Instructor:** [Dr. Lennart Wittkuhn]({{< var team.lennart.website >}})
+- {{< fa chalkboard >}} **Event:** Course
 - {{< fa language >}} **Language:** English
-- {{< fa tag >}} **Tag:** {{< var project.tag >}}
 :::
 ::::
 
-## What will the average seminar session look like?
+## What will the average session look like?
 
 ::: {.fragment}
-{{< fa clock >}} The course will consist of up to 13 sessions (90 minutes each)
+{{< fa clock >}} The course will consist of 6 main sessions (ca. 60 minutes each)
 :::
 
 ::: {.fragment}
-1. {{< fa book-open >}} **Content Review (up to 30 minutes):**
-<br> Course participants engage with [the online materials](https://lennartwittkuhn.com/version-control-book/) (aka. our "Version Control Book"), supplemented by short presentations by the instructors.
-Some course preparation may occur outside of the class.
+1. {{< fa chalkboard-user >}} **Demonstration (up to 15 minutes):**
+<br> The instructor introduces the topic and gives a short demonstration of the main Git commands.
 :::
 
 ::: {.fragment}
-2. {{< fa comments >}} **Interactive Discussions & Quizzes (up to 15 minutes):**
-<br>Course participants collectively address any inquiries related to the session's content and online materials.
-Instructor-led quiz questions may also be interspersed throughout.
-:::
-
-::: {.fragment}
-3. {{< fa laptop-code >}} **Exercises & Implementation (up to 60 minutes):**
+2. {{< fa laptop-code >}} **Exercises (up to 45 minutes):**
 <br>Course participants actively delve into hands-on exercises and assignments.
 :::
 
 ::: {.fragment}
-### Logistics
-
-- {{< fa laptop >}} You need a laptop.
-Talk to us if you don't have a laptop.
-
+3. {{< fa book-open >}} **Reading (in parallel to the exercises; up to 45 minutes):**
+<br> Course participants engage with [the online learning materials](https://lennartwittkuhn.com/version-control-book/) (aka. our "Version Control Book").
 :::
 
 ::: {.fragment}
-Note, that course participants are **sometimes required to work on course materials outside of class time**.
+4. {{< fa comments >}} **Discussions (up to 10 minutes):**
+<br>Course participants and instructor collectively address any questions related to the session's content.
+:::
 
-Not all course contents will be covered during class time.
+::: {.fragment}
+5. {{< fa clipboard-question >}} **Quizzes (up to 10 minutes):**
+<br>Course participants complete online quizzes to test their knowledge.
 :::
 
 ## Schedule
@@ -162,12 +85,12 @@ Not all course contents will be covered during class time.
 create_schedule()
 ```
 
-## Course Website
+## Course website
 
-{{< fa brands internet-explorer >}} [lennartwittkuhn.com/version-control-course-uhh-ss24](https://lennartwittkuhn.com/version-control-course-uhh-ss24/)
+{{< fa display >}} [{{< var links.site >}}]({{< var links.site >}})
 
 ```{=html}
-<iframe width="100%" height="74%" src="https://lennartwittkuhn.com/version-control-course-uhh-ss24/" title="Course Website"></iframe>
+<iframe width="100%" height="80%" src="{{< var links.site >}}" title="Course Website"></iframe>
 ```
 
 ::: {.notes}
@@ -178,10 +101,10 @@ create_schedule()
 
 ## Version Control Book
 
-{{< fa brands internet-explorer >}} [lennartwittkuhn.com/version-control-book](https://lennartwittkuhn.com/version-control-book)
+{{< fa display >}} [{{< var links.book >}}]({{< var links.book >}})
 
 ```{=html}
-<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-book" title="Version Control Book"></iframe>
+<iframe width="100%" height="80%" src="{{< var links.book >}}" title="Version Control Book"></iframe>
 ```
 
 ## Exercises, quizzes & surveys
@@ -196,136 +119,80 @@ create_schedule()
 
 - all raw data are kept **anonymous** and will only be **used for research and educational purposes**
 - if responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained
-- if you want your data to be deleted, send an email with your personal codeword to [{{< var links.email-secretary >}}]({{< var links.mailto-secretary >}}) (Christine Manor).
-Our secretary forwards your codeword to us (without your name).
+- if you want your data to be deleted, send an email with your personal codeword to [{{< var links.email-secretary >}}]({{< var links.mailto-secretary >}}).
+Your codeword is then forwarded to us (without your name).
 :::
 
-## Your role: questions and communication
+## Cheatsheets
+
+- Each session / chapter / slidedeck contains a cheatsheet with relevant commands
+- For an overview of all cheatsheets see <https://lennartwittkuhn.com/version-control-book/misc/cheatsheet.html>.
 
 ::: {.fragment}
-#### **Questions & discussions *during* class time**
-- Ask questions!
-There are no stupid questions!
-- Participate in the discussions
-:::
-::: {.fragment}
-- Ask questions!
-There are no stupid questions!
-:::
-::: {.fragment}
-#### **Questions & discussions *outside of* class time**
-- Ask questions!
-There are no stupid questions!
-- Send questions to our mailing list: [{{< var links.email-mailing-list >}}]({{< var links.mailto-mailing-list >}})
-- Send questions to [Lennart]({{< var team.lennart.mailto >}}) and / or [Konrad]({{< var team.konrad.mailto >}})
-- Office hours by appointment via email
-- Be proactive: Give us feedback!
+### Example cheatsheet: Basic Git commands
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = FALSE)
+```
 :::
 
-## Your role: active participation
+## Pair Programming (variant)
 
-::: {.fragment}
-#### **Active participation**
-- This is a pass / fail course.
-You pass if you fulfill all course requirements:
-- Requirement 1: Come to at least **11 out of 13 sessions** (85%)
-- Requirement 2: Complete all **surveys/quizzes**
-- Requirement 3: Complete **all mandatory exercises** (implemented in Git)
-:::
-
-::: {.fragment}
-#### How do we verify the course requirements?
-
-1. Requirement 1: **Sign the attendance list**
-1. Requirement 2: **Provide a personal codeword**.
-At the end of the semester, send an email with your personal codeword to [{{< var links.email-secretary >}}]({{< var links.mailto-secretary >}}) (Christine Manor).
-We will send our secretary a list of personal codewords and she will return a list of names.
-1. Requirement 3: At the end of the semester, **send a link to your completed exercises**.
-
-:::
+::::: {.columns}
+:::: {.column width="60%"}
+- Find and say hello to your nearest desk neighbor
+- Complete the exercises together, help each other out, etc.
+::::
+:::: {.column width="40%"}
+![This illustration is created by [Scriberia](https://www.scriberia.com/) with [The Turing Way community](https://the-turing-way.netlify.app/welcome). Used under a [CC-BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/). DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3695300)](../images/turing-way-community.svg)
+::::
+:::::
 
 ## Course exercise: Building an online recipes book
 
-Example: <https://lennartwittkuhn.com/recipes>
+{{< fa display >}} [{{< var links.recipes >}}]({{< var links.recipes >}})
 
 ```{=html}
-<iframe width="100%" height="100%" src="https://lennartwittkuhn.com/recipes/" title="Course Website"></iframe>
+<iframe width="100%" height="80%" src="{{< var links.recipes >}}" title="Course Website"></iframe>
 ```
 
 ## Code of Conduct
 
 {{< include ../_code-of-conduct.qmd >}}
 
+## Breaks
+
+- We will have a one-hour lunch break at 1 p.m.
+- Feel free to take short breaks in-between (sessions) when needed.
+
 # Survey results
 
-## Expectations
+:pray: Thank you for your responses!
 
-- No idea (for example: "i really have no idea about that")
+## Let's do the splits
 
-- Data analysis (for example: "How to work with research data")
+![](../images/splits.jpg){fig-align="center"}
 
-- **Git/GitHub** (for example: "Practical tasks with git and github, theoretical background")
-
-## Hopes
-
-- Data analysis skills (for example: "Learning practical information about data analyses")
-
-- Coding skills (for example: "Hopes for better coding skills post-course")
-
-- Science Communication (for example: "Science communication and networking using research") 
-
-- Version Control Skills (for example: "Getting an idea of what is possible with GitHub")
-
-## Worries
-
-- Lack of coding skills (for example: "My low ability in coding")
-
-- Inadequate previous knowledge (for example: "I worry that I don't have enough previous knowledge")
-
-- Language barrier 
-
-- Learning pace
-
-## Motivation
-
-- Pragmatic course selection (for example:  "I needed a course for 'Wahlbereich' and this one was the only available one.")
-
-- Learning new skills (for example: "For me it is very important to get to know tools and learn how to handle them.")
-
-## Version Control
-
-### Can you briefly define the term version control?
-
-- No idea (for example: "I don’t know what that is")
-
-- "(...) it's about comparing the latest version of someone else who is working on the same project as me with my version"
-
-## Scenarios
-
-#### Imagine a scenario where you crafted a brilliant paragraph for your document (for example, your paper, thesis or report), but then accidentally ruined it. How would you retrieve the earlier brilliant version? Is it even possible?
-
-- "In the past, I mostly worked with doc documents (word) and saved every day a new version when I was the only person working on the document. This was not very practical and I hope to learn an alternative during this course"
-
-#### (...) Consider a situation where you are working with five co-authors on a paper. How do you handle the changes and comments they make to the document
-
-- "I know that you can accept changes and comments in word, but I always find it confusing and complex to keep the overview. I don't know what happens to the history of modifications."
-
-# Introduction to version control
+# Introduction to Version Control
 
 ## Learning objectives
 
-At the end of this session, you should be able to answer the following questions:
-
+{{< include _learning-objectives-note.qmd >}}
 {{< include ../objectives/_objectives-intro.qmd >}}
 
 ## Your turn
 
-1. Read [Chapter 1: "Introduction to Version Control"](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) in the [Version Control Book]({{< var links.book >}})
-1. Discuss the learning objectives with your desk neighbor (quietly)
+{{< include tasks/tasks-intro.qmd >}}
 
 #### Learning objectives
 
 {{< include ../objectives/_objectives-intro.qmd >}}
+
+# Discussion
 
 ## The issue of computational reproducibility in science
 
@@ -497,6 +364,8 @@ We need a **professional toolkit** for digital research!
 - Archiving on GitHub is not enough
 :::
 
+# Outlook
+
 ## Schedule
 
 ```{r}
@@ -507,53 +376,9 @@ We need a **professional toolkit** for digital research!
 create_schedule()
 ```
 
-## Next week: The command line
+## Next session: The command line
 
 ![Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png) (free license)](../images/command-line.png)
-
-## Homework
-
-::::: {.fragment}
-### 1. Check if you have Git / a command line installed
-:::: {.columns}
-::: {.column width="50%"}
-#### Windows Users {{< fa brands windows >}}
-
-- Download and install [Git for Windows](https://gitforwindows.org) until **next week**
-- You can find a tutorial in the [Version Control Book](https://lennartwittkuhn.com/version-control-book/chapters/installation.html)
-:::
-
-::: {.column width="50%"}
-#### Apple {{< fa brands apple >}} or Linux Users {{< fa brands linux >}} 
-
-- Download and install [Git](https://git-scm.com) until **15.04.** (in two weeks)
-- You can find a tutorial in our [Version Control Book](https://lennartwittkuhn.com/version-control-book/chapters/installation.html)
-
-:::
-::::
-:::::
-
-::: {.fragment}
-### 2. Complete the pre-course survey
-:::
-
-## Research Colloquium: Cognitive Neuroscience
-
-| Date   | Time  | Topic                                                   | Presenter               | Room     |
-|--------|-------|---------------------------------------------------------|-------------------------|----------|
-| 03 Apr | 17:00 | Hippocampal Remapping and Reward coding in mice         | Mari Sosa (Stanford)    | Zoom     |
-| 10 Apr | 10:15 | Meta Learning of Learning Rates                         | Jonas Simoens (U Ghent) | VMP 5 4018 |
-| 17 Apr | 10:15 | Decision Making Strategies in younger and older adults  | Alexa Ruel (UHH)        | VMP 5 4018 |
-| 24 Apr | 15:15 | Replay shapes abstract cognitive maps for efficient social navigation | Jae-Young Son (Brown) | VMP 5 4054 |
-| 08 May | 16:00 | TBD                                                     | Bob Wilson (U Arizona)  | VMP 5 4018 |
-| 15 May | 10:15 | TBD                                                     | Tobias Donner (UKE Hamburg) | VMP 5 4054 |
-| 29 May | 14:00 | TBD                                                     | Ben Eppinger (U Greifswald) | VMP 5 4054 |
-| 05 Jun | 10:15 | Memory replay in younger and older adults               | Xiangjuan Ren (UHH)     | VMP 5 4018 |
-| 12 Jun | 10:15 | Generalisation through replay                            | Fabian Renz (UHH)       | VMP 5 4018 |
-| 19 Jun | TBD   |                                                         |                         | VMP 5 4018 |
-| 26 Jun | TBD   |                                                         |                         | VMP 5 4018 |
-
-{{< include _job-advertizement.qmd >}}
 
 ## References
 

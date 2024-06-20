@@ -9,17 +9,17 @@ listing:
     - "session04.qmd"
     - "session05.qmd"
     - "session06.qmd"
+    - "session07.qmd"
     - "session08.qmd"
-    - "session09.qmd"
   type: default
-  sort: "date desc"
+  sort: "date asc"
   categories: false
   table-hover: true
   sort-ui: false
   filter-ui: false
   fields: [date, title, author, subtitle, categories]
   field-links: [title]
-  date-format: "long"
+  date-format: "HH:mm"
 toc: false
 ---
 

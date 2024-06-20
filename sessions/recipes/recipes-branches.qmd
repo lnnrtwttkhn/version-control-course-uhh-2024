@@ -1,0 +1,16 @@
+---
+metadata-files:
+  - ../_sessions.yml
+engine: knitr
+execute:
+  eval: false
+  echo: true
+---
+
+At the end of this session, you should have accomplished the following:
+
+1. You created a new branch and merged changes to your main branch
+1. You created and resolved a merge conflict
+
+Please keep the `recipes` folder!
+We will continue to use it in the following sessions.

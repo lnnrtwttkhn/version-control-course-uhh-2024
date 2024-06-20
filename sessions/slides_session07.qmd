@@ -1,0 +1,84 @@
+---
+title: "Session 6: {{< meta session-title >}}"
+date: 2024-06-21T15:00:00+02:00
+format: revealjs
+metadata-files:
+  - _slides.yml
+session-title: "Collaboration on GitLab / GitHub"
+chapter-title: "GitHub - Advanced"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html
+reading: |
+  ["GitHub - Advanced"](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html) and ["Issues"](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)
+quiz-url: https://version-control-github.formr.org/  
+---
+
+# Last session: Integration with GitLab / GitHub
+
+## Last sessions: Learning objectives
+
+After the last session, you should now be able to answer the following questions / do the following:
+
+{{< include ../objectives/_objectives-github-intro.qmd >}}
+
+## Last session: `recipes` project
+
+{{< include recipes/recipes-github-intro.qmd >}}
+
+# This session: {{< meta session-title >}}
+
+## {{< meta session-title >}}
+
+![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
+
+## This session: Issues
+
+![](../images/issue-example-recipes-tiramisu.png){width="80%"}
+
+[Link to Issue](https://github.com/lnnrtwttkhn/recipes/issues/1)
+
+## Reading
+
+{{< fa display >}} [{{< meta chapter-url >}}]({{< meta chapter-url >}})
+
+```{=html}
+<iframe width="100%" height="80%" src="{{< meta chapter-url >}}"></iframe>
+```
+
+## Learning objectives
+
+### GitHub - Advanced
+
+{{< include ../objectives/_objectives-github-advanced.qmd >}}
+
+### Issues
+
+{{< include ../objectives/_objectives-issues.qmd >}}
+
+## Cheatsheet
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.names = FALSE)
+```
+
+## GitHub Flow
+
+::: {.fragment}
+![Image from [Sebass van Boxel](https://github.com/SvanBoxel/release-based-workflow/issues/1)](../images/github_flow.png){width="70%"}
+:::
+
+## Tasks
+
+{{< include tasks/tasks-template.qmd >}}
+
+## `recipes` project
+
+{{< include recipes/recipes-github-advanced.qmd >}}
+
+
+## Exercises
+
+{{< include exercises/exercise-github-advanced.qmd >}}

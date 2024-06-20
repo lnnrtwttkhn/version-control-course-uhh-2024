@@ -24,10 +24,10 @@ website:
         href: index.qmd
       - text: "{{< fa circle-info >}} About"
         href: about.qmd
-      # - text: "{{< fa clipboard-list >}} Schedule"
-      #   href: schedule.qmd
-      # - text:  "{{< fa list-ol >}} Sessions"
-      #   href: sessions/index.qmd
+      - text: "{{< fa clipboard-list >}} Schedule"
+        href: schedule.qmd
+      - text:  "{{< fa list-ol >}} Sessions"
+        href: sessions/index.qmd
       # - text: "{{< fa wrench >}} Tools"
       #   href: tools.qmd
       # - text: "{{< fa chalkboard-user >}} Team"

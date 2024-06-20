@@ -1,5 +1,7 @@
 subtitle: |
-  {{< var project.title >}}
+  **{{< var project.title >}}**
+  
+  Course at {{< var project.where-institution >}}
   
   [{{< fa display >}} Slides]({{< var links.site >}}) |
   [{{< fa brands github >}} Source]({{< var links.github >}})
@@ -13,23 +15,24 @@ authors:
       family: Wittkuhn
       literal: Dr. Lennart Wittkuhn
     url: https://lennartwittkuhn.com/
-    email: lennart.wittkuhn@uni-hamburg.de
+    email: lennart.wittkuhn@tutanota.com
     orcid: 0000-0003-2966-6888
     attributes:
       corresponding: true
       equal-contributor: true
-  - id: pagenstedt
-    name:
-      given: Konrad
-      family: Pagenstedt
-      literal: Konrad Pagenstedt
-    email: konrad.pagenstedt@uni-hamburg.de
-    orcid: 0009-0000-6867-1546
-    attributes:
-      corresponding: false
-      equal-contributor: false
+  # - id: pagenstedt
+  #   name:
+  #     given: Konrad
+  #     family: Pagenstedt
+  #     literal: Konrad Pagenstedt
+  #   email: konrad.pagenstedt@uni-hamburg.de
+  #   orcid: 0009-0000-6867-1546
+  #   attributes:
+  #     corresponding: false
+  #     equal-contributor: false
 from: markdown+emoji
-date-format: long
+date-format: "HH:mm"
+published-title: "Starts at:"
 format:
   revealjs:
     theme: [default, slides.scss]

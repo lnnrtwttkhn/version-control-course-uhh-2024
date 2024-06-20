@@ -1,0 +1,71 @@
+---
+title: "Session 5: {{< meta session-title >}}"
+date: 2024-06-21T14:00:00+02:00
+format: revealjs
+metadata-files:
+  - _slides.yml
+session-title: "Integration with GitLab / GitHub"
+chapter-title: "GitHub - Introduction"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html
+quiz-url: https://version-control-github.formr.org/
+---
+
+# Last session: Branches
+
+## Last session: Learning objectives
+
+After the last session, you should now be able to answer the following questions / do the following:
+
+{{< include ../objectives/_objectives-branches.qmd >}}
+
+## Last session: `recipes` project
+
+{{< include recipes/recipes-branches.qmd >}}
+
+# This session: {{< meta session-title >}}
+
+## {{< meta session-title >}}
+
+![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
+
+## Reading
+
+{{< fa display >}} [{{< meta chapter-url >}}]({{< meta chapter-url >}})
+
+```{=html}
+<iframe width="100%" height="80%" src="{{< meta chapter-url >}}"></iframe>
+```
+
+## Learning objectives
+
+{{< include ../objectives/_objectives-github-intro.qmd >}}
+
+## Cheatsheet
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.names = FALSE)
+```
+
+## Tasks
+
+{{< include tasks/tasks-template.qmd >}}
+
+## `recipes` project
+
+{{< include recipes/recipes-github-intro.qmd >}}
+
+## Exercises
+
+{{< include exercises/exercise-github-intro.qmd >}}
+
+## Cloning
+
+::: {.fragment}
+#### Cloning
+- Remember to clone a repo in a sensible location (not in your own repository)
+- To rename the cloned repo you can use: `git clone <URL> new-folder-name`
+:::

@@ -1,12 +1,19 @@
 ---
-title: "Session 8: GitHub - Intro"
-date: 2024-05-20
+title: "Session 8: Summary & Outlook"
+date: 2024-06-21T16:00:00+02:00
 format: revealjs
 metadata-files:
   - _slides.yml
+quiz-url: https://version-control-feedback.formr.org/
 ---
 
-# Schedule
+# Summary
+
+## How are you now?
+
+::: fragment
+![](../images/moodscale_14.jpeg){width="50%"}
+:::
 
 ## Schedule
 
@@ -18,140 +25,184 @@ metadata-files:
 create_schedule()
 ```
 
-# Last Session
+## Learning Objectives
 
-## Last session: Quarto Workshop
+### Session 1: Introduction to Version Control
 
-{{< fa display >}} [https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/session06](https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/session06)
-```{=html}
-<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/session06" title="Version Control Book"></iframe>
-```
+{{< include ../objectives/_objectives-intro.qmd >}}
 
-## Last week: Questions about Quarto?
+### Session 2: Basics of the Command Line
 
-## Important note: Git repository in `user` folder?
+{{< include ../objectives/_objectives-cli.qmd >}}
 
-::: {.fragment}
-- Please make sure that your `recipes` repository is in a suitable place (for example, in the `Desktop`, `Documents` folders or where you keep your university-related files, ...) and **not** in your user directory!
-- Also: Always remember to `cd` into your repository before you execute Git commands!
-- If your repository is in your user directory, please **tell Lennart** and we can fix it.
+### Session 3: First steps with Git
+
+{{< include ../objectives/_objectives-firststeps.qmd >}}
+
+## Learning Objectives (continued)
+
+### Session 4: Branches
+
+{{< include ../objectives/_objectives-branches.qmd >}}
+
+### Session 6: Integration with GitLab / GitHub
+
+{{< include ../objectives/_objectives-github-intro.qmd >}}
+
+### Session 7: Collaboration on GitLab / GitHub
+
+{{< include ../objectives/_objectives-github-advanced.qmd >}}
+
+## Quizzes
+
+Test your Git knowledge with **quizzes** (also after the course):
+
+- **Introduction**: [{{< var quizzes.intro >}}]({{< var quizzes.intro >}})
+- **Command Line**: [{{< var quizzes.cli >}}]({{< var quizzes.cli >}})
+- **Git Basics**: [{{< var quizzes.basics >}}]({{< var quizzes.basics >}})
+- **Branches**: [{{< var quizzes.branches >}}]({{< var quizzes.branches >}})
+- **GitHub**: [{{< var quizzes.github >}}]({{< var quizzes.github >}})
+
+Feel free to **enter your personal and course codeword**!
+
+# There's more ...
+
+## Tags, releases, DOIs: Integration with Zenodo
+
+::: fragment
+::: columns
+::: {.column width="75%"}
+> "*Zenodo, a CERN service, is an open dependable home for the long-tail of science, enabling researchers to share and preserve any research outputs in any size, any format and from any science.*" -- from the [Zenodo GitHub README](https://github.com/zenodo/zenodo)
 :::
 
-::: {.fragment}
-**Tip:** To prevent ever creating a Git repository inside your `user` folder, you can use:
-
-::: {.columns}
-::: {.column width="40%"}
-```{zsh filename="Code"}
-touch ~/.git
-```
+::: {.column width="25%"}
+![[Zenodo Logo (CC0 license)](https://about.zenodo.org/)](https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg){height="20%" fig-align="left"}
 :::
 :::
-:::
-
-::: {.fragment}
-
-Running `git init` in the `user` directory now results in a (desired) error:
-
-::: {.column width="40%"}
-```{zsh filename="Output"}
-fatal: invalid gitfile format: /Users/user/.git
-```
-:::
-
-Thanks to [Eamon Caddigan](https://social.coop/@eamon/112434377857903339) for the idea!
-::: 
-
-# This week: Introduction to GitHub
-
-## Today's topic: Introduction to GitHub
-
-::: {.fragment}
-
-![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
-:::
-
-## This weeks learning objectives
-
-::: {.fragment}
-{{< include ../objectives/_objectives-github-intro.qmd >}
-:::
-
-## Today's chapter
-
-{{< fa brands internet-explorer >}} <https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html>
-
-```{=html}
-<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html" title="Version Control Book"></iframe>
-```
-
-## Your turn
-
-::: incremental
-1.  {{< fa book-open >}} **Content Review**: Read the chapter ["GitHub - Intro"](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html) in the Version Control Book.
-2.  {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter! Play around! Have fun!.
-3.  **Note:** Please complete the implementation exercises on the next slide
 :::
 
 ::: fragment
-Ask questions!
+#### Integrate your repository on GitHub with Zenodo
 
-Let's *git* started!
+> "*To **make your repositories easier to reference in academic literature**, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs). You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a repository on [GitHub.com](https://github.com/) and issue a DOI for the archive.*" -- Details in the [GitHub documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 :::
 
-## Implementation exercises
+::: fragment
+::: columns
+::: {.column width="45%"}
+1.  Navigate to the [login page](https://zenodo.org/login) for Zenodo.
+2.  Click **Log in with GitHub**.
+3.  Review the information about access permissions, then click **Authorize zenodo**.
+4.  Navigate to the [Zenodo GitHub page](https://zenodo.org/account/settings/github/).
+5.  To the right of the name of the repository you want to archive, toggle the button to **On**.
 
-::::: {.columns}
-:::: {.column width="33%"}
-::: {.fragment}
+See our book chapter on ["Tags & Releases"](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html).
+:::
 
-### Task 1: Upload and manage your repo on GitHub
+::: {.column width="55%"}
+![["Making your project citable" by CodeRefinery (CC BY 4.0)](https://coderefinery.github.io/github-without-command-line/doi/)](https://coderefinery.github.io/github-without-command-line/_images/zenodo.png){fig-align="left"}
+:::
+:::
+:::
 
-- **Connect your GitHub account**
-  1. Generate a personal access token (PAT) on GitHub
-  1. Use the PAT for GitHub authentication
-- **Upload your repository**
-  1. Create a new **private**(!) repository on GitHub.
-  2. Set the remote URL for your local Git repository.
-  3. Push your `main` branch to GitHub.
-- **Optional: Manage branches**
-  1. Push other branches with changes to GitHub.
-  2. Delete unused branches.
-  
+::: notes
+-   CERN, the European Organization for Nuclear Research, is one of the world's largest and most respected centres for scientific research.
+:::
+
+::: notes
+-   Demonstration: We are now going to add a DOI to this presentation.
+:::
+
+## Graphical User Interfaces (GUIs) for Git
+
+::: columns
+::: {.column width="35%"}
+::: fragment
+### Integrated Development Environments (IDEs)
+
+#### RStudio
+
+[![](../images/gui-rstudio.png)](https://microsite.geo.uzh.ch/reproducible_research/post/rr-rstudio-git/)
+:::
+
+::: fragment
+#### MATLAB
+
+[![](../images/gui-matlab.png)](https://de.mathworks.com/help/matlab/matlab_prog/branch-and-merge-with-git.html)
+:::
+:::
+
+::: {.column width="35%"}
+::: fragment
+### Git Clients
+
+### GitKraken
+
+[![](../images/gui-gitkraken.png)](https://jonbunator.github.io/gitkraken-custom-themes/)
+:::
+
+::: fragment
+### GitHub Desktop
+
+[![](../images/gui-githubdesktop.png)](https://desktop.github.com/)
+:::
+:::
+
+::: {.column width="25%"}
+::: fragment
+### Mobile
+
+#### Working Copy (iOS)
+
+[![](../images/gui-workingcopy.png)](https://workingcopyapp.com/users-guide)
+:::
+:::
+:::
+
+## Continuous Integration & Deployment (CI/CD)
+
+::::: columns
+:::: {.column width="65%"}
+![from [Suresoft](https://suresoft.dev/knowledge-hub/continuous-integration/gitlab-ci/)](../images/gitlab-ci.jpg)
+::::
+:::: {.column width="35%"}
+#### Example: Lennart's `recipes` repo
+
+- Automated spell check
+- Rebuilding of project website
+
+{{< fa display >}} [{{< var links.recipes >}}]({{< var links.recipes >}})
+::::
+:::::
+
+## Version Control for *Data*: DataLad
+
+::::: columns
+:::: {.column width="55%"}
+::: fragment
+... for **data** (binary files) ![© Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd052810s.gif)
 :::
 ::::
-:::: {.column width="33%"}
+:::: {.column width="45%"}
 ::: {.fragment}
-### Task 2: Maintain your repo and collaborate
-- **Clean up your repository on GitHub**:
-  1. Delete unnecessary files or add a new recipe.
-  2. Commit changes with a message.
-  3. Pull the changes to your local repository.
-- **Collaboration**:
-  1. Add collaborators to your repository: Lennart ([\@lnnrtwttkhn](https://github.com/lnnrtwttkhn)) and Konrad ([\@konradpa](https://github.com/konradpa?tab=repositories)).
-  
+Sadly, Git does not handle large files well.
+![](../images/git-snapshot.png){fig-align="center" width=100%}
 :::
-::::
-:::: {.column width="33%"}
 ::: {.fragment}
-### Task 3: Create a `README` file
+::: {layout-ncol=2}
+![[datalad.org](https://www.datalad.org/) (from the [DataLad Handbook](https://handbook.datalad.org/en/latest/index.html) by Wagner et al.)](../images/datalad-logo-full.svg)
 
-1. Navigate to your repository on GitHub, click "Add file", and select "Create new file".
-1. Name the file `README.md`, add a brief description of your project, and provide a commit message.
-Play around with Markdown syntax!
-1. Click the green "Commit new file" button to save the `README.md` file to the repository.
-1. Pull the changes to your local repository.
-
+[![](../images/datalad-handbook-logo.svg)](https://handbook.datalad.org/en/latest/)
+:::
 :::
 ::::
 :::::
 
-## Implementation exercises (optional bonus)
+# Feedback
 
-::: {.fragment}
-### Task 4: Clone and synac your repo (optional)
-1. Clone your repository from GitHub to a different location on your computer.
-2. Make and push changes.
-3. Pull changes to the repository in the original location.
-4. Delete your newly cloned repository.
-:::
+## Feedback
+
+- Please complete the feedback survey: [{{< meta quiz-url >}}]({{< meta quiz-url >}})
+- This should not take much longer than **15 minutes**.
+
+# Questions?

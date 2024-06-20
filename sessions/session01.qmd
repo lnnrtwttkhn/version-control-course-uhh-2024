@@ -1,7 +1,9 @@
 ---
-title: "Introduction to Version Control"
+title: "Welcome & Introduction to Version Control"
 subtitle: "Session 01"
-date: 2024-04-08
+date: 2024-06-21T09:30:00+02:00
+metadata-files:
+  - _sessions.yml
 about:
   id: hero-heading
   template: solana
@@ -9,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/slides_session01.html
+      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session01.html
       aria-label: display
     - icon: book
       text: Chapter
@@ -19,6 +21,8 @@ about:
       text: Exercises
       href: https://version-control-versioncontrol.formr.org
       aria-label: input-cursor-text
+chapter-title: "Introduction to Version Control"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html
 ---
 
 ::: {#hero-heading}
@@ -26,20 +30,11 @@ about:
 
 ## This session
 
-In this session, you will complete the following tasks:
-
-1. Complete the [pre-course survey](https://version-control-intro.formr.org/).
-1. Read the [chapter "Introduction"](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) of the Version Control Book.
-1. Check whether you have achieved the [learning objectives](#learning-objectives).
-1. After the session: complete the [homework](#homework).
-
-## Homework
-
-Check if you have Git and / or a command line installed.
-For detailed instructions for Windows and macOS users, see the [chapter "Installation"](https://lennartwittkuhn.com/version-control-book/chapters/installation.html) of the Version Control Book.
+{{< include tasks/tasks-intro.qmd >}}
 
 ## Learning objectives
 
+{{< include _learning-objectives-note.qmd >}}
 {{< include ../objectives/_objectives-intro.qmd >}}
 
 ## Slides
@@ -54,23 +49,38 @@ For detailed instructions for Windows and macOS users, see the [chapter "Install
 
 Dear course participants,
 
-You are receiving this email because you are enrolled in the course "{{< var project.title >}}", taking place this summer semester 2024 (April to July) at {{< var project.where-institution >}}.
-We are excited that you have signed up for this course and can't wait to delve into the world of version control with you.
-Our first session takes place next Monday, April 08, 2024, from 12:15 to 13:45 at {{< var project.where-address >}}, {{< var project.where-room >}}.
+You are receiving this email because you have signed up for the course "{{< var project.title >}}", taking place on {{< var project.when-long >}} at the {{< var project.where-institution >}} ({{< var project.where-room >}}), {{< var project.where-address >}}.
+We are excited that you have signed up for this course and can't wait to delve into the world of version control with you!
 
-In order to tailor the course to your prior experience and needs, we have prepared a **short survey** with a few questions.
-Please **complete the survey before our first session**, ideally **by Sunday evening** (April 07, 2024).
-This will give us enough time to review your responses before our first session on Monday.
+In preparation for the course, we kindly ask you to **complete two assignments**: (1) check if you have Git installed, and (2) answer a survey.
+In total, this should only **take about 20 to 30 minutes** (not much longer).
 
-The survey can be accessed here: **https://version-control-intro.formr.org**
+**1. Check Git installation**
+
+Please check if you have Git installed.
+You can find detailed instructions in our online course book here: <https://lennartwittkuhn.com/version-control-book/chapters/installation.html>.
+Windows users: Please install Git for Windows (<https://gitforwindows.org>).
+macOS and Linux users: You likely have Git already installed.
+Open the Terminal / Command Line and enter the command `git --version`.
+If a version number is shown, Git is installed. 
+For more details, see the link to the online course book above.
+And please don't forget to bring your laptop, with Git installed, to the course!
+
+**2. Complete survey** 
+
+In order to tailor the course to your prior experience and needs, we have prepared a **survey** with a few questions.
+Please **complete the survey before the course**, ideally **by Thursday at noon** (June 20th 2024).
+This will give us enough time to review your responses before our course on Friday.
+
+The survey can be accessed here: **<https://version-control-intro.formr.org>**.
 
 A few technical remarks about the survey:
 The survey will ask you for two codewords: a **personal codeword** and a **course codeword**.
 
 The **personal codeword** is used to associate your responses with a unique identifier.
-This will allow us to identify and relate your responses across surveys while ensuring anonymity.
+This will allow us to identify and relate your responses across all surveys used in the course while ensuring anonymity.
 By providing a personal codeword, you will allow us to draw more detailed insights from your responses that will help us improve the course for you.
-The survey will contain an explanation of how to generate your personal codeword.
+The survey will contain an explanation in the beginning on how to generate your personal codeword.
 
 The **course codeword** is used to tag your responses as coming from a course participant at {{< var project.where-institution >}}.
 We might also use the survey to collect responses from participants in other course settings.
@@ -78,14 +88,16 @@ The course codeword allows us to distinguish responses from different course set
 
 **The course codeword is: `--------`** (course password will be announced during the course).
 
-Apart from answering the survey, you don't need to prepare anything else for our first session on Monday.
+Please note that you might be asked for the codewords repeatedly.
+This is not an error in the survey but the result of combining separate smaller surveys into a longer one.
+If this happens, please just re-enter personal and course codeword.
 
-Further information about the course can be found on our course website: [{{< var links.site >}}]({{< var links.site >}})
+Further information about the course can be found on our course website at [{{< var links.site >}}]({{< var links.site >}}) which will be updated with more information about the course soon.
 
 If you have any questions, feel free to contact us directly via email.
 
-We are looking forward to seeing you for the first session on Monday!
+We are looking forward to seeing you at the course on Friday!
 
 Best wishes,
 
-Lennart Wittkuhn (Instructor) & Konrad Pagenstedt (Teaching Assistant)
+Lennart Wittkuhn (Instructor) and the organizing team

@@ -1,12 +1,16 @@
 ---
-title: "Session 2: Command Line"
-date: "2024-04-15"
+title: "Session 2: Basics of the Command Line"
+date: 2024-06-21T10:00:00+02:00
 format: revealjs
 metadata-files:
   - _slides.yml
+session-title: "Basics of the Command Line"
+chapter-title: "Command Line"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/command-line.html
+quiz-url: https://version-control-cli.formr.org/
 ---
 
-# Admin
+# Logistics & Admin
 
 ## Schedule
 
@@ -18,50 +22,17 @@ metadata-files:
 create_schedule()
 ```
 
-## Clarification: "What happens if I miss a session?"
-
-- Short answer: If you miss a session, please review the materials and complete the tasks until next session.
-- We will list the workload (and any homework) explicitly for each session on the course website.
-
-```{=html}
-<iframe width="100%" height="60%" src="https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/session02.html" title="Version Control Book"></iframe>
-```
-
-{{< fa display >}} [lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/session02.html](https://lennartwittkuhn.com/version-control-course-uhh-ss24/sessions/session02.html)
-
-# Survey results
-
-# Last session
-
-## Last week's learning objectives
-
-After the last session, you should now be able to answer the following questions:
-
-{{< include ../objectives/_objectives-intro.qmd >}}
-
-# Today's session
-
-## Pair Programming (variant)
-
-::::: {.columns}
-:::: {.column width="50%"}
-- Find yourself in pairs of two
-- Complete the exercises together
-::::
-:::: {.column width="40%"}
-![This illustration is created by [Scriberia](https://www.scriberia.com/) with [The Turing Way community](https://the-turing-way.netlify.app/welcome). Used under a [CC-BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/). DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3695300)](../images/turing-way-community.svg)
-::::
-:::::
-
 ## Course exercise: Building an online recipes book
 
-Example: <https://lennartwittkuhn.com/recipes>
+{{< fa display >}} [{{< var links.recipes >}}]({{< var links.recipes >}})
 
 ```{=html}
-<iframe width="100%" height="100%" src="https://lennartwittkuhn.com/recipes/" title="Course Website"></iframe>
+<iframe width="100%" height="80%" src="{{< var links.recipes >}}" title="Course Website"></iframe>
 ```
 
-## Today: The command line
+# {{< meta session-title >}}
+
+## This session: The command line
 
 ![Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png) (free license)](../images/command-line.png)
 
@@ -69,19 +40,32 @@ Example: <https://lennartwittkuhn.com/recipes>
 
 {{< include ../objectives/_objectives-cli.qmd >}}
 
-## Today's chapter
+## Reading
 
-{{< fa display >}} [lennartwittkuhn.com/version-control-book/chapters/command-line.html](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html)
+{{< fa display >}} [{{< meta chapter-url >}}]({{< meta chapter-url >}})
 
 ```{=html}
-<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-book/chapters/command-line.html" title="Version Control Book"></iframe>
+<iframe width="100%" height="80%" src="{{< meta chapter-url >}}"></iframe>
 ```
 
-## Your turn
+## Cheatsheet
 
-1. {{< fa brands microsoft >}} **Windows users**: Make sure that [Git for Windows](https://gitforwindows.org/) is installed and set up!
-1. {{< fa book-open >}} **Content Review**: Read the chapter ["Command Line"](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) in the Version Control Book
-1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter! Play around! Have fun!
-1. {{< fa dumbbell >}} **Exercises**: Complete the exercises in the [survey](https://version-control-cli.formr.org/)
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FALSE)
+```
 
-Ask questions!
+## Tasks
+
+{{< include tasks/tasks-template.qmd >}}
+
+## `recipes` project
+
+{{< include recipes/recipes-cli.qmd >}}
+
+## Exercises
+
+{{< include exercises/exercise-cli.qmd >}}

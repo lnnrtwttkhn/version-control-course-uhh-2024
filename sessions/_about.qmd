@@ -6,7 +6,7 @@
 
 :scientist: **Position:** Postdoctoral Researcher & Lab Manager at the [Institute of Psychology](https://www.psy.uni-hamburg.de/en.html) at the [University of Hamburg](https://www.psy.uni-hamburg.de/en/arbeitsbereiche/lern-und-veraenderungsmechanismen.html)
 
-:mortar_board: **Education:** BSc Psychology & MSc Cognitive Neuroscience (TU Dresden), PhD Cognitive Neuroscience (FU Berlin)
+:mortar_board: **Education:** BSc Psychology & MSc Cognitive Neuroscience (TU Dresden), PhD Cognitive Neuroscience (MPIB)
 
 :microscope: **Research:** I study the role of fast neural memory reactivation ("[replay](https://en.wikipedia.org/wiki/Hippocampal_replay)") in the human brain using fMRI
 
@@ -30,7 +30,7 @@
 :trackball: **DOI:** [10.5281/zenodo.5012476](http://doi.org/10.5281/zenodo.5012476) (generated using GitHub releases + Zenodo, see details [here](https://guides.github.com/activities/citable-code/))
 -->
 
-{{< fa brands github >}} **Source:** Source code is publicly available on GitHub at [{{< var links.github >}}]({{< var links.github >}})
+{{< fa brands github >}} **Source:** Code is publicly available on GitHub at [{{< var links.github >}}]({{< var links.github >}})
 
 :pray: **Contact:** I am happy for any feedback or suggestions via [email]({{< var links.mailto >}}) or [GitHub issues]({{< var issues >}}). Thank you!
 
