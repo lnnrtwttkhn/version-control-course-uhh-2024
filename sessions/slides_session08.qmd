@@ -47,7 +47,7 @@ create_schedule()
 
 ### Session 6: Integration with GitLab / GitHub
 
-{{< include ../objectives/_objectives-github-intro.qmd >}}
+{{< include ../objectives/_objectives-remotes-intro.qmd >}}
 
 ### Session 7: Collaboration on GitLab / GitHub
 

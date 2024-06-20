@@ -14,16 +14,16 @@ about:
       href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session05.html
       aria-label: display
     - icon: book
-      text: "Chapter: GitHub - Introduction"
-      href: https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html
+      text: "Chapter: Remotes - Introduction"
+      href: https://lennartwittkuhn.com/version-control-book/chapters/remotes-intro.html
       aria-label: book
     - icon: input-cursor-text
       text: Quiz
       href: https://version-control-github.formr.org/
       aria-label: input-cursor-text
 session-title: "Integration with GitLab / GitHub"
-chapter-title: "GitHub - Introduction"
-chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html
+chapter-title: "Remotes - Introduction"
+chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/remotes-intro.html
 quiz-url: https://version-control-github.formr.org/
 ---
 
@@ -36,7 +36,7 @@ quiz-url: https://version-control-github.formr.org/
 
 ## Learning objectives
 
-{{< include ../objectives/_objectives-github-intro.qmd >}}
+{{< include ../objectives/_objectives-remotes-intro.qmd >}}
 
 ## `recipes` project
 
@@ -61,5 +61,5 @@ quiz-url: https://version-control-github.formr.org/
 #| echo: false
 #| message: false
 #| warning: false
-knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.names = FALSE)
+knitr::kable(table_cheatsheet(name = "remote_intro"), format = "markdown", row.names = FALSE)
 ```

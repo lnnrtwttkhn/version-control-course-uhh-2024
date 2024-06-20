@@ -18,7 +18,7 @@ quiz-url: https://version-control-github.formr.org/
 
 After the last session, you should now be able to answer the following questions / do the following:
 
-{{< include ../objectives/_objectives-github-intro.qmd >}}
+{{< include ../objectives/_objectives-remotes-intro.qmd >}}
 
 ## Last session: `recipes` project
 
@@ -61,7 +61,7 @@ After the last session, you should now be able to answer the following questions
 #| echo: false
 #| message: false
 #| warning: false
-knitr::kable(table_cheatsheet(name = "github_intro"), format = "markdown", row.names = FALSE)
+knitr::kable(table_cheatsheet(name = "remote_intro"), format = "markdown", row.names = FALSE)
 ```
 
 ## GitHub Flow
