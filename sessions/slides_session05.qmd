@@ -20,7 +20,7 @@ After the last session, you should now be able to answer the following questions
 
 ## Last session: `recipes` project
 
-{{< include recipes/recipes-github-intro.qmd >}}
+{{< include recipes/recipes-branches.qmd >}}
 
 # This session: {{< meta session-title >}}
 
