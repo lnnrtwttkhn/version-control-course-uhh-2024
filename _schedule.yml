@@ -81,12 +81,12 @@ session08:
     - "Summary of course contents"
     - "Outlook to more Git topics"
     - "Discussing open questions"
-session09:
-  date: "Optional"
-  title: "Publishing" 
-  contents:
-    - "Creating Tags with Git"
-    - "Creating Releases with GitHub"
-    - "Using [Zenodo](https://zenodo.org) for scientific publishing"
-  reading:
-    - "[Tags and Releases](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html)"
+# session09:
+#   date: "Optional"
+#   title: "Publishing" 
+#   contents:
+#     - "Creating Tags with Git"
+#     - "Creating Releases with GitHub"
+#     - "Using [Zenodo](https://zenodo.org) for scientific publishing"
+#   reading:
+#     - "[Tags and Releases](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html)"

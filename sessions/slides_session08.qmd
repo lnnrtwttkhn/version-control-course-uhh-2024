@@ -47,7 +47,7 @@ create_schedule()
 
 ### Session 6: Integration with GitLab / GitHub
 
-{{< include ../objectives/_objectives-github-intro.qmd >}}
+{{< include ../objectives/_objectives-remotes-intro.qmd >}}
 
 ### Session 7: Collaboration on GitLab / GitHub
 
@@ -175,7 +175,7 @@ See our book chapter on ["Tags & Releases"](https://lennartwittkuhn.com/version-
 ::::
 :::::
 
-## Version Control for *Data*: DataLad
+## Version Control for *data*: DataLad
 
 ::::: columns
 :::: {.column width="55%"}
