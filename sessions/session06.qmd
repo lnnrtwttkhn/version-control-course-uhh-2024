@@ -1,6 +1,6 @@
 ---
 title: "Integration with GitLab / GitHub"
-subtitle: "Session 05"
+subtitle: "Session 06"
 date: 2024-06-21T14:00:00+02:00
 metadata-files:
   - _sessions.yml
