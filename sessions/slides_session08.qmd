@@ -1,0 +1,194 @@
+---
+title: "Session 8: Summary & Outlook"
+date: 2024-06-21T16:00:00+02:00
+format: revealjs
+metadata-files:
+  - _slides.yml
+quiz-url: https://version-control-feedback.formr.org/
+---
+
+# Summary
+
+## How are you now?
+
+::: fragment
+![](../images/moodscale_14.jpeg){width="50%"}
+:::
+
+## Schedule
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+create_schedule()
+```
+
+## Learning Objectives
+
+### Introduction to Version Control
+
+{{< include ../objectives/_objectives-intro.qmd >}}
+
+### Basics of the Command Line
+
+{{< include ../objectives/_objectives-cli.qmd >}}
+
+### First steps with Git
+
+{{< include ../objectives/_objectives-firststeps.qmd >}}
+
+### Branches
+
+{{< include ../objectives/_objectives-branches.qmd >}}
+
+### Integration with GitLab / GitHub
+
+{{< include ../objectives/_objectives-github-intro.qmd >}}
+
+### Collaboration on GitLab / GitHub
+
+{{< include ../objectives/_objectives-github-advanced.qmd >}}
+
+# There's more ...
+
+## Tags, releases, DOIs: Integration with Zenodo
+
+::: fragment
+::: columns
+::: {.column width="75%"}
+> "*Zenodo, a CERN service, is an open dependable home for the long-tail of science, enabling researchers to share and preserve any research outputs in any size, any format and from any science.*" -- from the [Zenodo GitHub README](https://github.com/zenodo/zenodo)
+:::
+
+::: {.column width="25%"}
+![[Zenodo Logo (CC0 license)](https://about.zenodo.org/)](https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg){height="20%" fig-align="left"}
+:::
+:::
+:::
+
+::: fragment
+#### Integrate your repository on GitHub with Zenodo
+
+> "*To **make your repositories easier to reference in academic literature**, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs). You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a repository on [GitHub.com](https://github.com/) and issue a DOI for the archive.*" -- Details in the [GitHub documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+:::
+
+::: fragment
+::: columns
+::: {.column width="45%"}
+1.  Navigate to the [login page](https://zenodo.org/login) for Zenodo.
+2.  Click **Log in with GitHub**.
+3.  Review the information about access permissions, then click **Authorize zenodo**.
+4.  Navigate to the [Zenodo GitHub page](https://zenodo.org/account/settings/github/).
+5.  To the right of the name of the repository you want to archive, toggle the button to **On**.
+
+See our book chapter on ["Tags & Releases"](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html).
+:::
+
+::: {.column width="55%"}
+![["Making your project citable" by CodeRefinery (CC BY 4.0)](https://coderefinery.github.io/github-without-command-line/doi/)](https://coderefinery.github.io/github-without-command-line/_images/zenodo.png){fig-align="left"}
+:::
+:::
+:::
+
+::: notes
+-   CERN, the European Organization for Nuclear Research, is one of the world's largest and most respected centres for scientific research.
+:::
+
+::: notes
+-   Demonstration: We are now going to add a DOI to this presentation.
+:::
+
+## Graphical User Interfaces (GUIs) for Git
+
+::: columns
+::: {.column width="35%"}
+::: fragment
+### Integrated Development Environments (IDEs)
+
+#### RStudio
+
+[![](../images/gui-rstudio.png)](https://microsite.geo.uzh.ch/reproducible_research/post/rr-rstudio-git/)
+:::
+
+::: fragment
+#### MATLAB
+
+[![](../images/gui-matlab.png)](https://de.mathworks.com/help/matlab/matlab_prog/branch-and-merge-with-git.html)
+:::
+:::
+
+::: {.column width="35%"}
+::: fragment
+### Git Clients
+
+### GitKraken
+
+[![](../images/gui-gitkraken.png)](https://jonbunator.github.io/gitkraken-custom-themes/)
+:::
+
+::: fragment
+### GitHub Desktop
+
+[![](../images/gui-githubdesktop.png)](https://desktop.github.com/)
+:::
+:::
+
+::: {.column width="25%"}
+::: fragment
+### Mobile
+
+#### Working Copy (iOS)
+
+[![](../images/gui-workingcopy.png)](https://workingcopyapp.com/users-guide)
+:::
+:::
+:::
+
+## Continuous Integration & Deployment (CI/CD)
+
+::::: columns
+:::: {.column width="65%"}
+![from [Suresoft](https://suresoft.dev/knowledge-hub/continuous-integration/gitlab-ci/)](../images/gitlab-ci.jpg)
+::::
+:::: {.column width="35%"}
+#### Example: Lennart's `recipes` repo
+
+- Automated spell check
+- Rebuilding of project website
+
+{{< fa display >}} [{{< var links.recipes >}}]({{< var links.recipes >}})
+::::
+:::::
+
+## Version Control for *Data*: DataLad
+
+::::: columns
+:::: {.column width="55%"}
+::: fragment
+... for **data** (binary files) ![© Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd052810s.gif)
+:::
+::::
+:::: {.column width="45%"}
+::: {.fragment}
+Sadly, Git does not handle large files well.
+![](../images/git-snapshot.png){fig-align="center" width=100%}
+:::
+::: {.fragment}
+::: {layout-ncol=2}
+![[datalad.org](https://www.datalad.org/) (from the [DataLad Handbook](https://handbook.datalad.org/en/latest/index.html) by Wagner et al.)](../images/datalad-logo-full.svg)
+
+[![](../images/datalad-handbook-logo.svg)](https://handbook.datalad.org/en/latest/)
+:::
+:::
+::::
+:::::
+
+# Feedback
+
+## Feedback
+
+- Please complete the feedback survey: [{{< meta quiz-url >}}]({{< meta quiz-url >}})
+- This should not take much longer than **15 minutes**.
+
+# Questions?
