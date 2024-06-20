@@ -51,6 +51,18 @@ create_schedule()
 
 {{< include ../objectives/_objectives-github-advanced.qmd >}}
 
+## Quizzes
+
+Test your Git knowledge with **quizzes** (also after the course):
+
+- **Introduction**: [{{< var quizzes.intro >}}]({{< var quizzes.intro >}})
+- **Command Line**: [{{< var quizzes.cli >}}]({{< var quizzes.cli >}})
+- **Git Basics**: [{{< var quizzes.basics >}}]({{< var quizzes.basics >}})
+- **Branches**: [{{< var quizzes.branches >}}]({{< var quizzes.branches >}})
+- **GitHub**: [{{< var quizzes.github >}}]({{< var quizzes.github >}})
+
+Feel free to **enter your personal and course codeword**!
+
 # There's more ...
 
 ## Tags, releases, DOIs: Integration with Zenodo

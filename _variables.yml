@@ -71,6 +71,12 @@ slides:
   license-short: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
   license-badge: "[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)"
   doi-badge: "[![DOI](https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.14149.svg)](https://doi.org/10.25592/uhhfdm.14149)"
+quizzes:
+  intro: https://version-control-versioncontrol.formr.org
+  cli: https://version-control-cli.formr.org/
+  basics: https://version-control-basics.formr.org/
+  branches:  https://version-control-branches.formr.org/
+  github:  https://version-control-github.formr.org/
 dates:
   one: "2024-04-08"
   two: "2024-04-15"
