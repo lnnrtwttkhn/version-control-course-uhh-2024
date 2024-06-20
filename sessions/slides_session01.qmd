@@ -173,6 +173,10 @@ knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = 
 
 :pray: Thank you for your responses!
 
+## Let's do the splits
+
+![](../images/splits.jpg){fig-align="center"}
+
 # Introduction to Version Control
 
 ## Learning objectives
