@@ -1,7 +1,7 @@
 ---
 title: "Basics of the Command Line"
 subtitle: "Session 02"
-date: 2024-06-21T10:00:00+04:00
+date: 2024-06-21T10:00:00
 metadata-files:
   - _sessions.yml
 about:

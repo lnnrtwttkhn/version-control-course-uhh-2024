@@ -1,7 +1,7 @@
 ---
 title: "Setup & First steps with Git"
 subtitle: "Session 03"
-date: 2024-06-21T11:00:00+04:00
+date: 2024-06-21T11:00:00
 metadata-files:
   - _sessions.yml
 about:
