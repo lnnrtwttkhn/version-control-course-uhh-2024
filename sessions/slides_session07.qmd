@@ -78,7 +78,6 @@ knitr::kable(table_cheatsheet(name = "remote_intro"), format = "markdown", row.n
 
 {{< include recipes/recipes-github-advanced.qmd >}}
 
-
 ## Exercises
 
 {{< include exercises/exercise-github-advanced.qmd >}}

@@ -62,6 +62,8 @@ knitr::kable(table_cheatsheet(name = "remote_intro"), format = "markdown", row.n
 
 {{< include exercises/exercise-github-intro.qmd >}}
 
+# Appendix
+
 ## Cloning
 
 ::: {.fragment}
