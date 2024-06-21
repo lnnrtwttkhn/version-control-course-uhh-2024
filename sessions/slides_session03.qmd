@@ -153,9 +153,19 @@ As always:
 :::
 :::
 
+::: columns
+::: {.column width="50%"}
 ::: fragment
-![Source: [git-scm.com](https://git-scm.com/book/en/v2)](../images/git-staging-diagram.png){width="500"}
+![Source: [git-scm.com](https://git-scm.com/book/en/v2)](../images/git-staging-diagram.png){width="100%"}
 :::
+:::
+::: {.column width="50%"}
+::: fragment
+![Source: [Heidi Seibold](https://docs.google.com/presentation/d/1Yj59XAAJZQprO-kfDHzHMtjJDttMFAqkkslqcSIRZKg/edit#slide=id.p)](../images/git-analogy-letter.png){width="100%"}
+:::
+:::
+:::
+
 
 ## `git log`
 
