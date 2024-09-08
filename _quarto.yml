@@ -12,8 +12,8 @@ project:
 website:
   title: "Version Control with Git"
   favicon: images/git-logo.png
-  site-url: "https://lennartwittkuhn.com/version-control-course-mpib-2024/"
-  repo-url: "https://github.com/lnnrtwttkhn/version-control-course-mpib-2024/"
+  site-url: "https://lennartwittkuhn.com/version-control-course-uhh-2024/"
+  repo-url: "https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/"
   open-graph: false
   navbar:
     background: light
