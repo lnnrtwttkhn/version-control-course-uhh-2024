@@ -11,9 +11,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.55">
+  <meta name="generator" content="quarto-1.3.450">
 
-  <title>Version Control with Git – Session 6: Integration with GitLab / GitHub</title>
+  <title>Version Control with Git - Session 6: Integration with GitLab / GitHub</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -160,8 +160,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -334,7 +333,7 @@
   <h1 class="title">Session 6: Integration with GitLab / GitHub</h1>
   <p class="subtitle"></p><p><strong>Track, organize and share your work: An introduction to Git for research</strong></p>
 <p>Course at General Psychology Lab at the University of Hamburg</p>
-<p><a href="{{< var links.site >}}"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> | <a href="{{< var links.github >}}"><i class="fa-brands fa-github" aria-label="github"></i> Source</a></p>
+<p><a href="https://lennartwittkuhn.com/version-control-course-uhh-2024/"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> | <a href="https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/"><i class="fa-brands fa-github" aria-label="github"></i> Source</a></p>
 <p><a href="https://creativecommons.org/licenses/by/4.0/"><img data-src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License: CC BY 4.0"></a> <a href="https://doi.org/10.25592/uhhfdm.14149"><img data-src="https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.14149.svg" alt="DOI"></a></p><p></p>
 
 <div class="quarto-title-authors">
@@ -348,13 +347,13 @@
 </div>
 </div>
 
-  <p class="date">14:00</p>
+  <p class="date">13:30</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Agenda</h2>
 <ul>
 <li><a href="#/last-session-branches" id="/toc-last-session-branches"><span class="header-section-number">1</span> Last session: Branches</a></li>
-<li><a href="#/this-session" id="/toc-this-session"><span class="header-section-number">2</span> This session: Integration with GitLab / GitHub</a></li>
+<li><a href="#/this-session-meta-session-title" id="/toc-this-session-meta-session-title"><span class="header-section-number">2</span> This session: Integration with GitLab / GitHub</a></li>
 <li><a href="#/appendix" id="/toc-appendix"><span class="header-section-number">3</span> Appendix</a></li>
 </ul>
 </nav>
@@ -369,21 +368,21 @@
 <p>After the last session, you should now be able to answer the following questions / do the following:</p>
 <p><span class="emoji" data-emoji="bulb">💡</span> You understand the purpose and benefits of using branches in Git<br> <span class="emoji" data-emoji="bulb">💡</span> You can create and switch between branches<br> <span class="emoji" data-emoji="bulb">💡</span> You can merge branches and resolve merge conflicts<br> <span class="emoji" data-emoji="bulb">💡</span> You can name at least three best practices when working with branches<br></p>
 </section>
-<section id="last-session-recipes-project" class="slide level2 scrollable">
+<section id="last-session-recipes-project" class="slide level2">
 <h2>Last session: <code>recipes</code> project</h2>
 <p>At the end of this session, you should have accomplished the following:</p>
 <ol type="1">
-<li>You created a new branch and merged changes to your main branch</li>
-<li>You created and resolved a merge conflict</li>
+<li>You created a new branch and merged changes toto your default branch.</li>
+<li>You created and resolved a merge conflict.</li>
 </ol>
 <p>Please keep the <code>recipes</code> folder! We will continue to use it in the following sessions.</p>
 </section></section>
 <section>
-<section id="this-session" class="title-slide slide level1 center" data-number="2">
+<section id="this-session-meta-session-title" class="title-slide slide level1 center" data-number="2">
 <h1><span class="header-section-number">2</span> This session: Integration with GitLab / GitHub</h1>
 
 </section>
-<section id="section" class="slide level2">
+<section id="meta-session-title" class="slide level2">
 <h2>Integration with GitLab / GitHub</h2>
 
 <img data-src="../images/git-github-integration.png" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">Image from <a href="https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e">Techdobz</a></p></section>
@@ -400,7 +399,7 @@
 <h2>Cheatsheet</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table class="caption-top">
+<table>
 <colgroup>
 <col style="width: 13%">
 <col style="width: 87%">
@@ -437,7 +436,7 @@
 </div>
 </div>
 </section>
-<section id="tasks" class="slide level2 scrollable">
+<section id="tasks" class="slide level2">
 <h2>Tasks</h2>
 <p>In this session, you will work on the following tasks:</p>
 <ol type="1">
@@ -454,14 +453,13 @@
 <li>Let’s <em>git</em> started!</li>
 </ol>
 </section>
-<section id="recipes-project" class="slide level2 scrollable">
+<section id="recipes-project" class="slide level2">
 <h2><code>recipes</code> project</h2>
 <p>At the end of this session, you should have accomplished the following:</p>
 <ol type="1">
 <li>You connected your GitHub account to your local Git.</li>
 <li>You created a new GitHub repository and uploaded (i.e., “pushed”) your <code>recipes</code> project.</li>
 <li>You collaborated on a shared project by adding and committing changes to a partner’s repository.</li>
-<li>You created and reviewed a pull request to integrate new content from a partner.</li>
 </ol>
 <h3 id="optional">Optional:</h3>
 <ol type="1">
@@ -470,19 +468,19 @@
 </ol>
 <p>Please keep the <code>recipes</code> folder! We will continue to use it in the following sessions.</p>
 </section>
-<section id="exercises" class="slide level2 scrollable">
+<section id="exercises" class="slide level2">
 <h2>Exercises</h2>
-<h3 id="upload-and-manage-your-repository-on-mpib-gitlab-or-github">1. Upload and manage your repository on MPIB GitLab or GitHub</h3>
+<h3 id="upload-and-manage-your-repository-on-gitlab-or-github">1. Upload and manage your repository on GitLab or GitHub</h3>
 <h4 id="connect-to-mpib-gitlab-or-github">Connect to MPIB GitLab or GitHub</h4>
 <ol type="1">
-<li>Generate a personal access token (PAT) on GitHub.</li>
-<li>Use the PAT for GitHub authentication.</li>
+<li>Generate an SSH key and add it to GitHub or GitLab.</li>
+<li>Use the SSH key to authentication on GitHub or GitLab.</li>
 </ol>
 <h4 id="push-your-repository">“Push” your repository</h4>
 <ol type="1">
-<li>Create an empty <em>internal</em> repository on MPIB GitLab or <em>private</em> repository on GitHub.</li>
+<li>Create an empty <em>internal</em> repository on GitLab or <em>private</em> repository on GitHub.</li>
 <li>Set the remote URL for your local <code>recipes</code> Git repository.</li>
-<li>Push your <code>main</code> branch to MPIB GitLab or GitHub.</li>
+<li>Push your <code>main</code> branch to GitLab or GitHub.</li>
 </ol>
 <h3 id="private-collaboration-with-pull-requests-using-github-flow">2. “Private” collaboration with pull requests (using “GitHub Flow”)</h3>
 <ol type="1">
@@ -490,7 +488,7 @@
 <li>Clone your partner’s repository.</li>
 <li>Create a new branch in your partner’s repository.</li>
 <li>Add and commit a recipe to your partner’s <code>recipes.txt</code> file.</li>
-<li>Push the changes on the new branch to MPIB GitLab / GitHub.</li>
+<li>Push the changes on the new branch to GitLab / GitHub.</li>
 <li>Create a Merge Request / Pull Request.</li>
 <li>Review and merge the PR your partner made in your repository.</li>
 <li><span class="emoji" data-emoji="rocket">🚀</span> Optional: Add additional changes on the branch pushed by your collaborator.</li>
@@ -537,10 +535,8 @@
 </ul>
 </div>
 
-<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Version Control Course</p>
-</div>
 </div>
 </section></section>
     </div>
@@ -570,6 +566,7 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -825,7 +822,18 @@
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -857,55 +865,11 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/lennartwittkuhn\.com\/version-control-course-uhh-2024\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-              // target, if specified
-              link.setAttribute("target", "_blank");
-              if (link.getAttribute("rel") === null) {
-                link.setAttribute("rel", "noopener");
-              }
-          }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -915,17 +879,8 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -939,11 +894,7 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {
@@ -983,6 +934,20 @@
           });
         }
       }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var filterRegex = new RegExp("https:\/\/lennartwittkuhn\.com\/version-control-course-mpib-2024\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+              // target, if specified
+              link.setAttribute("target", "_blank");
+          }
+        }
     });
     </script>
     
