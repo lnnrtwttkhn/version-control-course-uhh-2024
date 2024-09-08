@@ -33,7 +33,6 @@ about:
       text: "Survey: Git Basics"
       href: https://version-control-basics.formr.org/
       aria-label: input-cursor-text
-session-title: "{{< meta.title >}}"
 chapter-title: "First steps with Git"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
 quiz-url: https://version-control-basics.formr.org/
