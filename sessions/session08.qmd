@@ -1,7 +1,7 @@
 ---
 title: "Summary & Outlook"
 subtitle: "Session 08"
-date: 2024-09-27T16:00:00
+date: 2024-09-27T15:00:00
 metadata-files:
   - _sessions.yml
 about:
@@ -32,7 +32,7 @@ You are receiving this email because you took part in the course "{{< var projec
 Thank you very much for your participation!
 
 With this email, we would kindly **ask you for your feedback**.
-Your valuable feedback will help us improve future iterations of this course but also other courses on related topics.
+Your valuable feedback will help us improve future versions of this course but also other courses on related topics.
 We have prepared an online survey that should not take much longer than up to **15 minutes to complete**.
 
 The feedback survey can be accessed here: **<https://version-control-feedback.formr.org/>**.
@@ -42,7 +42,7 @@ As a reminder, **the course codeword is `--------`** (course password will be an
 Thank you very much for your feedback!
 
 The course materials will continue to be available on the course website at [{{< var links.site >}}]({{< var links.site >}}).
-We will continue the development on the "Version Control Book" available at [{{< var links.book >}}]({{< var links.book >}}).
+We will also continue the development on the "Version Control Book" available at [{{< var links.book >}}]({{< var links.book >}}).
 Feel free to take a look at it again at any later point of your Git journey.
 
 If you have any questions, feel free to contact us directly via email.
