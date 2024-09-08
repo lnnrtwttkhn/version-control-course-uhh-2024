@@ -78,6 +78,8 @@ quizzes:
   basics: https://version-control-basics.formr.org/
   branches:  https://version-control-branches.formr.org/
   github:  https://version-control-github.formr.org/
+chapters:
+  installation: https://lennartwittkuhn.com/version-control-book/chapters/installation.html/
 dates:
   one: "2024-04-08"
   two: "2024-04-15"
