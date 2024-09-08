@@ -1,12 +1,3 @@
----
-metadata-files:
-  - ../_sessions.yml
-engine: knitr
-execute:
-  eval: false
-  echo: true
----
-
 ### 1. Upload and manage your repository on MPIB GitLab or GitHub
 
 #### Connect to MPIB GitLab or GitHub

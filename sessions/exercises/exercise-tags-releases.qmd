@@ -1,12 +1,3 @@
----
-metadata-files:
-  - ../_sessions.yml
-engine: knitr
-execute:
-  eval: false
-  echo: true
----
-
 ### Create a tag and releases
 
 1. Read the [Tags and Releases chapter](https://lennartwittkuhn.com/version-control-book/chapters/tags-and-releases.html)

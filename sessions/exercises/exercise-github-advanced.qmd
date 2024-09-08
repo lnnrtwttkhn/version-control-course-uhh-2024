@@ -1,12 +1,3 @@
----
-metadata-files:
-  - ../_sessions.yml
-engine: knitr
-execute:
-  eval: false
-  echo: true
----
-
 ### 1. "Public" collaboration with pull requests (using a Fork)
 
 1. Find out what [forking](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html) is

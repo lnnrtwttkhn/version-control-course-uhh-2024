@@ -1,12 +1,3 @@
----
-metadata-files:
-  - ../_sessions.yml
-engine: knitr
-execute:
-  eval: false
-  echo: true
----
-
 At the end of this session, you should have accomplished the following:
 
 1. You forked a public / internal `recipes` repository of another course participant.

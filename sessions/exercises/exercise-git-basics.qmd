@@ -1,12 +1,3 @@
----
-metadata-files:
-  - ../_sessions.yml
-engine: knitr
-execute:
-  eval: false
-  echo: true
----
-
 ### Setup
 
 1. Set your Git username and email address.
