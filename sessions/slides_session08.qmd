@@ -1,6 +1,6 @@
 ---
 title: "Session 8: Summary & Outlook"
-date: 2024-09-27T16:00:00
+date: 2024-09-27T15:00:00
 format: revealjs
 metadata-files:
   - _slides.yml
@@ -8,12 +8,6 @@ quiz-url: https://version-control-feedback.formr.org/
 ---
 
 # Summary
-
-## How are you now?
-
-::: fragment
-![](../images/moodscale_14.jpeg){width="50%"}
-:::
 
 ## Schedule
 

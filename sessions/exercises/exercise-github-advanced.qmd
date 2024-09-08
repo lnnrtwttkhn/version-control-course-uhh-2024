@@ -1,15 +1,14 @@
-### 1. "Public" collaboration with pull requests (using a Fork)
+### 1. Public collaboration with pull requests (using a "fork")
 
 1. Find out what [forking](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html) is
-1. **Fork the recipes repository** of another course participant (who is not your partner from the previous exercise)
-1. Create an **issue**, suggesting a missing recipe
-1. Create an issue in your partner's repository (maybe their repo is missing a great recipe?)
+1. **Fork the recipes repository** of another course participant (ideally, someone who is *not* your partner from the previous exercise)
+1. Create an **Issue**, suggesting a missing recipe
+1. Create an Issue in your partner's repository (maybe their repository is missing a great recipe?)
 1. Repeat the steps from the previous exercise using the forked repository:
     1. **Clone** the *forked* repository into a sensible location
-    1. **Create a new branch** and create **one or multiple commits** "fixing" the issue that you opened
-    1. Follow the **contributing guide** in Lennart's repo to create a new recipe
+    1. **Create a new branch** and create **one or multiple commits** "fixing" the Issue that you opened
     1. **Push** your changes to GitHub
-    1. **Create a pull request** with your changes (hint: from the fork to the original repo) and refer to the issue in your pull request
+    1. **Create a pull request** with your changes (hint: from the forked to the original repository) and refer to the Issue in your pull request
 
 ### 2. Review pull requests in your repository
 
@@ -21,3 +20,4 @@
 ### :rocket: Optional: Practice forking on GitHub
 
 1. Repeat the entire forking workflow (see task 1 above) with [Lennart's `recipes` repository](https://github.com/lnnrtwttkhn/recipes/).
+Find out about the **contributing guidelines** in Lennart's repo and follow them when creating a new recipe.

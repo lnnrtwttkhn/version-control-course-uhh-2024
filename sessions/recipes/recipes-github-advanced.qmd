@@ -2,7 +2,8 @@ At the end of this session, you should have accomplished the following:
 
 1. You forked a public / internal `recipes` repository of another course participant.
 1. You opened an Issue in another repository.
-1. You opened a pull request with changes that "fix" the Issue you opened.
+1. You created a pull request with changes that "fix" the Issue you opened.
+1. You reviewed and merged a pull request to integrate new content from a partner.
 
 Please keep the `recipes` folder!
 We will continue to use it in the following sessions.

@@ -4,17 +4,17 @@
 
 ### Me
 
-:scientist: **Position:** Postdoctoral Researcher & Lab Manager at the [Institute of Psychology](https://www.psy.uni-hamburg.de/en.html) at the [University of Hamburg](https://www.psy.uni-hamburg.de/en/arbeitsbereiche/lern-und-veraenderungsmechanismen.html)
+:scientist: **Position:** Postdoctoral Researcher at the [Institute of Psychology](https://www.psy.uni-hamburg.de/en.html) at the [University of Hamburg](https://www.psy.uni-hamburg.de/en/arbeitsbereiche/lern-und-veraenderungsmechanismen.html)
 
 :mortar_board: **Education:** BSc Psychology & MSc Cognitive Neuroscience (TU Dresden), PhD Cognitive Neuroscience (MPIB)
 
 :microscope: **Research:** I study the role of fast neural memory reactivation ("[replay](https://en.wikipedia.org/wiki/Hippocampal_replay)") in the human brain using fMRI
 
-:link: **Contact:** You can connect with me via [email]({{< var links.mailto >}}), [Twitter]({{< var twitter >}}), [Mastodon]({{< var mastodon >}}),
-[GitHub]({{< var github >}}) or
-[LinkedIn]({{< var linkedin >}})
+:link: **Contact:** You can connect with me via [email]({{< var links.mailto >}}), [Twitter]({{< var team.lennart.twitter >}}), [Mastodon]({{< var team.lennart.mastodon >}}),
+[GitHub]({{< var team.lennart.github >}}) or
+[LinkedIn]({{< var team.lennart.linkedin >}})
 
-:information_source: **Info:** Find out more about my work on [my website]({{< var homepage >}}), [Google Scholar]({{< var scholar >}}) and [ORCiD]({{< var orcid-link >}})
+:information_source: **Info:** Find out more about my work on [my website]({{< var team.lennart.website >}}), [Google Scholar]({{< var team.lennart.scholar >}}) and [ORCiD]({{< var team.lennart.orcid >}})
 
 :::
 
@@ -32,6 +32,6 @@
 
 {{< fa brands github >}} **Source:** Code is publicly available on GitHub at [{{< var links.github >}}]({{< var links.github >}})
 
-:pray: **Contact:** I am happy for any feedback or suggestions via [email]({{< var links.mailto >}}) or [GitHub issues]({{< var issues >}}). Thank you!
+:pray: **Contact:** I am happy for any feedback or suggestions via [email]({{< var links.mailto >}}) or [GitHub issues]({{< var links.issues >}}). Thank you!
 
 :::
