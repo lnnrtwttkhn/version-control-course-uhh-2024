@@ -1,6 +1,6 @@
 ---
 title: "Session 7: {{< meta session-title >}}"
-date: 2024-09-27T15:00:00
+date: 2024-09-27T14:15:00
 format: revealjs
 metadata-files:
   - _slides.yml
@@ -14,7 +14,7 @@ quiz-url: https://version-control-github.formr.org/
 
 # Last session: Integration with GitLab / GitHub
 
-## Last sessions: Learning objectives
+## Last session: Learning objectives
 
 After the last session, you should now be able to answer the following questions / do the following:
 
