@@ -45,12 +45,11 @@ Guided by the seminar instructor, participants will engaging in practical hands-
 ::: g-col-8
 ### Dr. Lennart Wittkuhn
 
-Lennart is a **Postdoctoral Researcher** and **Lab Manager** in the [Research Group "Cognitive Neuroscience of Learning and Change"](https://www.psy.uni-hamburg.de/en/arbeitsbereiche/lern-und-veraenderungsmechanismen.html) at the [University of Hamburg](https://www.uni-hamburg.de/en.html).
+Lennart is a **Postdoctoral Researcher** in the [Research Group "Cognitive Neuroscience of Learning and Change"](https://www.psy.uni-hamburg.de/en/arbeitsbereiche/lern-und-veraenderungsmechanismen.html) at the [University of Hamburg](https://www.uni-hamburg.de/en.html).
 In his scientific work, Lennart investigates **neural replay of task representations** in the human brain using functional magnetic resonance imaging (fMRI).
 He is also passionate about **open science**, **research data management**, **reproducibility** and tools that improve the scientific workflow.
 
 Find out more about Lennart and his work at [{{< var links.homepage >}}]({{< var links.homepage >}}).
-
 
 :::
 :::
