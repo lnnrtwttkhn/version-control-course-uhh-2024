@@ -1,6 +1,6 @@
 ---
 title: "Session 6: {{< meta session-title >}}"
-date: 2024-09-27T14:00:00
+date: 2024-09-27T13:30:00
 format: revealjs
 metadata-files:
   - _slides.yml
