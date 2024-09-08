@@ -17,7 +17,7 @@ This is the website for the {{< var project.duration >}} course "{{< var project
 
 {{< fa circle-info >}} **What?** A {{< var project.duration >}} course on version control with Git
 
-{{< fa calendar-days >}} **When?** {{< var project.when-short >}}
+{{< fa calendar-days >}} **When?** {{< var project.when-long >}}
 
 {{< fa building-columns >}} **Where?** {{< var project.where-short >}}
 
