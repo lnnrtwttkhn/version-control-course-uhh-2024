@@ -1,11 +1,12 @@
 project:
   name: "version-control-course-mpib-2024"
   title: "Track, organize and share your work: An introduction to Git for research"
-  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, {{< var project.where-city >}}, {{< var project.where-country >}} on June 21st 2024"
+  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, {{< var project.where-city >}}, {{< var project.where-country >}} on {{< var project.when-date >}}"
   instructors: "Dr. Lennart Wittkuhn"
   when-long: "Friday, June 21st 2024, 9:30 a.m. to 4:30 p.m."
   when-short: "Friday, June 21st 2024, 9:30 a.m. to 4:30 p.m."
   when-semester: "Friday, June 21st 2024"
+  when-date: "June 21st 2024"
   when-time: "9:30 a.m. to 4:30 p.m. (6 hours)"
   where-institution: "Max Planck Institute for Human Development"
   where-city: "Berlin"
