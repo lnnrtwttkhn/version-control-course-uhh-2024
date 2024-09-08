@@ -11,9 +11,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.55">
 
-  <title>Version Control with Git - Session 2: Basics of the Command Line</title>
+  <title>Version Control with Git – Session 2: Basics of the Command Line</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -160,7 +160,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -333,7 +334,7 @@
   <h1 class="title">Session 2: Basics of the Command Line</h1>
   <p class="subtitle"></p><p><strong>Track, organize and share your work: An introduction to Git for research</strong></p>
 <p>Course at General Psychology Lab at the University of Hamburg</p>
-<p><a href="https://lennartwittkuhn.com/version-control-course-uhh-2024/"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> | <a href="https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/"><i class="fa-brands fa-github" aria-label="github"></i> Source</a></p>
+<p><a href="{{< var links.site >}}"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> | <a href="{{< var links.github >}}"><i class="fa-brands fa-github" aria-label="github"></i> Source</a></p>
 <p><a href="https://creativecommons.org/licenses/by/4.0/"><img data-src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License: CC BY 4.0"></a> <a href="https://doi.org/10.25592/uhhfdm.14149"><img data-src="https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.14149.svg" alt="DOI"></a></p><p></p>
 
 <div class="quarto-title-authors">
@@ -353,7 +354,7 @@
 <h2 id="toc-title">Agenda</h2>
 <ul>
 <li><a href="#/logistics-admin" id="/toc-logistics-admin"><span class="header-section-number">1</span> Logistics &amp; Admin</a></li>
-<li><a href="#/meta-session-title" id="/toc-meta-session-title"><span class="header-section-number">2</span> Basics of the Command Line</a></li>
+<li><a href="#/section" id="/toc-section"><span class="header-section-number">2</span> Basics of the Command Line</a></li>
 </ul>
 </nav>
 </section>
@@ -366,7 +367,7 @@
 <h2>Schedule</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">No</th>
@@ -453,7 +454,7 @@
 <iframe width="100%" height="80%" src="https://lennartwittkuhn.com/recipes" title="Course Website"></iframe>
 </section></section>
 <section>
-<section id="meta-session-title" class="title-slide slide level1 center" data-number="2">
+<section id="section" class="title-slide slide level1 center" data-number="2">
 <h1><span class="header-section-number">2</span> Basics of the Command Line</h1>
 
 </section>
@@ -474,7 +475,7 @@
 <h2>Cheatsheet</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 23%">
 <col style="width: 76%">
@@ -603,7 +604,7 @@
 </div>
 </div>
 </section>
-<section id="tasks" class="slide level2">
+<section id="tasks" class="slide level2 scrollable">
 <h2>Tasks</h2>
 <p>In this session, you will work on the following tasks:</p>
 <ol type="1">
@@ -620,7 +621,7 @@
 <li>Let’s <em>git</em> started!</li>
 </ol>
 </section>
-<section id="recipes-project" class="slide level2">
+<section id="recipes-project" class="slide level2 scrollable">
 <h2><code>recipes</code> project</h2>
 <p>At the end of this session, you should have accomplished the following:</p>
 <ol type="1">
@@ -644,8 +645,10 @@
 <h3 id="bonus-question">Bonus question</h3>
 <p>Imagine, that you are in a folder containing multiple text files with various extensions, including <code>.txt</code>, <code>.md</code>, and <code>.docx</code>. You want to move all the <code>.txt</code> files to a subfolder named “text_files” while keeping the other file types in the current directory. Write a series of command-line commands to accomplish this task, including creating the “text_files” subdirectory. Explain each step in your solution.</p>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Version Control Course</p>
+</div>
 </div>
 </section></section>
     </div>
@@ -675,7 +678,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -931,18 +933,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -974,11 +965,55 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/lennartwittkuhn\.com\/version-control-course-uhh-2024\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -988,8 +1023,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1003,7 +1047,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
@@ -1043,20 +1091,6 @@
           });
         }
       }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var filterRegex = new RegExp("https:\/\/lennartwittkuhn\.com\/version-control-course-mpib-2024\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-              // target, if specified
-              link.setAttribute("target", "_blank");
-          }
-        }
     });
     </script>
     

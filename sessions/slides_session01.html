@@ -11,9 +11,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.55">
 
-  <title>Version Control with Git - Session 1: Welcome &amp; Introduction to Version Control</title>
+  <title>Version Control with Git – Session 1: Welcome &amp; Introduction to Version Control</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -35,6 +35,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -179,7 +180,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -352,7 +354,7 @@
   <h1 class="title">Session 1: Welcome &amp; Introduction to Version Control</h1>
   <p class="subtitle"></p><p><strong>Track, organize and share your work: An introduction to Git for research</strong></p>
 <p>Course at General Psychology Lab at the University of Hamburg</p>
-<p><a href="https://lennartwittkuhn.com/version-control-course-uhh-2024/"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> | <a href="https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/"><i class="fa-brands fa-github" aria-label="github"></i> Source</a></p>
+<p><a href="{{< var links.site >}}"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> | <a href="{{< var links.github >}}"><i class="fa-brands fa-github" aria-label="github"></i> Source</a></p>
 <p><a href="https://creativecommons.org/licenses/by/4.0/"><img data-src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License: CC BY 4.0"></a> <a href="https://doi.org/10.25592/uhhfdm.14149"><img data-src="https://www.fdr.uni-hamburg.de/badge/DOI/10.25592/uhhfdm.14149.svg" alt="DOI"></a></p><p></p>
 
 <div class="quarto-title-authors">
@@ -400,7 +402,6 @@
 <h3 id="this-presentation">This presentation</h3>
 <p><span class="emoji" data-emoji="computer">💻</span> <strong>Slides:</strong> Slides are publicly available at <a href="https://lennartwittkuhn.com/version-control-course-uhh-2024/">https://lennartwittkuhn.com/version-control-course-uhh-2024/</a></p>
 <p><span class="emoji" data-emoji="package">📦</span> <strong>Software:</strong> Reproducible slides built with <a href="https://quarto.org/">Quarto</a> and deployed to <a href="https://pages.github.com/">GitHub Pages</a> using <a href="https://github.com/features/actions">GitHub Actions</a></p>
-
 <!-- 
 :trackball: **DOI:** [10.5281/zenodo.5012476](http://doi.org/10.5281/zenodo.5012476) (generated using GitHub releases + Zenodo, see details [here](https://guides.github.com/activities/citable-code/))
 -->
@@ -408,7 +409,7 @@
 <p><span class="emoji" data-emoji="pray">🙏</span> <strong>Contact:</strong> I am happy for any feedback or suggestions via <a href="mailto:lennart.wittkuhn@tutanota.com">email</a> or <a href="?var:issues">GitHub issues</a>. Thank you!</p>
 </div>
 </section>
-<section id="who-are-you" class="slide level2">
+<section id="who-are-you" class="slide level2 scrollable">
 <h2>Who are you?</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -423,8 +424,7 @@
 <div class="fragment">
 <p><img data-src="../images/mood-sheep.png" alt="Mood on a sheep scale."></p>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="course-overview" class="slide level2">
 <h2>Course overview</h2>
@@ -441,10 +441,9 @@
 <li><i class="fa-solid fa-chalkboard" aria-label="chalkboard"></i> <strong>Event:</strong> Course</li>
 <li><i class="fa-solid fa-language" aria-label="language"></i> <strong>Language:</strong> English</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
-<section id="what-will-the-average-session-look-like" class="slide level2">
+<section id="what-will-the-average-session-look-like" class="slide level2 scrollable">
 <h2>What will the average session look like?</h2>
 <div class="fragment">
 <p><i class="fa-solid fa-clock" aria-label="clock"></i> The course will consist of 6 main sessions (ca. 60 minutes each)</p>
@@ -479,7 +478,7 @@
 <h2>Schedule</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">No</th>
@@ -616,7 +615,7 @@
 <h3 id="example-cheatsheet-basic-git-commands">Example cheatsheet: Basic Git commands</h3>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 38%">
 <col style="width: 61%">
@@ -669,8 +668,7 @@
 <figcaption>This illustration is created by <a href="https://www.scriberia.com/">Scriberia</a> with <a href="https://the-turing-way.netlify.app/welcome">The Turing Way community</a>. Used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 licence</a>. DOI: <a href="https://doi.org/10.5281/zenodo.3695300">10.5281/zenodo.3332807</a></figcaption>
 </figure>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="course-exercise-building-an-online-recipes-book" class="slide level2">
 <h2>Course exercise: Building an online recipes book</h2>
@@ -679,7 +677,7 @@
 </section>
 <section id="code-of-conduct" class="slide level2">
 <h2>Code of Conduct</h2>
-<p>During this course, we want to ensure a safe, productive, and welcoming environment for everyone who attends. All participants and speakers are expected to abide by this code of conduct. We do not tolerate any form of discrimination or harassment in any form or by any means. If you experience harassment or hear of any incidents of unacceptable behavior, please reach out to the course instructor, Dr.&nbsp;Lennart Wittkuhn (<a href="mailto:lennart.wittkuhn@tutanota.com">lennart.wittkuhn@tutanota.com</a>), so that we can take the appropriate action.</p>
+<p>During this course, we want to ensure a safe, productive, and welcoming environment for everyone who attends. All participants and speakers are expected to abide by this code of conduct. We do not tolerate any form of discrimination or harassment in any form or by any means. If you experience harassment or hear of any incidents of unacceptable behavior, please reach out to the course instructor, Dr.&nbsp;Lennart Wittkuhn (<a href="mailto:">lennart.wittkuhn@tutanota.com</a>), so that we can take the appropriate action.</p>
 <p>Unacceptable behavior is defined as:</p>
 <ul>
 <li>Harassment, intimidation, or discrimination in any form, verbal abuse of any attendee, speaker, or other person. Examples include, but are not limited to, verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, national origin, inappropriate use of nudity and/or sexual images in public spaces or in presentations, or threatening or stalking.</li>
@@ -703,7 +701,7 @@
 <section id="lets-do-the-splits" class="slide level2">
 <h2>Let’s do the splits</h2>
 
-<img data-src="../images/splits.jpg" class="r-stretch quarto-figure-center"></section></section>
+<img data-src="../images/splits.jpg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="introduction-to-version-control" class="title-slide slide level1 center" data-number="3">
 <h1><span class="header-section-number">3</span> Introduction to Version Control</h1>
@@ -714,7 +712,7 @@
 <p>At the end of this session, you should be able to answer the following questions and / or achieve the following learning objectives:</p>
 <p><span class="emoji" data-emoji="bulb">💡</span> You know what version control is.<br> <span class="emoji" data-emoji="bulb">💡</span> You can argue why version control is useful (for research).<br> <span class="emoji" data-emoji="bulb">💡</span> You can name benefits of Git compared to other approaches to version control.<br> <span class="emoji" data-emoji="bulb">💡</span> You can explain the difference between Git and GitHub.<br></p>
 </section>
-<section id="your-turn" class="slide level2">
+<section id="your-turn" class="slide level2 scrollable">
 <h2>Your turn</h2>
 <p>In this session, you will work on the following tasks:</p>
 <ol type="1">
@@ -769,8 +767,7 @@
 <li class="fragment">“natural selection of bad science” <a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
 <div class="fragment">
 <p>“<em>… accumulated evidence indicates […] <strong>substantial room for improvement</strong> with regard to research practices to maximize the efficiency of the research community’s use of the public’s financial investment.</em>” <span class="citation" data-cites="munafò2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span></p>
 </div>
@@ -817,8 +814,7 @@
 <div class="fragment">
 <p><strong>… track everything.</strong></p>
 </div>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <ul>
 <li>Version control is relevant for anyone who wants to track the evolution of digital objects</li>
@@ -870,8 +866,7 @@
 </figure>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="what-is-git" class="slide level2">
 <h2>What is Git?</h2>
@@ -918,7 +913,7 @@
 <h2>Schedule</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">No</th>
@@ -1005,7 +1000,7 @@
 <img data-src="../images/command-line.png" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png">Wikimedia Commons</a> (free license)</p></section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-baker2016" class="csl-entry" role="listitem">
 Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. <em>Nature</em>, <em>533</em>(7604), 452–454. <a href="https://doi.org/10.1038/533452a">https://doi.org/10.1038/533452a</a>.
 </div>
@@ -1035,8 +1030,10 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
 </div>
 </div>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Version Control Course</p>
+</div>
 </div>
 </section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
@@ -1078,7 +1075,6 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1334,18 +1330,7 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1377,11 +1362,55 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/lennartwittkuhn\.com\/version-control-course-uhh-2024\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1391,8 +1420,17 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1406,7 +1444,11 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
@@ -1446,20 +1488,6 @@ Wicherts, J. M., Borsboom, D., Kats, J., &amp; Molenaar, D. (2006). The poor ava
           });
         }
       }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var filterRegex = new RegExp("https:\/\/lennartwittkuhn\.com\/version-control-course-mpib-2024\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-              // target, if specified
-              link.setAttribute("target", "_blank");
-          }
-        }
     });
     </script>
     
