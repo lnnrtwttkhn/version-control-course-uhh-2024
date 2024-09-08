@@ -1,12 +1,3 @@
----
-metadata-files:
-  - ../_sessions.yml
-engine: knitr
-execute:
-  eval: false
-  echo: true
----
-
 ### Navigation and setup
 
 Identify a folder on your computer where you (want to) keep course-related files. 

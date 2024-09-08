@@ -1,7 +1,7 @@
 ---
 title: "Welcome & Introduction to Version Control"
 subtitle: "Session 01"
-date: 2024-06-21T09:30:00
+date: 2024-09-27T09:30:00
 metadata-files:
   - _sessions.yml
 about:
@@ -58,7 +58,7 @@ In total, this should only **take about 20 to 30 minutes** (not much longer).
 **1. Check Git installation**
 
 Please check if you have Git installed.
-You can find detailed instructions in our online course book here: <https://lennartwittkuhn.com/version-control-book/chapters/installation.html>.
+You can find detailed instructions in our online course book here: [{{< var chapters.installation >}}]({{< var chapters.installation >}}).
 Windows users: Please install Git for Windows (<https://gitforwindows.org>).
 macOS and Linux users: You likely have Git already installed.
 Open the Terminal / Command Line and enter the command `git --version`.
@@ -69,8 +69,8 @@ And please don't forget to bring your laptop, with Git installed, to the course!
 **2. Complete survey** 
 
 In order to tailor the course to your prior experience and needs, we have prepared a **survey** with a few questions.
-Please **complete the survey before the course**, ideally **by Thursday at noon** (June 20th 2024).
-This will give us enough time to review your responses before our course on Friday.
+Please **complete the survey before the course**, ideally at least two days before the course starts.
+This will give us enough time to review your responses before our course on {{< var project.when-day >}}.
 
 The survey can be accessed here: **<https://version-control-intro.formr.org>**.
 
@@ -84,19 +84,19 @@ The survey will contain an explanation in the beginning on how to generate your 
 
 The **course codeword** is used to tag your responses as coming from a course participant at {{< var project.where-institution >}}.
 We might also use the survey to collect responses from participants in other course settings.
-The course codeword allows us to distinguish responses from different course settings.
+The course codeword therefore allows us to distinguish responses from different course settings.
 
 **The course codeword is: `--------`** (course password will be announced during the course).
 
 Please note that you might be asked for the codewords repeatedly.
 This is not an error in the survey but the result of combining separate smaller surveys into a longer one.
-If this happens, please just re-enter personal and course codeword.
+If this happens, please just enter the personal and course codeword again.
 
 Further information about the course can be found on our course website at [{{< var links.site >}}]({{< var links.site >}}) which will be updated with more information about the course soon.
 
 If you have any questions, feel free to contact us directly via email.
 
-We are looking forward to seeing you at the course on Friday!
+We are looking forward to seeing you at the course on {{< var project.when-day >}}, {{< var project.when-date >}}!
 
 Best wishes,
 

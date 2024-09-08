@@ -1,27 +1,28 @@
 project:
-  name: "version-control-course-mpib-2024"
+  name: "version-control-course-uhh-2024"
   title: "Track, organize and share your work: An introduction to Git for research"
-  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, Berlin, Germany on June 21st 2024"
+  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, {{< var project.where-country >}} on {{< var project.when-date >}}"
   instructors: "Dr. Lennart Wittkuhn"
-  when-long: "Friday, June 21st 2024, 9:30 a.m. to 4:30 p.m."
-  when-short: "Friday, June 21st 2024, 9:30 a.m. to 4:30 p.m."
-  when-semester: "Friday, June 21st 2024"
-  when-time: "9:30 a.m. to 4:30 p.m. (6 hours)"
-  where-institution: "Max Planck Institute for Human Development"
-  where-address: "Lentzeallee 94, 14195 Berlin"
-  where-room: "Campus Open Space"
+  when-day: "Friday"
+  when-date: "September 27th 2024"
+  when-time: "9:30 to 15:30"
+  when-long: "{{< var project.when-day >}}, {{< var project.when-date >}}, {{< var project.when-time >}}"
+  where-institution: "General Psychology Lab at the University of Hamburg"
+  where-city: "Hamburg"
+  where-country: "Germany"
+  where-address: "Von-Melle-Park 5, 20146 Hamburg"
+  where-room: "Room 4054 / William-Stern-Room"
   where-long: "{{< var project.where-institution >}}, {{< var project.where-address >}}, {{< var project.where-room >}}"
   where-short: "{{< var project.where-institution >}} ({{< var project.where-room >}})"
   target-group: "Researchers at the {{< var project.where-institution >}}"
-  registration-start: "June 7th 2024"
-  registration-end: "June 19th 2024"
   duration: "full-day"
 links:
   email: "lennart.wittkuhn@tutanota.com"
-  mailto: "mailto:{{< var links.email >}}"
-  github: "https://github.com/lnnrtwttkhn/{{< var project.name >}}"
-  issues: "{{< var links.github >}}/issues"
-  site: "https://lennartwittkuhn.com/{{< var project.name >}}"
+  mailto: "mailto:lennart.wittkuhn@tutanota.com"
+  homepage: "https://lennartwittkuhn.com/"
+  github: "https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/"
+  issues: "https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/issues"
+  site: "https://lennartwittkuhn.com/version-control-course-uhh-2024/"
   book: "https://lennartwittkuhn.com/version-control-book"
   recipes: "https://lennartwittkuhn.com/recipes"
   ddlitlab-proposal: https://lennartwittkuhn.com/ddlitlab-proposal
@@ -32,8 +33,8 @@ links:
   hedgedoc-features: https://demo.hedgedoc.org/s/features
   markdown: https://www.markdownguide.org/
   formr: https://formr.org/
-  email-secretary: rdm@mpib-berlin.mpg.de
-  mailto-secretary: "mailto:{{< var links.email-secretary >}}"
+  email-secretary: barbara.oberbauer@uni-hamburg.de
+  mailto-secretary: mailto:barbara.oberbauer@uni-hamburg.de
   email-mailing-list: version-control-course-ss24.psych@lists.uni-hamburg.de
   mailto-mailing-list: "mailto:{{< var links.email-mailing-list >}}"
   scriberia: "https://www.scriberia.com/"
@@ -77,6 +78,8 @@ quizzes:
   basics: https://version-control-basics.formr.org/
   branches:  https://version-control-branches.formr.org/
   github:  https://version-control-github.formr.org/
+chapters:
+  installation: https://lennartwittkuhn.com/version-control-book/chapters/installation.html/
 dates:
   one: "2024-04-08"
   two: "2024-04-15"

@@ -1,7 +1,7 @@
 ---
 title: "Summary & Outlook"
 subtitle: "Session 08"
-date: 2024-06-21T16:00:00
+date: 2024-09-27T16:00:00
 metadata-files:
   - _sessions.yml
 about:
@@ -28,7 +28,7 @@ about:
 
 Dear course participants,
 
-You are receiving this email because you took part in the course "{{< var project.title >}}", which took place on {{< var project.when-short >}} at the {{< var project.where-institution >}}.
+You are receiving this email because you took part in the course "{{< var project.title >}}", which took place on {{< var project.when-long >}} at the {{< var project.where-institution >}}.
 Thank you very much for your participation!
 
 With this email, we would kindly **ask you for your feedback**.
