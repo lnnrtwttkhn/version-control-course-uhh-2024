@@ -3,7 +3,7 @@
 #### Connect to MPIB GitLab or GitHub
 
 1. Generate an SSH key and add it to GitHub or GitLab.
-1. Use the SSH key fo authentication on GitHub or GitLab.
+1. Use the SSH key to authentication on GitHub or GitLab.
 
 #### "Push" your repository
 
