@@ -68,4 +68,4 @@ knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FA
 
 ## Exercises
 
-{{< include exercises/exercise-cli.qmd >}}
+{{< include ../exercises/_exercises-cli.qmd >}}
