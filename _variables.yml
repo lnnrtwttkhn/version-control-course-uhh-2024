@@ -18,10 +18,10 @@ project:
   duration: "full-day"
 links:
   email: "lennart.wittkuhn@tutanota.com"
-  mailto: "mailto:{{< var links.email >}}"
-  github: "https://github.com/lnnrtwttkhn/{{< var project.name >}}"
-  issues: "{{< var links.github >}}/issues"
-  site: "https://lennartwittkuhn.com/{{< var project.name >}}"
+  mailto: "mailto:lennart.wittkuhn@tutanota.com"
+  github: "https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/"
+  issues: "https://github.com/lnnrtwttkhn/version-control-course-uhh-2024/issues"
+  site: "https://lennartwittkuhn.com/version-control-course-uhh-2024/"
   book: "https://lennartwittkuhn.com/version-control-book"
   recipes: "https://lennartwittkuhn.com/recipes"
   ddlitlab-proposal: https://lennartwittkuhn.com/ddlitlab-proposal
