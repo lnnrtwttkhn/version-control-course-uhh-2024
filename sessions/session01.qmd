@@ -1,7 +1,7 @@
 ---
 title: "Welcome & Introduction to Version Control"
 subtitle: "Session 01"
-date: 2024-06-21T09:30:00
+date: 2024-09-27T09:30:00
 metadata-files:
   - _sessions.yml
 about:
