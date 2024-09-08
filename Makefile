@@ -27,6 +27,12 @@ objectives: objectives.txt
 	mkdir -p objectives
 	wget -P ./objectives -i objectives.txt  
 
+.PHONY: exercises
+exercises: exercises.txt
+	rm -rf ./exercises
+	mkdir -p exercises
+	wget -P ./exercises -i exercises.txt 
+
 .PHONY: cheatsheet
 cheatsheet:
 	rm -rf cheatsheet.json

@@ -32,7 +32,7 @@ create_schedule()
 
 # {{< meta session-title >}}
 
-## This session: The command line
+## This session: {{< meta session-title >}}
 
 ![Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png) (free license)](../images/command-line.png)
 
@@ -68,4 +68,4 @@ knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FA
 
 ## Exercises
 
-{{< include exercises/exercise-cli.qmd >}}
+{{< include ../exercises/_exercises-cli.qmd >}}

@@ -11,7 +11,7 @@ session01:
   survey:
     - "[Course survey](https://version-control-intro.formr.org)"
 session02:
-  date: "10:00 - 11:00"
+  date: "10:00 - 10:45"
   title: "Basics of the Command Line"
   contents:
     - "File systems and navigation"
@@ -22,7 +22,7 @@ session02:
   survey:
     - "[Command Line Quiz](https://version-control-cli.formr.org)"
 session03:
-  date: "11:00 - 12:00"
+  date: "10:45 - 11:30"
   title: "Setup & First steps with Git"
   contents:
     - "Configuration and setup of Git"
@@ -33,7 +33,7 @@ session03:
   survey:
     - "[Git Basics Quiz](https://version-control-basics.formr.org)"
 session04:
-  date: "12:00 - 13:00"
+  date: "11:30 - 12:15"
   title: "Branches, Merging & Merge Conflicts"
   contents: 
     - "Understanding branches in Git"
@@ -45,12 +45,12 @@ session04:
   survey:
     - "[Git Branches Quiz](https://version-control-branches.formr.org)"
 session05:
-  date: "13:00 - 14:00"
+  date: "12:30 - 13:30"
   title: "Lunch Break"
   contents:
     - "Enjoy your lunch!"
 session06:
-  date: "14:00 - 15:00"
+  date: "13:30 - 14:15"
   title: "Integration with GitLab / GitHub"
   contents:
     - "Introduction to remote repositories"
@@ -62,7 +62,7 @@ session06:
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
 session07:
-  date: "15:00 - 16:00"
+  date: "14:15 - 15:00"
   title: "Collaboration on GitLab / GitHub"
   contents:
     - "Forkinga repository"
@@ -75,7 +75,7 @@ session07:
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
 session08:
-  date: "16:00 - 16:30"
+  date: "15:00 - 15:30"
   title: "Summary & Outlook"
   contents:
     - "Summary of course contents"

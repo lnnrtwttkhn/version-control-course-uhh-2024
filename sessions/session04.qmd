@@ -1,7 +1,7 @@
 ---
 title: "Branches"
 subtitle: "Session 04"
-date: 2024-09-27T12:00:00
+date: 2024-09-27T11:30:00
 metadata-files:
   - _sessions.yml
 about:
@@ -11,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session04.html
+      href: https://lennartwittkuhn.com/version-control-course-uhh-2024/sessions/slides_session04.html
       aria-label: display
     - icon: book
       text: "Chapter: Branches"
@@ -44,7 +44,7 @@ quiz-url: https://version-control-branches.formr.org/
 
 ## Exercises
 
-{{< include exercises/exercise-branches.qmd >}}
+{{< include ../exercises/_exercises-branches.qmd >}}
 
 ## Slides
 
