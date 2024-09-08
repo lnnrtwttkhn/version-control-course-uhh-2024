@@ -1,7 +1,7 @@
 project:
   name: "version-control-course-uhh-2024"
   title: "Track, organize and share your work: An introduction to Git for research"
-  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, {{< var project.where-city >}}, {{< var project.where-country >}} on {{< var project.when-date >}}"
+  subtitle: "A {{< var project.duration >}} course at the {{< var project.where-institution >}}, {{< var project.where-country >}} on {{< var project.when-date >}}"
   instructors: "Dr. Lennart Wittkuhn"
   when-day: "Friday"
   when-date: "September 27th 2024"
