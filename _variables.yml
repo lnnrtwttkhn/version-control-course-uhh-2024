@@ -33,8 +33,8 @@ links:
   hedgedoc-features: https://demo.hedgedoc.org/s/features
   markdown: https://www.markdownguide.org/
   formr: https://formr.org/
-  email-secretary: rdm@mpib-berlin.mpg.de
-  mailto-secretary: "mailto:{{< var links.email-secretary >}}"
+  email-secretary: barbara.oberbauer@uni-hamburg.de
+  mailto-secretary: mailto:barbara.oberbauer@uni-hamburg.de
   email-mailing-list: version-control-course-ss24.psych@lists.uni-hamburg.de
   mailto-mailing-list: "mailto:{{< var links.email-mailing-list >}}"
   scriberia: "https://www.scriberia.com/"
