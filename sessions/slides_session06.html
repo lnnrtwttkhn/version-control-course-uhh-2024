@@ -31,6 +31,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -366,14 +431,14 @@
 <section id="last-session-learning-objectives" class="slide level2">
 <h2>Last session: Learning objectives</h2>
 <p>After the last session, you should now be able to answer the following questions / do the following:</p>
-<p><span class="emoji" data-emoji="bulb">💡</span> You understand the purpose and benefits of using branches in Git<br> <span class="emoji" data-emoji="bulb">💡</span> You can create and switch between branches<br> <span class="emoji" data-emoji="bulb">💡</span> You can merge branches and resolve merge conflicts<br> <span class="emoji" data-emoji="bulb">💡</span> You can name at least three best practices when working with branches<br></p>
+<p><span class="emoji" data-emoji="bulb">💡</span> You understand the purpose and benefits of using branches in Git.<br> <span class="emoji" data-emoji="bulb">💡</span> You can create and switch between branches.<br> <span class="emoji" data-emoji="bulb">💡</span> You can merge branches and resolve merge conflicts.<br> <span class="emoji" data-emoji="bulb">💡</span> You can name at least three best practices when working with branches.</p>
 </section>
 <section id="last-session-recipes-project" class="slide level2">
 <h2>Last session: <code>recipes</code> project</h2>
 <p>At the end of this session, you should have accomplished the following:</p>
 <ol type="1">
 <li>You created a new branch and merged changes toto your default branch.</li>
-<li>You created and resolved a merge conflict.</li>
+<li><span class="emoji" data-emoji="rocket">🚀</span> Optional: You created and resolved a merge conflict.</li>
 </ol>
 <p>Please keep the <code>recipes</code> folder! We will continue to use it in the following sessions.</p>
 </section></section>
@@ -393,7 +458,7 @@
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
-<p><span class="emoji" data-emoji="bulb">💡</span> You can connect your local Git to a remote repository service.<br> <span class="emoji" data-emoji="bulb">💡</span> You can create a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can pull and push changes to and from a remote repository.</p>
+<p><span class="emoji" data-emoji="bulb">💡</span> You can create a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can connect your local Git to a remote repository service.<br> <span class="emoji" data-emoji="bulb">💡</span> You can pull and push changes to and from a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can clone a repository from a remote repository service.</p>
 </section>
 <section id="cheatsheet" class="slide level2">
 <h2>Cheatsheet</h2>
@@ -468,54 +533,178 @@
 </ol>
 <p>Please keep the <code>recipes</code> folder! We will continue to use it in the following sessions.</p>
 </section>
-<section id="exercises" class="slide level2">
-<h2>Exercises</h2>
-<h3 id="upload-and-manage-your-repository-on-gitlab-or-github">1. Upload and manage your repository on GitLab or GitHub</h3>
-<h4 id="connect-to-mpib-gitlab-or-github">Connect to MPIB GitLab or GitHub</h4>
+<section id="exercises-1" class="slide level2">
+<h2>Exercises 1</h2>
+<h3 id="connect-to-remote-repositories-using-ssh">Connect to remote repositories using SSH</h3>
 <ol type="1">
-<li>Generate an SSH key and add it to GitHub or GitLab.</li>
-<li>Use the SSH key to authentication on GitHub or GitLab.</li>
+<li>Generate an SSH key.</li>
+<li>Copy the SSH key to your clipboard.</li>
+<li>Add the SSH key to the remote repository (for example, GitHub or GitLab).</li>
 </ol>
-<h4 id="push-your-repository">“Push” your repository</h4>
+<h3 id="upload-your-local-repository-to-a-remote-repository">Upload your local repository to a remote repository</h3>
 <ol type="1">
-<li>Create an empty <em>internal</em> repository on GitLab or <em>private</em> repository on GitHub.</li>
-<li>Set the remote URL for your local <code>recipes</code> Git repository.</li>
-<li>Push your <code>main</code> branch to GitLab or GitHub.</li>
+<li>Create an empty repository on the remote repository hosting platform, for example GitHub or GitLab. Make sure to not initialize the repository with any files!</li>
+<li>If needed, navigate to the <code>recipes</code> repository using the command line.</li>
+<li>Set the remote URL of your local repository to your remote repository.</li>
+<li>Push the changes on your <code>main</code> branch to your remote repository.</li>
 </ol>
-<h3 id="private-collaboration-with-pull-requests-using-github-flow">2. “Private” collaboration with pull requests (using “GitHub Flow”)</h3>
+</section>
+<section id="exercises-2" class="slide level2">
+<h2>Exercises 2</h2>
+<h3 id="private-collaboration-with-pull-requests-using-github-flow">“Private” collaboration with pull requests (using GitHub Flow)</h3>
 <ol type="1">
-<li>Add your partner (desk neighbor) as a collaborator to your <code>recipes</code> repository.</li>
+<li>Add your exercise partner as a collaborator to your <code>recipes</code> repository.</li>
 <li>Clone your partner’s repository.</li>
-<li>Create a new branch in your partner’s repository.</li>
-<li>Add and commit a recipe to your partner’s <code>recipes.txt</code> file.</li>
-<li>Push the changes on the new branch to GitLab / GitHub.</li>
-<li>Create a Merge Request / Pull Request.</li>
-<li>Review and merge the PR your partner made in your repository.</li>
+<li>Create a new branch in your collaborator’s repository.</li>
+<li>Add a recipe to your collaborator’s <code>recipes.txt</code> file.</li>
+<li>Add and commit the changes.</li>
+<li>Push the changes on the new branch to the remote repository.</li>
+<li>Create a Pull / Merge Request.</li>
+<li>Review the PR your collaborator made in your repository.</li>
 <li><span class="emoji" data-emoji="rocket">🚀</span> Optional: Add additional changes on the branch pushed by your collaborator.</li>
+<li>Merge the PR into your repository.</li>
 </ol>
-<h3 id="optional-create-a-readme.md-file"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Create a <code>README.md</code> file</h3>
+</section>
+<section id="bonus-exercises" class="slide level2">
+<h2><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</h2>
+<h3 id="add-a-readme.md">Add a <code>README.md</code></h3>
 <ol type="1">
-<li>Navigate to your repository on GitHub, click “Add file”, and select “Create new file”.</li>
-<li>Name the file <code>README.md</code>, add a brief description of your project, and provide a commit message. Play around with <a href="https://www.markdownguide.org/">Markdown</a> syntax!</li>
-<li>Click the green “Commit new file” button to save the <code>README.md</code> file to the repository.</li>
+<li>Find the option to create a new file on your remote repository in the browser.</li>
+<li>Name the file <code>README.md</code>, add a brief description, and provide a commit message.</li>
+<li><span class="emoji" data-emoji="rocket">🚀</span> Optional: Play around with <a href="https://www.markdownguide.org/">Markdown</a> syntax.</li>
+<li>Save the <code>README.md</code> file to the repository.</li>
 <li>Pull the changes to your local repository.</li>
 </ol>
-<h3 id="optional-manage-branches"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Manage branches</h3>
+<h3 id="clone-and-sync-your-repository">Clone and sync your repository</h3>
 <ol type="1">
-<li>Push another branch (other than the default branch) with changes to MPIB GitLab or GitHub.</li>
-<li>Delete any unused or merged branches.</li>
+<li>Move to a location on your computer where you want to clone a repository.</li>
+<li>Clone your remote repository to a <em>different location</em> on your computer.</li>
+<li>Stage and commit changes in the new location (consider using a new branch).</li>
+<li>Push these new changes to GitHub.</li>
+<li>Pull the changes to the repository in the original location.</li>
+<li>Delete your newly cloned repository.</li>
 </ol>
-<h3 id="optional-clean-up-your-repository-on-mpib-gitlab-or-github"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Clean up your repository on MPIB GitLab or GitHub</h3>
+</section>
+<section id="solutions" class="slide level2">
+<h2>Solutions</h2>
+<h3 id="connect-to-remote-repositories-using-ssh-1">Connect to remote repositories using SSH</h3>
+<div class="cell" data-file="exercises/code-exercises-remotes-ssh.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"your_email@example.com"</span> <span class="co"># &lt;1&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">cat</span> ~/.ssh/id_ed25519.pub <span class="co"># &lt;2&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># Copy the SSh key to your account # &lt;3&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 <ol type="1">
-<li>Delete unnecessary files or add a new recipe directly on MPIB GitLab or GitHub.</li>
-<li>Commit changes on MPIB GitLab or GitHub with a message.</li>
-<li>Pull the changes to your local repository.</li>
+<li>In the command line, create a new SSH key. Make sure to change the example email to your email address. Optionally, provide a passphrase.</li>
+<li>Copy the SSH key to your clipboard. Here, we use <code>cat</code> to print the contents of the SSH key to the command line. Copy the contents displayed in the Terminal to your clipboard.</li>
+<li>Add the SSH key to your remote repository account.</li>
 </ol>
-<h3 id="optional-clone-and-sync-your-repo"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Clone and sync your repo</h3>
+</section>
+<section id="solutions-1" class="slide level2">
+<h2>Solutions</h2>
+<h3 id="upload-your-local-repository-to-a-remote-repository-1">Upload your local repository to a remote repository</h3>
+<div class="cell" data-file="exercises/code-exercises-remotes-push.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># create an empty remote repository # &lt;1&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="bu">cd</span> recipes <span class="co"># &lt;2&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">git</span> remote add origin https://github.com/your-username/your-repo-name.git <span class="co"># &lt;3&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="fu">git</span> push <span class="at">-u</span> origin main <span class="co"># &lt;4&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 <ol type="1">
-<li>Clone your repository from MPIB GitLab or GitHub to a different location on your computer.</li>
-<li>Stage, commit and push changes in the new location (consider using a new branch).</li>
-<li>Pull changes to the repository in the original location.</li>
+<li>To create an empty repository on GitHub: (1) Go to GitHub and click the <code>+</code> icon in the upper-right corner, then select <code>New repository</code>. (2) Name your repository. (3) Do not select <code>Initialize this repository with a README</code>. (4) Click <code>Create repository</code>.</li>
+<li>Optional: Navigate into the <code>recipes</code> repository using <code>cd</code> (or a similar path).</li>
+<li>Set the remote URL of the local repository to the repository using <code>git remote add origin &lt;URL&gt;</code>. Remember to use the correct <code>&lt;URL&gt;</code> depending on whether you authentication method (typically SSH or PAT).</li>
+<li>Push the changes on the <code>main</code> branch to the remote repository using <code>git push -u origin main</code>.</li>
+</ol>
+</section>
+<section id="solutions-2" class="slide level2">
+<h2>Solutions</h2>
+<h3 id="private-collaboration-with-pull-requests-using-github-flow-1">“Private” collaboration with pull requests (using GitHub Flow)</h3>
+<div class="cell" data-file="exercises/code-exercises-remotes-collaboration.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co"># Add your exercise partner as a collaborator to your recipes repository # &lt;1&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="bu">cd</span> ~ <span class="co"># &lt;2&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">git</span> clone https://github.com/partner-username/partner-repo-name.git  <span class="co"># &lt;3&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-branch-name <span class="co"># &lt;4&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="bu">echo</span> <span class="st">"New Recipe"</span> <span class="op">&gt;&gt;</span> recipes.txt <span class="co"># &lt;5&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="fu">git</span> add recipes.txt  <span class="co"># &lt;6&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add new recipe to recipes.txt"</span> <span class="co"># &lt;6&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="fu">git</span> push origin new-branch-name <span class="co"># &lt;7&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># Create a Pull / Merge Request. # &lt;8&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="co"># Review the PR your partner made in your repository. # &lt;9&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="co"># Merge the PR into your repository. # &lt;10&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol type="1">
+<li>Add your exercise partner as a collaborator to your <code>recipes</code> repository: (1) Go to your repository on GitHub. (2) Click on <code>Settings</code>. (2) Click on <code>Manage access</code> in the left sidebar. (3) Click <code>Invite a collaborator</code> and enter your partner’s GitHub username.</li>
+<li>Move to the location on your computer where you would like to clone your partner’s repository into, using <code>cd</code> in the command line. Here, we <code>cd</code> into the user’s home directory (<code>~</code>).</li>
+<li>Clone your partner’s repository using <code>git clone</code>. Make sure that you <em>not</em> cloning into an existing repository.</li>
+<li>Create a new branch in your partner’s repository.</li>
+<li>Add a recipe to your partner’s <code>recipes.txt</code> file.</li>
+<li>Add and commit the changes using a descriptive commit message.</li>
+<li>Push the changes on the new branch to GitHub.</li>
+<li>Create a Pull Request: (1) Go to your partner’s repository on GitHub. (2) Click <code>Compare &amp; pull request</code> for your branch. (3) Provide a title and description, then click <code>Create pull request</code>.</li>
+<li>Review the PR your partner made in your repository: (19) Go to your repository on GitHub. (2) Click on the <code>Pull requests</code> tab. (3) Click on the PR made by your partner. (4) Review the changes and provide feedback.</li>
+<li>Merge the PR into your repository: (1) After reviewing, click the green <code>Merge pull request</code> button. (2) Click <code>Confirm merge</code>.</li>
+</ol>
+</section>
+<section id="solutions-3" class="slide level2">
+<h2>Solutions</h2>
+<h3 id="add-a-readme.md-1">Add a <code>README.md</code></h3>
+<ol type="1">
+<li>In your browser, go to your remote repository (for example, on GitHub), click <code>Add file</code>, and select <code>Create new file</code>.</li>
+<li>Name the file <code>README.md</code>. Add a brief description of your project. Provide a descriptive commit message at the bottom.</li>
+<li>Play around with <a href="https://www.markdownguide.org/">Markdown</a> syntax</li>
+<li>Click the green <code>Commit new file</code> button to save the <code>README.md</code> file to the repository.</li>
+<li>Use <code>git pull origin main</code> to pull the changes to your local repository.</li>
+</ol>
+</section>
+<section id="solutions-4" class="slide level2">
+<h2>Solutions</h2>
+<h3 id="clone-and-sync-your-repository-1">Clone and sync your repository</h3>
+<div class="cell" data-file="exercises/code-exercises-remotes-clone.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="bu">cd</span> /new/location/for/repo <span class="co"># &lt;1&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">git</span> clone https://github.com/your-username/your-repo-name.git /new/location/for/repo <span class="co"># &lt;2&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-branch <span class="co"># &lt;3&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="bu">echo</span> <span class="st">"New Recipe"</span> <span class="op">&gt;&gt;</span> recipes.txt <span class="co"># &lt;3&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="fu">git</span> add recipes.txt  <span class="co"># &lt;3&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add new recipe to recipes.txt"</span> <span class="co"># &lt;3&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="fu">git</span> push <span class="at">-u</span> origin new-branch <span class="co"># &lt;4&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="bu">cd</span> /original/location/for/repo <span class="co"># &lt;5&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="fu">git</span> fetch <span class="co"># &lt;5&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="fu">git</span> switch new-branch <span class="co"># &lt;5&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="fu">rm</span> <span class="at">-rf</span> /new/location/for/repo <span class="co"># &lt;6&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol type="1">
+<li>Move to the location on your computer where you would like to clone your own repository into, using <code>cd</code> in the command line.</li>
+<li>Clone your repository from GitHub to a different location on your computer.</li>
+<li>Stage and commit changes in the new location (consider using a new branch).</li>
+<li>Push the new changes to GitHub.</li>
+<li>Fetch these new changes to the repository in the original location.</li>
 <li>Delete your newly cloned repository.</li>
 </ol>
 </section></section>

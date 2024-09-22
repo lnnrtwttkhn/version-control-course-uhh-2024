@@ -132,16 +132,14 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
   <ul>
-  <li><a href="#upload-and-manage-your-repository-on-gitlab-or-github" id="toc-upload-and-manage-your-repository-on-gitlab-or-github" class="nav-link" data-scroll-target="#upload-and-manage-your-repository-on-gitlab-or-github">1. Upload and manage your repository on GitLab or GitHub</a>
-  <ul class="collapse">
-  <li><a href="#connect-to-mpib-gitlab-or-github" id="toc-connect-to-mpib-gitlab-or-github" class="nav-link" data-scroll-target="#connect-to-mpib-gitlab-or-github">Connect to MPIB GitLab or GitHub</a></li>
-  <li><a href="#push-your-repository" id="toc-push-your-repository" class="nav-link" data-scroll-target="#push-your-repository">“Push” your repository</a></li>
+  <li><a href="#connect-to-remote-repositories-using-ssh" id="toc-connect-to-remote-repositories-using-ssh" class="nav-link" data-scroll-target="#connect-to-remote-repositories-using-ssh">Connect to remote repositories using SSH</a></li>
+  <li><a href="#upload-your-local-repository-to-a-remote-repository" id="toc-upload-your-local-repository-to-a-remote-repository" class="nav-link" data-scroll-target="#upload-your-local-repository-to-a-remote-repository">Upload your local repository to a remote repository</a></li>
+  <li><a href="#private-collaboration-with-pull-requests-using-github-flow" id="toc-private-collaboration-with-pull-requests-using-github-flow" class="nav-link" data-scroll-target="#private-collaboration-with-pull-requests-using-github-flow">“Private” collaboration with pull requests (using GitHub Flow)</a></li>
   </ul></li>
-  <li><a href="#private-collaboration-with-pull-requests-using-github-flow" id="toc-private-collaboration-with-pull-requests-using-github-flow" class="nav-link" data-scroll-target="#private-collaboration-with-pull-requests-using-github-flow">2. “Private” collaboration with pull requests (using “GitHub Flow”)</a></li>
-  <li><a href="#optional-create-a-readme.md-file" id="toc-optional-create-a-readme.md-file" class="nav-link" data-scroll-target="#optional-create-a-readme.md-file"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Create a <code>README.md</code> file</a></li>
-  <li><a href="#optional-manage-branches" id="toc-optional-manage-branches" class="nav-link" data-scroll-target="#optional-manage-branches"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Manage branches</a></li>
-  <li><a href="#optional-clean-up-your-repository-on-mpib-gitlab-or-github" id="toc-optional-clean-up-your-repository-on-mpib-gitlab-or-github" class="nav-link" data-scroll-target="#optional-clean-up-your-repository-on-mpib-gitlab-or-github"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Clean up your repository on MPIB GitLab or GitHub</a></li>
-  <li><a href="#optional-clone-and-sync-your-repo" id="toc-optional-clone-and-sync-your-repo" class="nav-link" data-scroll-target="#optional-clone-and-sync-your-repo"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Clone and sync your repo</a></li>
+  <li><a href="#bonus-exercises" id="toc-bonus-exercises" class="nav-link" data-scroll-target="#bonus-exercises"><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</a>
+  <ul>
+  <li><a href="#add-a-readme.md" id="toc-add-a-readme.md" class="nav-link" data-scroll-target="#add-a-readme.md">Add a <code>README.md</code></a></li>
+  <li><a href="#clone-and-sync-your-repository" id="toc-clone-and-sync-your-repository" class="nav-link" data-scroll-target="#clone-and-sync-your-repository">Clone and sync your repository</a></li>
   </ul></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#cheatsheet" id="toc-cheatsheet" class="nav-link" data-scroll-target="#cheatsheet">Cheatsheet</a></li>
@@ -208,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="learning-objectives" class="level2">
 <h2 data-anchor-id="learning-objectives">Learning objectives</h2>
-<p><span class="emoji" data-emoji="bulb">💡</span> You can connect your local Git to a remote repository service.<br> <span class="emoji" data-emoji="bulb">💡</span> You can create a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can pull and push changes to and from a remote repository.</p>
+<p><span class="emoji" data-emoji="bulb">💡</span> You can create a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can connect your local Git to a remote repository service.<br> <span class="emoji" data-emoji="bulb">💡</span> You can pull and push changes to and from a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can clone a repository from a remote repository service.</p>
 </section>
 <section id="recipes-project" class="level2">
 <h2 data-anchor-id="recipes-project"><code>recipes</code> project</h2>
@@ -229,73 +227,66 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="exercises" class="level2">
 <h2 data-anchor-id="exercises">Exercises</h2>
-<section id="upload-and-manage-your-repository-on-gitlab-or-github" class="level3">
-<h3 data-anchor-id="upload-and-manage-your-repository-on-gitlab-or-github">1. Upload and manage your repository on GitLab or GitHub</h3>
-<section id="connect-to-mpib-gitlab-or-github" class="level4">
-<h4 data-anchor-id="connect-to-mpib-gitlab-or-github">Connect to MPIB GitLab or GitHub</h4>
+<section id="connect-to-remote-repositories-using-ssh" class="level3">
+<h3 data-anchor-id="connect-to-remote-repositories-using-ssh">Connect to remote repositories using SSH</h3>
 <ol type="1">
-<li>Generate an SSH key and add it to GitHub or GitLab.</li>
-<li>Use the SSH key to authentication on GitHub or GitLab.</li>
+<li>Generate an SSH key.</li>
+<li>Copy the SSH key to your clipboard.</li>
+<li>Add the SSH key to the remote repository (for example, GitHub or GitLab).</li>
 </ol>
 </section>
-<section id="push-your-repository" class="level4">
-<h4 data-anchor-id="push-your-repository">“Push” your repository</h4>
+<section id="upload-your-local-repository-to-a-remote-repository" class="level3">
+<h3 data-anchor-id="upload-your-local-repository-to-a-remote-repository">Upload your local repository to a remote repository</h3>
 <ol type="1">
-<li>Create an empty <em>internal</em> repository on GitLab or <em>private</em> repository on GitHub.</li>
-<li>Set the remote URL for your local <code>recipes</code> Git repository.</li>
-<li>Push your <code>main</code> branch to GitLab or GitHub.</li>
+<li>Create an empty repository on the remote repository hosting platform, for example GitHub or GitLab. Make sure to not initialize the repository with any files!</li>
+<li>If needed, navigate to the <code>recipes</code> repository using the command line.</li>
+<li>Set the remote URL of your local repository to your remote repository.</li>
+<li>Push the changes on your <code>main</code> branch to your remote repository.</li>
 </ol>
-</section>
 </section>
 <section id="private-collaboration-with-pull-requests-using-github-flow" class="level3">
-<h3 data-anchor-id="private-collaboration-with-pull-requests-using-github-flow">2. “Private” collaboration with pull requests (using “GitHub Flow”)</h3>
+<h3 data-anchor-id="private-collaboration-with-pull-requests-using-github-flow">“Private” collaboration with pull requests (using GitHub Flow)</h3>
 <ol type="1">
-<li>Add your partner (desk neighbor) as a collaborator to your <code>recipes</code> repository.</li>
+<li>Add your exercise partner as a collaborator to your <code>recipes</code> repository.</li>
 <li>Clone your partner’s repository.</li>
-<li>Create a new branch in your partner’s repository.</li>
-<li>Add and commit a recipe to your partner’s <code>recipes.txt</code> file.</li>
-<li>Push the changes on the new branch to GitLab / GitHub.</li>
-<li>Create a Merge Request / Pull Request.</li>
-<li>Review and merge the PR your partner made in your repository.</li>
+<li>Create a new branch in your collaborator’s repository.</li>
+<li>Add a recipe to your collaborator’s <code>recipes.txt</code> file.</li>
+<li>Add and commit the changes.</li>
+<li>Push the changes on the new branch to the remote repository.</li>
+<li>Create a Pull / Merge Request.</li>
+<li>Review the PR your collaborator made in your repository.</li>
 <li><span class="emoji" data-emoji="rocket">🚀</span> Optional: Add additional changes on the branch pushed by your collaborator.</li>
+<li>Merge the PR into your repository.</li>
 </ol>
 </section>
-<section id="optional-create-a-readme.md-file" class="level3">
-<h3 data-anchor-id="optional-create-a-readme.md-file"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Create a <code>README.md</code> file</h3>
+</section>
+<section id="bonus-exercises" class="level2">
+<h2 data-anchor-id="bonus-exercises"><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</h2>
+<section id="add-a-readme.md" class="level3">
+<h3 data-anchor-id="add-a-readme.md">Add a <code>README.md</code></h3>
 <ol type="1">
-<li>Navigate to your repository on GitHub, click “Add file”, and select “Create new file”.</li>
-<li>Name the file <code>README.md</code>, add a brief description of your project, and provide a commit message. Play around with <a href="https://www.markdownguide.org/">Markdown</a> syntax!</li>
-<li>Click the green “Commit new file” button to save the <code>README.md</code> file to the repository.</li>
+<li>Find the option to create a new file on your remote repository in the browser.</li>
+<li>Name the file <code>README.md</code>, add a brief description, and provide a commit message.</li>
+<li><span class="emoji" data-emoji="rocket">🚀</span> Optional: Play around with <a href="https://www.markdownguide.org/">Markdown</a> syntax.</li>
+<li>Save the <code>README.md</code> file to the repository.</li>
 <li>Pull the changes to your local repository.</li>
 </ol>
 </section>
-<section id="optional-manage-branches" class="level3">
-<h3 data-anchor-id="optional-manage-branches"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Manage branches</h3>
+<section id="clone-and-sync-your-repository" class="level3">
+<h3 data-anchor-id="clone-and-sync-your-repository">Clone and sync your repository</h3>
 <ol type="1">
-<li>Push another branch (other than the default branch) with changes to MPIB GitLab or GitHub.</li>
-<li>Delete any unused or merged branches.</li>
-</ol>
-</section>
-<section id="optional-clean-up-your-repository-on-mpib-gitlab-or-github" class="level3">
-<h3 data-anchor-id="optional-clean-up-your-repository-on-mpib-gitlab-or-github"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Clean up your repository on MPIB GitLab or GitHub</h3>
-<ol type="1">
-<li>Delete unnecessary files or add a new recipe directly on MPIB GitLab or GitHub.</li>
-<li>Commit changes on MPIB GitLab or GitHub with a message.</li>
-<li>Pull the changes to your local repository.</li>
-</ol>
-</section>
-<section id="optional-clone-and-sync-your-repo" class="level3">
-<h3 data-anchor-id="optional-clone-and-sync-your-repo"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Clone and sync your repo</h3>
-<ol type="1">
-<li>Clone your repository from MPIB GitLab or GitHub to a different location on your computer.</li>
-<li>Stage, commit and push changes in the new location (consider using a new branch).</li>
-<li>Pull changes to the repository in the original location.</li>
+<li>Move to a location on your computer where you want to clone a repository.</li>
+<li>Clone your remote repository to a <em>different location</em> on your computer.</li>
+<li>Stage and commit changes in the new location (consider using a new branch).</li>
+<li>Push these new changes to GitHub.</li>
+<li>Pull the changes to the repository in the original location.</li>
 <li>Delete your newly cloned repository.</li>
 </ol>
 </section>
 </section>
 <section id="slides" class="level2">
 <h2 data-anchor-id="slides">Slides</h2>
+<iframe width="100%" height="500" src="slides_session06.html"></iframe>
 <div class="callout callout-style-simple callout-note callout-titled" title="How can I download the slides as a PDF file?">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -308,7 +299,7 @@ How can I download the slides as a PDF file?
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>To print the slides to PDF, do the following:</p>
+<p>To export the slides to PDF, do the following:</p>
 <ol type="1">
 <li>Toggle into Print View using the <kbd>E</kbd> key (or using the <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu">Navigation Menu</a>).</li>
 <li>Open the in-browser print dialog (CTRL/CMD+P).</li>
@@ -325,7 +316,6 @@ How can I download the slides as a PDF file?
 </div>
 </div>
 </div>
-<iframe width="100%" height="500" src="slides_session06.html"></iframe>
 </section>
 <section id="cheatsheet" class="level2">
 <h2 data-anchor-id="cheatsheet">Cheatsheet</h2>

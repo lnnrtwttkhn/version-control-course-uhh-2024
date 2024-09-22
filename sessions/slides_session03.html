@@ -468,6 +468,11 @@
 <h3 id="first-steps-with-git">First steps with Git</h3>
 <p><span class="emoji" data-emoji="bulb">💡</span> You can initialize a Git repository<br> <span class="emoji" data-emoji="bulb">💡</span> You can stage and commit changes<br></p>
 </div>
+<div class="fragment">
+<!-- -->
+<h3 id="optional-git-essentials"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Git essentials</h3>
+<p><span class="emoji" data-emoji="bulb">💡</span> You know how to explore the commit history<br> <span class="emoji" data-emoji="bulb">💡</span> You can compare different commits<br> <span class="emoji" data-emoji="bulb">💡</span> You know how to use and create a <code>.gitignore</code> file<br> <span class="emoji" data-emoji="bulb">💡</span> You can discuss which files can (not) be tracked well with Git and why<br> <span class="emoji" data-emoji="bulb">💡</span> You know how to track empty folders in Git repositories</p>
+</div>
 </section>
 <section id="cheatsheet" class="slide level2">
 <h2>Cheatsheet</h2>
@@ -597,7 +602,7 @@
 <h2>Tasks</h2>
 <p>In this session, you will work on the following tasks:</p>
 <ol type="1">
-<li><i class="fa-solid fa-book-open" aria-label="book-open"></i> <strong>Reading</strong>: Read the chapters <a href="https://lennartwittkuhn.com/version-control-book/chapters/setup.html">“Setup”</a> and <a href="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html">“First steps with Git”</a> in the Version Control Book.</li>
+<li><i class="fa-solid fa-book-open" aria-label="book-open"></i> <strong>Reading</strong>: Read the chapters <a href="https://lennartwittkuhn.com/version-control-book/chapters/setup.html">“Setup”</a>, <a href="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html">“First steps with Git”</a> and, optional, <a href="https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html">“Git Essentials”</a> in the Version Control Book.</li>
 <li><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> <strong>Implementation</strong>: Try out the commands in the chapter.</li>
 <li><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> <strong>Exercises</strong>: Work on the <a href="#/exercises">exercises</a> for the <a href="#/recipes-project"><code>recipes</code> project</a>.</li>
 <li><i class="fa-solid fa-clipboard-question" aria-label="clipboard-question"></i> <strong>Quiz</strong>: Test your knowledge with the <a href="https://version-control-basics.formr.org/">quiz</a>.</li>
@@ -624,7 +629,7 @@
 <h2>Exercises</h2>
 <h3 id="configure-git">Configure Git</h3>
 <ol type="1">
-<li>Navigate into the <code>recipes</code> folder.</li>
+<li>If needed, navigate into the <code>recipes</code> folder using the command line.</li>
 <li>Set your Git username.</li>
 <li>Set your Git email address.</li>
 <li>Change the default name of the initial branch to <code>main</code></li>
@@ -633,7 +638,7 @@
 </ol>
 <h3 id="initialize-a-git-repository">Initialize a Git repository</h3>
 <ol type="1">
-<li>Navigate to the <code>recipes</code> folder using the command line.</li>
+<li>If needed, navigate to the <code>recipes</code> folder using the command line.</li>
 <li>Initialize a new Git repository in the <code>recipes</code> folder.</li>
 </ol>
 <h3 id="add-content-and-commit-changes">Add content and commit changes</h3>
@@ -644,24 +649,148 @@
 <li>Commit the changes in <code>recipes.txt</code> with a descriptive commit message.</li>
 </ol>
 <p><span class="emoji" data-emoji="rocket">🚀</span> Optional: Commit at least three additional changes in <code>recipes.txt</code>.</p>
+</section>
+<section id="bonus-exercises" class="slide level2">
+<h2><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</h2>
 <h3 id="amend-a-commit">Amend a commit</h3>
-<ol start="7" type="1">
+<ol type="1">
+<li>If needed, navigate into the <code>recipes</code> repository using <code>cd recipes</code> (or a similar path).</li>
 <li>Make additional changes to your <code>recipes.txt</code> file.</li>
 <li>Stage the changes.</li>
 <li>Amend the previous commit to include the new changes.</li>
+<li>Check the commit history to verify that the last commit message has not changed.</li>
 </ol>
 <p>For example, add a recipe without a title first, commit, then add a title and amend the previous commit to add the title change to the same commit.</p>
 <h3 id="create-a-.gitignore-file">Create a <code>.gitignore</code> file</h3>
-<ol start="10" type="1">
-<li>Create a random file that you want to ignore, for example <code>random-file.docx</code> or download an image from the internet.</li>
-<li>Check the state of your repository to see that Git detects the untracked file.</li>
+<ol type="1">
+<li>If needed, navigate into the <code>recipes</code> repository using <code>cd recipes</code> (or a similar path).</li>
+<li>Add a random file to your repository that you want to ignore, for example an image file like <code>image.jpg</code>.</li>
+<li>Check the state of your repository to confirm that Git noticed the added file.</li>
 <li>Create a <code>.gitignore</code> file.</li>
-<li>Add the random file to the <code>.gitignore</code> file so that it is ignored by Git and save the file.</li>
-<li>Check the state of your repository again to see that Git does not list the file as untracked anymore.</li>
-<li>Stage the changes in the <code>.gitignore</code> file.</li>
-<li>Commit the changes in <code>.gitignore</code>.</li>
+<li>Add the random file to the <code>.gitignore</code> file.</li>
+<li>Check the state of your repository again to confirm that Git now ignores the added file.</li>
+<li>Stage the changes in your repository.</li>
+<li>Commit the <code>.gitignore</code> file using a descriptive commit message.</li>
+<li><span class="emoji" data-emoji="rocket">🚀</span> All macOS users: Let your repository ignore <code>.DS_Store</code>.</li>
 </ol>
-<p><span class="emoji" data-emoji="rocket">🚀</span> Optional (for macOS users): Let your repository ignore <code>.DS_Store</code>.</p>
+</section>
+<section id="solutions-setup" class="slide level2">
+<h2>Solutions: Setup</h2>
+<div class="cell" data-file="exercises/code-exercises-setup.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="bu">cd</span> recipes <span class="co"># &lt;1&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span> <span class="co"># &lt;2&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your.email@example.com"</span> <span class="co"># &lt;3&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main <span class="co"># &lt;4&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"vim"</span> <span class="co"># &lt;5&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="fu">git</span> config <span class="at">--list</span> <span class="co"># &lt;6&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol type="1">
+<li>Optional: Use <code>cd recipes</code> (or a similar path) to navigate into the <code>recipes</code> subfolder.</li>
+<li>Set your global Git username using <code>git config --global user.name "Your Name"</code>. Replace <code>Your Name</code> with your name and don’t remove the quotation marks.</li>
+<li>Set your global Git email address using <code>git config --global user.email "your.email@example.com"</code>. Replace <code>your.email@example.com</code> with your email address and don’t remove the quotation marks.</li>
+<li>Change the default name of the initial branch to <code>main</code> using <code>git config --global init.defaultBranch main</code>.</li>
+<li>Optional: Change your default text editor. In this example, the default text editor is changed to Vim using <code>git config --global core.editor "vim"</code>.</li>
+<li>List the Git configuration.</li>
+</ol>
+</section>
+<section id="solutions-first-steps-with-git" class="slide level2">
+<h2>Solutions: First steps with Git</h2>
+<div class="cell" data-file="exercises/code-exercises-first-steps-git.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="bu">cd</span> recipes <span class="co"># &lt;1&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">git</span> init <span class="co"># &lt;2&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">touch</span> recipes.txt <span class="co"># &lt;3&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="fu">cat</span> <span class="op">&gt;</span> recipes.txt <span class="op">&lt;&lt;- EOM</span> <span class="co"># &lt;4&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="st">Pasta</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="st">1. Bring water to the boil in a large saucepan.</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="st">2. Once the water is boiling, add a good pinch of salt.</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="st">3. Add the pasta.</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="st">4. Cook the pasta according to packet instructions until it's "al dente".</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="st">5. Drain the pasta in a colander.</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="op">EOM</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="fu">git</span> add recipes.txt <span class="co"># &lt;5&gt;</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add pasta recipe to recipes.txt"</span> <span class="co"># &lt;6&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol type="1">
+<li>If needed, navigate into the <code>recipes</code> subfolder using <code>cd recipes</code> (or a similar path).</li>
+<li>Initialize a new Git repository in the <code>recipes</code> folder using <code>git init</code>.</li>
+<li>Create a new file called <code>recipes.txt</code> using <code>touch</code>. Note that you can also use a regular text editor to do this.</li>
+<li>Add a <em>short</em> recipe to <code>recipes.txt</code>. In this example, <code>cat</code> is used to add text to <code>recipes.txt</code>. This command would also create the file if <code>recipes.txt</code> wouldn’t exist yet. Note that you can also use a regular text editor to do this.</li>
+<li>Stage the new <code>recipes.txt</code> file using <code>git add</code>.</li>
+<li>Commit the changes in <code>recipes.txt</code> with a descriptive commit message using <code>git commit</code>.</li>
+</ol>
+</section>
+<section id="solutions-amend-a-commit" class="slide level2">
+<h2>Solutions: Amend a commit</h2>
+<div class="cell" data-file="exercises/code-exercises-essentials-amend.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="bu">cd</span> recipes <span class="co"># &lt;1&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="bu">echo</span> <span class="st">"6. Enjoy!"</span> <span class="op">&gt;&gt;</span> recipes.txt <span class="co"># &lt;2&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="fu">git</span> add recipes.txt <span class="co"># &lt;3&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="fu">git</span> commit <span class="at">--amend</span> <span class="at">--no-edit</span> <span class="co"># &lt;4&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="fu">git</span> log <span class="at">--oneline</span> <span class="co"># &lt;5&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol type="1">
+<li>Optional: Navigate into the <code>recipes</code> repository using <code>cd recipes</code> (or a similar path).</li>
+<li>Make an additional change to the <code>recipes.txt</code> file. In this example, <code>echo</code> is used to append text to <code>recipes.txt</code>. Note that you can also use a regular text editor to do this.</li>
+<li>Stage the changes using <code>git add</code>.</li>
+<li>Amend the previous commit to include the new changes using <code>git commit --amend</code>. In this example, the <code>--no-edit</code> flag is used to amend the commit without changing the commit message.</li>
+<li>Check the commit history using <code>git log</code> to verify that the last commit message has not changed. Here, we add the <code>--oneline</code> flag to show a concise summary of the past commits.</li>
+</ol>
+</section>
+<section id="solutions-create-a-.gitignore-file" class="slide level2">
+<h2>Solutions: Create a <code>.gitignore</code> file</h2>
+<div class="cell" data-file="exercises/code-exercises-essentials-gitignore.sh">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="bu">cd</span> recipes <span class="co"># &lt;1&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="fu">wget</span> <span class="at">-nv</span> <span class="at">-O</span> pasta.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rigatoni.jpg/320px-Rigatoni.jpg <span class="co"># &lt;2&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="fu">git</span> status <span class="co"># &lt;3&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="fu">touch</span> .gitignore <span class="co"># &lt;4&gt;</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="bu">echo</span> <span class="st">"*.jpg"</span> <span class="op">&gt;</span> .gitignore <span class="co"># &lt;5&gt;</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="fu">git</span> status <span class="co"># &lt;6&gt;</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="fu">git</span> add <span class="at">--all</span> <span class="co"># &lt;7&gt;</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add .gitignore and ignore all files that end with .jpg"</span> <span class="co"># &lt;8&gt;</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="bu">echo</span> <span class="st">".DS_Store"</span> <span class="op">&gt;&gt;</span> .gitignore <span class="co"># &lt;9&gt;</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="fu">git</span> add .gitignore <span class="co"># &lt;9&gt;</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Ignore .DS_Store"</span> <span class="co"># &lt;9&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol type="1">
+<li>Navigate into the <code>recipes</code> repository using <code>cd recipes</code> (or a similar path).</li>
+<li>Download an image from the internet using <code>wget</code>. This command download a picture of pasta from the internet and saves the output <code>-O</code> as <code>pasta.jpg</code>. The <code>-nv</code> (or <code>--no-verbose</code>) argument makes the command output less text.</li>
+<li>Check the state of your repository using <code>git status</code>. Git will notice the new file and list it as untracked.</li>
+<li>Create a <code>.gitignore</code> file using <code>touch</code>. Note that you can also use a regular text editor to do this.</li>
+<li>Add <code>*.jpg</code> to the <code>.gitignore</code> file to ignore all files that end with the <code>.jpg</code> file extension. In this example, <code>echo</code> is used to append text to <code>recipes.txt</code>. Note that you can also use a regular text editor to do this. This command would also create the file if <code>.gitignore</code> wouldn’t exist yet.</li>
+<li>Check the state of your repository again using <code>git status</code>. The new file should disappear from the output and is not listed as untracked anymore.</li>
+<li>Stage all changes using <code>git add --all</code>. This command should generally be avoided as it may lead to staging and committing changes that should not added to the repository’s history. Here, we use it to demonstrate that only the <code>.gitignore</code> will be staged but not the pasta image file because it is ignored.</li>
+<li>Commit the changes in <code>.gitignore</code> with a descriptive commit message using <code>git commit</code>.</li>
+<li>Add <code>.DS_Store</code> to the <code>.gitignore</code> file to ignore it. Again, <code>echo</code> is used to append text to <code>recipes.txt</code>. Note that you can also use a regular text editor to do this. Stage and commit your changes using a descriptive commit message.</li>
+</ol>
 </section></section>
 <section>
 <section id="appendix" class="title-slide slide level1 center" data-number="3">
@@ -710,51 +839,51 @@
 <section id="git-log" class="slide level2">
 <h2><code>git log</code></h2>
 <div class="fragment">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">git</span> log</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">git</span> log</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>e.g:</p>
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="fragment">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="ex">commit</span> 3f6db14ed93d6e92a207a9a3ac5f8b8c5c5c5c34 <span class="er">(</span><span class="ex">HEAD</span> <span class="at">-</span><span class="op">&gt;</span> main, origin/master, origin/HEAD<span class="kw">)</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="ex">Author:</span> Jane Doe <span class="op">&lt;</span>jane@example.com<span class="op">&gt;</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="ex">Date:</span>   Tue Apr 24 14:24:48 2024 <span class="at">-0700</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a></span>
-<span id="cb4-6"><a href="#cb4-6"></a>    <span class="ex">Fix</span> the widget rendering issue in the dashboard</span>
-<span id="cb4-7"><a href="#cb4-7"></a></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="ex">commit</span> a4324f44d3e85723a4d91cb9e07132b7115e4941</span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="ex">Author:</span> John Smith <span class="op">&lt;</span>john@example.com<span class="op">&gt;</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="ex">Date:</span>   Mon Apr 23 16:17:59 2024 <span class="at">-0700</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a></span>
-<span id="cb4-12"><a href="#cb4-12"></a>    <span class="ex">Update</span> dependencies to newer versions</span>
-<span id="cb4-13"><a href="#cb4-13"></a></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="ex">commit</span> fa204b9145bf7fc7ff226a26b49a567fc2eb1b94</span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="ex">Author:</span> Alice Johnson <span class="op">&lt;</span>alice@example.com<span class="op">&gt;</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="ex">Date:</span>   Sun Apr 22 15:08:43 2024 <span class="at">-0700</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a></span>
-<span id="cb4-18"><a href="#cb4-18"></a>    <span class="ex">Initial</span> commit of project files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="ex">commit</span> 3f6db14ed93d6e92a207a9a3ac5f8b8c5c5c5c34 <span class="er">(</span><span class="ex">HEAD</span> <span class="at">-</span><span class="op">&gt;</span> main, origin/master, origin/HEAD<span class="kw">)</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="ex">Author:</span> Jane Doe <span class="op">&lt;</span>jane@example.com<span class="op">&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="ex">Date:</span>   Tue Apr 24 14:24:48 2024 <span class="at">-0700</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a></span>
+<span id="cb8-6"><a href="#cb8-6"></a>    <span class="ex">Fix</span> the widget rendering issue in the dashboard</span>
+<span id="cb8-7"><a href="#cb8-7"></a></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="ex">commit</span> a4324f44d3e85723a4d91cb9e07132b7115e4941</span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="ex">Author:</span> John Smith <span class="op">&lt;</span>john@example.com<span class="op">&gt;</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a><span class="ex">Date:</span>   Mon Apr 23 16:17:59 2024 <span class="at">-0700</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a></span>
+<span id="cb8-12"><a href="#cb8-12"></a>    <span class="ex">Update</span> dependencies to newer versions</span>
+<span id="cb8-13"><a href="#cb8-13"></a></span>
+<span id="cb8-14"><a href="#cb8-14"></a><span class="ex">commit</span> fa204b9145bf7fc7ff226a26b49a567fc2eb1b94</span>
+<span id="cb8-15"><a href="#cb8-15"></a><span class="ex">Author:</span> Alice Johnson <span class="op">&lt;</span>alice@example.com<span class="op">&gt;</span></span>
+<span id="cb8-16"><a href="#cb8-16"></a><span class="ex">Date:</span>   Sun Apr 22 15:08:43 2024 <span class="at">-0700</span></span>
+<span id="cb8-17"><a href="#cb8-17"></a></span>
+<span id="cb8-18"><a href="#cb8-18"></a>    <span class="ex">Initial</span> commit of project files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="fragment">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="ex">commit</span> b9690b287bdfec6e17af39b7337b84e9ebf6f046</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="ex">Author:</span> Lennart Wittkuhn <span class="op">&lt;</span>lennart.wittkuhn@tutanota.com<span class="op">&gt;</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="ex">Date:</span>   Fri Mar 22 15:19:43 2024 +0100</span>
-<span id="cb5-5"><a href="#cb5-5"></a></span>
-<span id="cb5-6"><a href="#cb5-6"></a>    <span class="ex">move</span> illustration of bad git commits <span class="er">(</span><span class="ex">xkcd</span> comic<span class="kw">)</span> <span class="ex">and</span> edit sentence</span>
-<span id="cb5-7"><a href="#cb5-7"></a></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="ex">commit</span> d8d770dd84cd19086f41d8d38752b223c8130859</span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="ex">Author:</span> konradpa <span class="op">&lt;</span>konrad@pagenstedt.de<span class="op">&gt;</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="ex">Date:</span>   Wed Mar 6 13:51:13 2024 +0100</span>
-<span id="cb5-11"><a href="#cb5-11"></a></span>
-<span id="cb5-12"><a href="#cb5-12"></a>    <span class="ex">add</span> image to setup chapter</span>
-<span id="cb5-13"><a href="#cb5-13"></a></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="ex">commit</span> 074c9f6e12dd5fc8cc61de9f31efbdbce41a7583</span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="ex">Author:</span> konradpa <span class="op">&lt;</span>konrad@pagenstedt.de<span class="op">&gt;</span></span>
-<span id="cb5-16"><a href="#cb5-16"></a><span class="ex">Date:</span>   Wed Mar 6 13:51:07 2024 +0100</span>
-<span id="cb5-17"><a href="#cb5-17"></a></span>
-<span id="cb5-18"><a href="#cb5-18"></a>    <span class="ex">add</span> image to rewriting history chapter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="ex">commit</span> b9690b287bdfec6e17af39b7337b84e9ebf6f046</span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="ex">Author:</span> Lennart Wittkuhn <span class="op">&lt;</span>lennart.wittkuhn@tutanota.com<span class="op">&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="ex">Date:</span>   Fri Mar 22 15:19:43 2024 +0100</span>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a>    <span class="ex">move</span> illustration of bad git commits <span class="er">(</span><span class="ex">xkcd</span> comic<span class="kw">)</span> <span class="ex">and</span> edit sentence</span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8"></a><span class="ex">commit</span> d8d770dd84cd19086f41d8d38752b223c8130859</span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="ex">Author:</span> konradpa <span class="op">&lt;</span>konrad@pagenstedt.de<span class="op">&gt;</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="ex">Date:</span>   Wed Mar 6 13:51:13 2024 +0100</span>
+<span id="cb9-11"><a href="#cb9-11"></a></span>
+<span id="cb9-12"><a href="#cb9-12"></a>    <span class="ex">add</span> image to setup chapter</span>
+<span id="cb9-13"><a href="#cb9-13"></a></span>
+<span id="cb9-14"><a href="#cb9-14"></a><span class="ex">commit</span> 074c9f6e12dd5fc8cc61de9f31efbdbce41a7583</span>
+<span id="cb9-15"><a href="#cb9-15"></a><span class="ex">Author:</span> konradpa <span class="op">&lt;</span>konrad@pagenstedt.de<span class="op">&gt;</span></span>
+<span id="cb9-16"><a href="#cb9-16"></a><span class="ex">Date:</span>   Wed Mar 6 13:51:07 2024 +0100</span>
+<span id="cb9-17"><a href="#cb9-17"></a></span>
+<span id="cb9-18"><a href="#cb9-18"></a>    <span class="ex">add</span> image to rewriting history chapter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -763,7 +892,7 @@
 <h2>Saving command line history?</h2>
 <p>Use this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">history</span> <span class="op">&gt;</span> history.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb10-1"><a href="#cb10-1"></a><span class="bu">history</span> <span class="op">&gt;</span> history.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><i class="fa-solid fa-display" aria-label="display"></i> <a href="https://lennartwittkuhn.com/version-control-book/chapters/command-line.html#saving-command-line-history">https://lennartwittkuhn.com/version-control-book/chapters/command-line.html#saving-command-line-history</a></p>
 <iframe width="100%" height="70%" src="https://lennartwittkuhn.com/version-control-book/chapters/command-line.html#saving-command-line-history" title="Version Control Book"></iframe>

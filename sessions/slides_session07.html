@@ -31,6 +31,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -365,7 +430,7 @@
 <section id="last-session-learning-objectives" class="slide level2">
 <h2>Last session: Learning objectives</h2>
 <p>After the last session, you should now be able to answer the following questions / do the following:</p>
-<p><span class="emoji" data-emoji="bulb">💡</span> You can connect your local Git to a remote repository service.<br> <span class="emoji" data-emoji="bulb">💡</span> You can create a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can pull and push changes to and from a remote repository.</p>
+<p><span class="emoji" data-emoji="bulb">💡</span> You can create a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can connect your local Git to a remote repository service.<br> <span class="emoji" data-emoji="bulb">💡</span> You can pull and push changes to and from a remote repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You can clone a repository from a remote repository service.</p>
 </section>
 <section id="last-session-recipes-project" class="slide level2">
 <h2>Last session: <code>recipes</code> project</h2>
@@ -403,7 +468,7 @@
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
-<h3 id="github---advanced">GitHub - Advanced</h3>
+<h3 id="remotes---advanced">Remotes - Advanced</h3>
 <p><span class="emoji" data-emoji="bulb">💡</span> You can fork a repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You know the purpose and components of a Pull Request.<br> <span class="emoji" data-emoji="bulb">💡</span> You can create a Pull Request from a forked repository.<br> <span class="emoji" data-emoji="bulb">💡</span> You know how to collaborate using the popular workflow strategy GitHub flow.<br> <span class="emoji" data-emoji="bulb">💡</span> You know the purpose and components of a <code>README</code> file.<br> <span class="emoji" data-emoji="bulb">💡</span> You can protect your <code>main</code> branch.</p>
 <h3 id="issues">Issues</h3>
 <p><span class="emoji" data-emoji="bulb">💡</span> You understand the purpose of GitHub Issues.<br> <span class="emoji" data-emoji="bulb">💡</span> You can create and manage Issues.<br> <span class="emoji" data-emoji="bulb">💡</span> You can reference an Issue in another issue.<br> <span class="emoji" data-emoji="bulb">💡</span> You can close an Issue with a commit or pull request.<br></p>
@@ -490,30 +555,92 @@
 </section>
 <section id="exercises" class="slide level2">
 <h2>Exercises</h2>
-<h3 id="public-collaboration-with-pull-requests-using-a-fork">1. Public collaboration with pull requests (using a “fork”)</h3>
+<div class="fragment">
+<!-- -->
+<h3 id="public-collaboration-with-pull-requests-using-a-fork-and-github-flow">“Public” collaboration with pull requests (using a fork and GitHub Flow)</h3>
 <ol type="1">
-<li>Find out what <a href="https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html">forking</a> is</li>
-<li><strong>Fork the recipes repository</strong> of another course participant (ideally, someone who is <em>not</em> your partner from the previous exercise)</li>
-<li>Create an <strong>Issue</strong>, suggesting a missing recipe</li>
-<li>Create an Issue in your partner’s repository (maybe their repository is missing a great recipe?)</li>
-<li>Repeat the steps from the previous exercise using the forked repository:
+<li>Find out what <a href="https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html">forking</a> is.</li>
+<li><strong>Fork the recipes repository</strong> of another course participant (ideally someone who is <em>not</em> your collaborator from the previous exercise).</li>
+<li><strong>Create an Issue</strong> in your new collaborator’s repository (maybe their repository is missing a great recipe?).</li>
+<li>Repeat the steps from the exercise on collaboration with remote repositories using the forked repository:
 <ol type="1">
-<li><strong>Clone</strong> the <em>forked</em> repository into a sensible location</li>
-<li><strong>Create a new branch</strong> and create <strong>one or multiple commits</strong> “fixing” the Issue that you opened</li>
-<li><strong>Push</strong> your changes to GitHub</li>
-<li><strong>Create a pull request</strong> with your changes (hint: from the forked to the original repository) and refer to the Issue in your pull request</li>
+<li><strong>Clone</strong> the <em>forked</em> repository into a sensible location on your computer.</li>
+<li><strong>Create a new branch</strong> and create <strong>one or multiple commits</strong> “fixing” the Issue that you opened. If available, follow the <strong>contributing guide</strong> of your collaborator’s repository.</li>
+<li><strong>Push</strong> your changes to the remote repository.</li>
+<li><strong>Create a pull / merge request</strong> with your changes (hint: from the forked to the original repository) and <strong>refer to the Issue</strong> in your pull / merge request.</li>
 </ol></li>
 </ol>
-<h3 id="review-pull-requests-in-your-repository">2. Review pull requests in your repository</h3>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="reviewing-pull-requests">Reviewing pull requests</h3>
 <ol type="1">
 <li>View any pull requests that are created in your <code>recipes</code> repository.</li>
 <li>Review the changes made by the contributor in the pull request.</li>
 <li>If needed, discuss additional changes with the contributor in the pull request.</li>
 <li>Close the pull request by merging the proposed changes.</li>
 </ol>
-<h3 id="optional-practice-forking-on-github"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Practice forking on GitHub</h3>
+</div>
+</section>
+<section id="bonus-exercises" class="slide level2">
+<h2><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</h2>
 <ol type="1">
-<li>Repeat the entire forking workflow (see task 1 above) with <a href="https://github.com/lnnrtwttkhn/recipes/">Lennart’s <code>recipes</code> repository</a>. Find out about the <strong>contributing guidelines</strong> in Lennart’s repo and follow them when creating a new recipe.</li>
+<li>Repeat the entire forking workflow with <a href="https://github.com/lnnrtwttkhn/recipes/">Lennart’s <code>recipes</code> repository</a>. Find out about the <strong>contributing guidelines</strong> in Lennart’s repo and follow them when creating a new recipe.</li>
+</ol>
+</section>
+<section id="solutions" class="slide level2">
+<h2>Solutions</h2>
+<ol type="1">
+<li>Forking is a process where you create a copy of someone else’s repository under your own account. It allows you to freely experiment with changes without affecting the original project.</li>
+<li>To fork the <code>recipes</code> repository of another course participant: (1) Go to the GitHub repository you want to fork. (2) Click the <code>Fork</code> button at the top-right corner of the repository page. (3) Select your GitHub account to fork the repository.</li>
+<li>Create an Issue, suggesting a missing recipe: (1) Go to the Issues tab of your partner’s repository on GitHub. (2) Click <code>New issue</code>. Provide a title and description for the Issue, suggesting a missing recipe. (3) Click <code>Submit new issue</code>.</li>
+<li>Clone the forked repository into a sensible location on your computer.</li>
+</ol>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">git</span> clone https://github.com/your-username/forked-repo-name.git /path/to/your/forked/directory</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="bu">cd</span> /path/to/your/forked/directory</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Create a new branch and create one or multiple commits “fixing” the Issue that you opened.</li>
+</ol>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> issue-fix-branch</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="bu">echo</span> <span class="st">"New Recipe Content"</span> <span class="op">&gt;&gt;</span> recipes.txt</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">git</span> add recipes.txt</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add new recipe to fix #1"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Push your changes to the remote repository:</li>
+</ol>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource zsh number-lines code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">git</span> push origin issue-fix-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol start="7" type="1">
+<li><p>Create a pull request with your changes (from the forked to the original repo) and refer to the issue in your pull request:</p>
+<ol type="1">
+<li>Go to your forked repository in your browser.</li>
+<li>Click the <code>Compare &amp; pull request</code> button.</li>
+<li>Ensure that the base repository is the original and the base branch is <code>main</code>.</li>
+<li>Provide a title and description for your pull request.</li>
+<li>Refer to the issue by adding <code>Fixes #issue-number</code> in the description.</li>
+<li>Click <code>Create pull request</code>.</li>
+<li>Review any pull requests in your repository.</li>
+</ol></li>
 </ol>
 
 <div class="footer footer-default">

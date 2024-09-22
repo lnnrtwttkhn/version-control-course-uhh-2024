@@ -129,6 +129,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
   <li><a href="#first-steps-with-git" id="toc-first-steps-with-git" class="nav-link" data-scroll-target="#first-steps-with-git">First steps with Git</a></li>
+  <li><a href="#optional-git-essentials" id="toc-optional-git-essentials" class="nav-link" data-scroll-target="#optional-git-essentials"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Git essentials</a></li>
   </ul></li>
   <li><a href="#recipes-project" id="toc-recipes-project" class="nav-link" data-scroll-target="#recipes-project"><code>recipes</code> project</a></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
@@ -136,6 +137,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#configure-git" id="toc-configure-git" class="nav-link" data-scroll-target="#configure-git">Configure Git</a></li>
   <li><a href="#initialize-a-git-repository" id="toc-initialize-a-git-repository" class="nav-link" data-scroll-target="#initialize-a-git-repository">Initialize a Git repository</a></li>
   <li><a href="#add-content-and-commit-changes" id="toc-add-content-and-commit-changes" class="nav-link" data-scroll-target="#add-content-and-commit-changes">Add content and commit changes</a></li>
+  </ul></li>
+  <li><a href="#bonus-exercises" id="toc-bonus-exercises" class="nav-link" data-scroll-target="#bonus-exercises"><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</a>
+  <ul>
   <li><a href="#amend-a-commit" id="toc-amend-a-commit" class="nav-link" data-scroll-target="#amend-a-commit">Amend a commit</a></li>
   <li><a href="#create-a-.gitignore-file" id="toc-create-a-.gitignore-file" class="nav-link" data-scroll-target="#create-a-.gitignore-file">Create a <code>.gitignore</code> file</a></li>
   </ul></li>
@@ -144,6 +148,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#setup-1" id="toc-setup-1" class="nav-link" data-scroll-target="#setup-1">Setup</a></li>
   <li><a href="#first-steps-with-git-1" id="toc-first-steps-with-git-1" class="nav-link" data-scroll-target="#first-steps-with-git-1">First steps with Git</a></li>
+  <li><a href="#git-essentials" id="toc-git-essentials" class="nav-link" data-scroll-target="#git-essentials">Git essentials</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -170,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   </div>
 </header> <div class="about-links">
-  <a href="https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session03.html" class="about-link" rel="" target="">
+  <a href="https://lennartwittkuhn.com/version-control-course-uhh-2024/sessions/slides_session03.html" class="about-link" rel="" target="">
     <i class="bi bi-display"></i>
      <span class="about-link-text">Slides</span>
   </a>
@@ -181,6 +186,10 @@ ul.task-list li input[type="checkbox"] {
   <a href="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html" class="about-link" rel="" target="">
     <i class="bi bi-book"></i>
      <span class="about-link-text">Chapter: First steps with Git</span>
+  </a>
+  <a href="https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html" class="about-link" rel="" target="">
+    <i class="bi bi-book"></i>
+     <span class="about-link-text">Chapter: Git Essentials</span>
   </a>
   <a href="https://version-control-basics.formr.org/" class="about-link" rel="" target="">
     <i class="bi bi-input-cursor-text"></i>
@@ -197,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-anchor-id="this-session">This session</h2>
 <p>In this session, you will work on the following tasks:</p>
 <ol type="1">
-<li><i class="fa-solid fa-book-open" aria-label="book-open"></i> <strong>Reading</strong>: Read the chapters <a href="https://lennartwittkuhn.com/version-control-book/chapters/setup.html">“Setup”</a> and <a href="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html">“First steps with Git”</a> in the Version Control Book.</li>
+<li><i class="fa-solid fa-book-open" aria-label="book-open"></i> <strong>Reading</strong>: Read the chapters <a href="https://lennartwittkuhn.com/version-control-book/chapters/setup.html">“Setup”</a>, <a href="https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html">“First steps with Git”</a> and, optional, <a href="https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html">“Git Essentials”</a> in the Version Control Book.</li>
 <li><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> <strong>Implementation</strong>: Try out the commands in the chapter.</li>
 <li><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> <strong>Exercises</strong>: Work on the <a href="#exercises">exercises</a> for the <a href="#recipes-project"><code>recipes</code> project</a>.</li>
 <li><i class="fa-solid fa-clipboard-question" aria-label="clipboard-question"></i> <strong>Quiz</strong>: Test your knowledge with the <a href="https://version-control-basics.formr.org/">quiz</a>.</li>
@@ -220,6 +229,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="first-steps-with-git">First steps with Git</h3>
 <p><span class="emoji" data-emoji="bulb">💡</span> You can initialize a Git repository<br> <span class="emoji" data-emoji="bulb">💡</span> You can stage and commit changes<br></p>
 </section>
+<section id="optional-git-essentials" class="level3">
+<h3 data-anchor-id="optional-git-essentials"><span class="emoji" data-emoji="rocket">🚀</span> Optional: Git essentials</h3>
+<p><span class="emoji" data-emoji="bulb">💡</span> You know how to explore the commit history<br> <span class="emoji" data-emoji="bulb">💡</span> You can compare different commits<br> <span class="emoji" data-emoji="bulb">💡</span> You know how to use and create a <code>.gitignore</code> file<br> <span class="emoji" data-emoji="bulb">💡</span> You can discuss which files can (not) be tracked well with Git and why<br> <span class="emoji" data-emoji="bulb">💡</span> You know how to track empty folders in Git repositories</p>
+</section>
 </section>
 <section id="recipes-project" class="level2">
 <h2 data-anchor-id="recipes-project"><code>recipes</code> project</h2>
@@ -236,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="configure-git" class="level3">
 <h3 data-anchor-id="configure-git">Configure Git</h3>
 <ol type="1">
-<li>Navigate into the <code>recipes</code> folder.</li>
+<li>If needed, navigate into the <code>recipes</code> folder using the command line.</li>
 <li>Set your Git username.</li>
 <li>Set your Git email address.</li>
 <li>Change the default name of the initial branch to <code>main</code></li>
@@ -247,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="initialize-a-git-repository" class="level3">
 <h3 data-anchor-id="initialize-a-git-repository">Initialize a Git repository</h3>
 <ol type="1">
-<li>Navigate to the <code>recipes</code> folder using the command line.</li>
+<li>If needed, navigate to the <code>recipes</code> folder using the command line.</li>
 <li>Initialize a new Git repository in the <code>recipes</code> folder.</li>
 </ol>
 </section>
@@ -261,31 +274,38 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p><span class="emoji" data-emoji="rocket">🚀</span> Optional: Commit at least three additional changes in <code>recipes.txt</code>.</p>
 </section>
+</section>
+<section id="bonus-exercises" class="level2">
+<h2 data-anchor-id="bonus-exercises"><span class="emoji" data-emoji="rocket">🚀</span> Bonus exercises</h2>
 <section id="amend-a-commit" class="level3">
 <h3 data-anchor-id="amend-a-commit">Amend a commit</h3>
-<ol start="7" type="1">
+<ol type="1">
+<li>If needed, navigate into the <code>recipes</code> repository using <code>cd recipes</code> (or a similar path).</li>
 <li>Make additional changes to your <code>recipes.txt</code> file.</li>
 <li>Stage the changes.</li>
 <li>Amend the previous commit to include the new changes.</li>
+<li>Check the commit history to verify that the last commit message has not changed.</li>
 </ol>
 <p>For example, add a recipe without a title first, commit, then add a title and amend the previous commit to add the title change to the same commit.</p>
 </section>
 <section id="create-a-.gitignore-file" class="level3">
 <h3 data-anchor-id="create-a-.gitignore-file">Create a <code>.gitignore</code> file</h3>
-<ol start="10" type="1">
-<li>Create a random file that you want to ignore, for example <code>random-file.docx</code> or download an image from the internet.</li>
-<li>Check the state of your repository to see that Git detects the untracked file.</li>
+<ol type="1">
+<li>If needed, navigate into the <code>recipes</code> repository using <code>cd recipes</code> (or a similar path).</li>
+<li>Add a random file to your repository that you want to ignore, for example an image file like <code>image.jpg</code>.</li>
+<li>Check the state of your repository to confirm that Git noticed the added file.</li>
 <li>Create a <code>.gitignore</code> file.</li>
-<li>Add the random file to the <code>.gitignore</code> file so that it is ignored by Git and save the file.</li>
-<li>Check the state of your repository again to see that Git does not list the file as untracked anymore.</li>
-<li>Stage the changes in the <code>.gitignore</code> file.</li>
-<li>Commit the changes in <code>.gitignore</code>.</li>
+<li>Add the random file to the <code>.gitignore</code> file.</li>
+<li>Check the state of your repository again to confirm that Git now ignores the added file.</li>
+<li>Stage the changes in your repository.</li>
+<li>Commit the <code>.gitignore</code> file using a descriptive commit message.</li>
+<li><span class="emoji" data-emoji="rocket">🚀</span> All macOS users: Let your repository ignore <code>.DS_Store</code>.</li>
 </ol>
-<p><span class="emoji" data-emoji="rocket">🚀</span> Optional (for macOS users): Let your repository ignore <code>.DS_Store</code>.</p>
 </section>
 </section>
 <section id="slides" class="level2">
 <h2 data-anchor-id="slides">Slides</h2>
+<iframe width="100%" height="500" src="slides_session03.html"></iframe>
 <div class="callout callout-style-simple callout-note callout-titled" title="How can I download the slides as a PDF file?">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -298,7 +318,7 @@ How can I download the slides as a PDF file?
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>To print the slides to PDF, do the following:</p>
+<p>To export the slides to PDF, do the following:</p>
 <ol type="1">
 <li>Toggle into Print View using the <kbd>E</kbd> key (or using the <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu">Navigation Menu</a>).</li>
 <li>Open the in-browser print dialog (CTRL/CMD+P).</li>
@@ -315,7 +335,6 @@ How can I download the slides as a PDF file?
 </div>
 </div>
 </div>
-<iframe width="100%" height="500" src="slides_session03.html"></iframe>
 </section>
 <section id="cheatsheet" class="level2">
 <h2 data-anchor-id="cheatsheet">Cheatsheet</h2>
@@ -399,6 +418,31 @@ How can I download the slides as a PDF file?
 <tr class="odd">
 <td style="text-align: left;"><code>git commit -m "commit message"</code></td>
 <td style="text-align: left;">Commits staged files with a commit message</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="git-essentials" class="level3">
+<h3 data-anchor-id="git-essentials">Git essentials</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>git log</code></td>
+<td style="text-align: left;">Views past commits</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git diff</code></td>
+<td style="text-align: left;">Views made changes compared to the last commit</td>
 </tr>
 </tbody>
 </table>
