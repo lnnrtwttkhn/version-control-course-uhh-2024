@@ -11,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session06.html
+      href: https://lennartwittkuhn.com/version-control-course-uhh-2024/sessions/slides_session06.html
       aria-label: display
     - icon: book
       text: "Chapter: GitHub - Advanced"
@@ -40,7 +40,7 @@ quiz-url: https://version-control-github.formr.org/
 
 ## Learning objectives
 
-### GitHub - Advanced
+### Remotes - Advanced
 
 {{< include ../objectives/_objectives-github-advanced.qmd >}}
 
@@ -54,7 +54,18 @@ quiz-url: https://version-control-github.formr.org/
 
 ## Exercises
 
-{{< include exercises/exercise-github-advanced.qmd >}}
+### "Public" collaboration with pull requests (using a fork and GitHub Flow)
+
+{{< include ../exercises/_exercises-remotes-forking.qmd >}}
+
+### Reviewing pull requests
+
+{{< include ../exercises/_exercises-remotes-pr-review.qmd >}}
+
+## :rocket: Bonus exercises
+
+1. Repeat the entire forking workflow with [Lennart's `recipes` repository](https://github.com/lnnrtwttkhn/recipes/).
+Find out about the **contributing guidelines** in Lennart's repo and follow them when creating a new recipe.
 
 ## Slides
 

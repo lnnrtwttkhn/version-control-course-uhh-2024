@@ -46,7 +46,7 @@ After the last session, you should now be able to answer the following questions
 
 ## Learning objectives
 
-### GitHub - Advanced
+### Remotes - Advanced
 
 {{< include ../objectives/_objectives-github-advanced.qmd >}}
 
@@ -80,4 +80,23 @@ knitr::kable(table_cheatsheet(name = "remote_intro"), format = "markdown", row.n
 
 ## Exercises
 
-{{< include exercises/exercise-github-advanced.qmd >}}
+::: {.fragment}
+### "Public" collaboration with pull requests (using a fork and GitHub Flow)
+
+{{< include ../exercises/_exercises-remotes-forking.qmd >}}
+:::
+
+::: {.fragment}
+### Reviewing pull requests
+
+{{< include ../exercises/_exercises-remotes-pr-review.qmd >}}
+:::
+
+## :rocket: Bonus exercises
+
+1. Repeat the entire forking workflow with [Lennart's `recipes` repository](https://github.com/lnnrtwttkhn/recipes/).
+Find out about the **contributing guidelines** in Lennart's repo and follow them when creating a new recipe.
+
+## Solutions
+
+{{< include ../exercises/_solutions-remotes-forking.qmd >}}

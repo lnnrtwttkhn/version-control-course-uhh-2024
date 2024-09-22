@@ -35,3 +35,6 @@ https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/ma
 https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/main/exercises/_exercises-remotes-clone.qmd
 https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/exercises/_solutions-remotes-clone.qmd
 https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/code/code-exercises-remotes-clone.sh
+https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/main/exercises/_exercises-remotes-forking.qmd
+https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/exercises/_solutions-remotes-forking.qmd
+https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/main/exercises/_exercises-remotes-pr-review.qmd
