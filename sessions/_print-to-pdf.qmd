@@ -1,6 +1,6 @@
 ::: {.callout-note title="How can I download the slides as a PDF file?" collapse="true" appearance="simple"}
 
-To print the slides to PDF, do the following:
+To export the slides to PDF, do the following:
 
 1.  Toggle into Print View using the <kbd>E</kbd> key (or using the [Navigation Menu](https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu)).
 2.  Open the in-browser print dialog (CTRL/CMD+P).
