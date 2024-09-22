@@ -39,11 +39,11 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 
 ## Slides
 
-{{< include _print-to-pdf.qmd >}}
-
 ```{=html}
 <iframe width="100%" height=500 src="slides_session01.html"></iframe>
 ```
+
+{{< include _print-to-pdf.qmd >}}
 
 ## Email
 

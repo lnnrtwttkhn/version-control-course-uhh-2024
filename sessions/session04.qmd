@@ -48,11 +48,11 @@ quiz-url: https://version-control-branches.formr.org/
 
 ## Slides
 
-{{< include _print-to-pdf.qmd >}}
-
 ```{=html}
 <iframe width="100%" height=500 src="slides_session04.html"></iframe>
 ```
+
+{{< include _print-to-pdf.qmd >}}
 
 ## Cheatsheet
 

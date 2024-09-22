@@ -136,11 +136,11 @@ mv *.txt text_files
 
 ## Slides
 
-{{< include _print-to-pdf.qmd >}}
-
 ```{=html}
 <iframe width="100%" height=500 src="slides_session02.html"></iframe>
 ```
+
+{{< include _print-to-pdf.qmd >}}
 
 ## Cheatsheet
 
