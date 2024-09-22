@@ -11,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session01.html
+      href: https://lennartwittkuhn.com/version-control-course-uhh-2024/sessions/slides_session01.html
       aria-label: display
     - icon: book
       text: Chapter
