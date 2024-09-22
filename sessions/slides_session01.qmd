@@ -19,7 +19,6 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 1. Your name?
 1. Your preferred pronouns?
 1. Your research group?
-1. Your research?
 1. Your mood on a sheep scale?
 :::
 ::: {.column width="60%"}
@@ -29,17 +28,18 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 :::
 ::::
 
+
 ## Course overview
 
 :::: {.columns}
 ::: {.column width="50%"}
-- {{< fa calendar-days >}} **Date:** {{< var project.when-long >}}
+- {{< fa calendar-days >}} **Date:** {{< var project.when-day >}}, {{< var project.when-date >}}
 - {{< fa clock >}} **Time:** {{< var project.when-time >}}
 - {{< fa building-columns >}} **Room:** {{< var project.where-room >}}
 :::
 ::: {.column width="50%"}
 - {{< fa person-chalkboard >}} **Instructor:** [{{< var project.instructors >}}]({{< var team.lennart.website >}})
-- {{< fa chalkboard >}} **Event:** Course
+- {{< fa chalkboard >}} **Event:** Course ({{< var project.duration >}})
 - {{< fa language >}} **Language:** English
 :::
 ::::
@@ -47,7 +47,7 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 ## What will the average session look like?
 
 ::: {.fragment}
-{{< fa clock >}} The course will consist of 6 main sessions (ca. 60 minutes each)
+{{< fa clock >}} The course will consist of 6 main sessions (ca. 45 - 60 minutes each)
 :::
 
 ::: {.fragment}
@@ -57,7 +57,7 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 
 ::: {.fragment}
 2. {{< fa laptop-code >}} **Exercises (up to 45 minutes):**
-<br>Course participants actively delve into hands-on exercises and assignments.
+<br>Course participants work on hands-on exercises and assignments.
 :::
 
 ::: {.fragment}
