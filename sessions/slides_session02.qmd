@@ -69,3 +69,23 @@ knitr::kable(table_cheatsheet(name = "cli"), format = "markdown", row.names = FA
 ## Exercises
 
 {{< include ../exercises/_exercises-cli.qmd >}}
+
+## Solutions
+
+### Navigate the file system
+
+```{zsh filename="Code"}
+cd /path/to/your/chosen/directory # <1>
+```
+1. Navigate into the chosen location.
+Replace `/path/to/your/chosen/directory` with a path on your computer.
+A good location might be within your `/Documents` folder or a dedicated `/Projects` or `/University` folder.
+This can help to easily find course-related files on your computer.
+
+### Create files and folders
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-cli.sh
+```
+{{< include ../exercises/_solutions-cli.qmd >}}
