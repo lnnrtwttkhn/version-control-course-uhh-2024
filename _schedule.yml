@@ -58,14 +58,14 @@ session06:
     - "Pushing and pulling changes"
     - "Cloning a remote repository"
   reading:
-    - "[GitHub Intro](https://lennartwittkuhn.com/version-control-book/chapters/github-intro.html)"
+    - "[Remotes Intro](https://lennartwittkuhn.com/version-control-book/chapters/remotes-intro.html)"
   survey:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
 session07:
   date: "14:15 - 15:00"
   title: "Collaboration on GitLab / GitHub"
   contents:
-    - "Forkinga repository"
+    - "Forking"
     - "Collaboration with GitHub Flow"
     - "Pull / Merge Requests"
     - "Issues"
