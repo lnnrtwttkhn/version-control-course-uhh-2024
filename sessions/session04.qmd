@@ -48,6 +48,12 @@ quiz-url: https://version-control-branches.formr.org/
 
 {{< include ../exercises/_exercises-branches.qmd >}}
 
+## :rocket: Bonus exercises
+
+### Create and resolve a merge conflict
+
+{{< include ../exercises/_exercises-branches-merge-conflict.qmd >}}
+
 ## Slides
 
 ```{=html}

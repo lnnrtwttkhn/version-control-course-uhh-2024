@@ -28,6 +28,12 @@ After the last session, you should now be able to answer the following questions
 {{< include ../objectives/_objectives-firststeps.qmd >}}
 :::
 
+::: {.fragment}
+### :rocket: Optional: Git essentials
+
+{{< include ../objectives/_objectives-essentials.qmd >}}
+:::
+
 ## Last session: `recipes` project
 
 {{< include recipes/recipes-basics.qmd >}}
@@ -80,6 +86,12 @@ knitr::kable(table_cheatsheet(name = "branches"), format = "markdown", row.names
 
 {{< include ../exercises/_exercises-branches.qmd >}}
 
+## :rocket: Bonus exercises
+
+### Create and resolve a merge conflict
+
+{{< include ../exercises/_exercises-branches-merge-conflict.qmd >}}
+
 ## Solutions: Branches
 
 ```{zsh, filename="Code"}
@@ -87,3 +99,11 @@ knitr::kable(table_cheatsheet(name = "branches"), format = "markdown", row.names
 #| file: exercises/code-exercises-branches.sh
 ```
 {{< include ../exercises/_solutions-branches.qmd >}}
+
+## Solutions: Merge Conflict
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-branches-merge-conflict.sh
+```
+{{< include ../exercises/_solutions-branches-merge-conflict.qmd >}}
