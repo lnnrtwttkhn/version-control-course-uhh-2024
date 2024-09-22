@@ -44,7 +44,27 @@ quiz-url: https://version-control-github.formr.org/
 
 ## Exercises
 
-{{< include exercises/exercise-github-intro.qmd >}}
+### Connect to remote repositories using SSH
+
+{{< include ../exercises/_exercises-remotes-ssh.qmd >}}
+
+### Upload your local repository to a remote repository
+
+{{< include ../exercises/_exercises-remotes-push.qmd >}}
+
+### "Private" collaboration with pull requests (using GitHub Flow)
+
+{{< include ../exercises/_exercises-remotes-collaboration.qmd >}}
+
+## :rocket: Bonus exercises
+
+### Add a `README.md`
+
+{{< include ../exercises/_exercises-remotes-readme.qmd >}}
+
+### Clone and sync your repository
+
+{{< include ../exercises/_exercises-remotes-clone.qmd >}}
 
 ## Slides
 
