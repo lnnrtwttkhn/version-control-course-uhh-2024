@@ -11,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session01.html
+      href: https://lennartwittkuhn.com/version-control-course-uhh-2024/sessions/slides_session01.html
       aria-label: display
     - icon: book
       text: Chapter
@@ -39,34 +39,34 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 
 ## Slides
 
-{{< include _print-to-pdf.qmd >}}
-
 ```{=html}
 <iframe width="100%" height=500 src="slides_session01.html"></iframe>
 ```
 
+{{< include _print-to-pdf.qmd >}}
+
 ## Email
 
-Dear course participants,
+Dear course participant,
 
-You are receiving this email because you have signed up for the course "{{< var project.title >}}", taking place on {{< var project.when-long >}} at the {{< var project.where-institution >}} ({{< var project.where-room >}}), {{< var project.where-address >}}.
+You are receiving this email because you have signed up for the course "{{< var project.title >}}", taking place on {{< var project.when-long >}} at {{< var project.where-institution >}} ({{< var project.where-room >}}), {{< var project.where-address >}}.  
 We are excited that you have signed up for this course and can't wait to delve into the world of version control with you!
 
 In preparation for the course, we kindly ask you to **complete two assignments**: (1) check if you have Git installed, and (2) answer a survey.
-In total, this should only **take about 20 to 30 minutes** (not much longer).
+In total, this should **take about 20 to 30 minutes** (not much longer).
 
-**1. Check Git installation**
+**1. Check Git Installation**
 
 Please check if you have Git installed.
 You can find detailed instructions in our online course book here: [{{< var chapters.installation >}}]({{< var chapters.installation >}}).
 Windows users: Please install Git for Windows (<https://gitforwindows.org>).
 macOS and Linux users: You likely have Git already installed.
 Open the Terminal / Command Line and enter the command `git --version`.
-If a version number is shown, Git is installed. 
+If a version number is shown, Git is installed.
 For more details, see the link to the online course book above.
 And please don't forget to bring your laptop, with Git installed, to the course!
 
-**2. Complete survey** 
+**2. Complete Survey**
 
 In order to tailor the course to your prior experience and needs, we have prepared a **survey** with a few questions.
 Please **complete the survey before the course**, ideally at least two days before the course starts.
@@ -80,7 +80,7 @@ The survey will ask you for two codewords: a **personal codeword** and a **cours
 The **personal codeword** is used to associate your responses with a unique identifier.
 This will allow us to identify and relate your responses across all surveys used in the course while ensuring anonymity.
 By providing a personal codeword, you will allow us to draw more detailed insights from your responses that will help us improve the course for you.
-The survey will contain an explanation in the beginning on how to generate your personal codeword.
+The survey will contain an explanation at the beginning on how to generate your personal codeword.
 
 The **course codeword** is used to tag your responses as coming from a course participant at {{< var project.where-institution >}}.
 We might also use the survey to collect responses from participants in other course settings.
@@ -92,7 +92,7 @@ Please note that you might be asked for the codewords repeatedly.
 This is not an error in the survey but the result of combining separate smaller surveys into a longer one.
 If this happens, please just enter the personal and course codeword again.
 
-Further information about the course can be found on our course website at [{{< var links.site >}}]({{< var links.site >}}) which will be updated with more information about the course soon.
+Further information about the course can be found on our course website at [{{< var links.site >}}]({{< var links.site >}}).
 
 If you have any questions, feel free to contact us directly via email.
 

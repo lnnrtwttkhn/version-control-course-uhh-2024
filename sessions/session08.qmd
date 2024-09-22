@@ -24,6 +24,8 @@ about:
 <iframe width="100%" height=500 src="slides_session08.html"></iframe>
 ```
 
+{{< include _print-to-pdf.qmd >}}
+
 ## Email
 
 Dear course participants,

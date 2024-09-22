@@ -54,6 +54,14 @@ After the last session, you should now be able to answer the following questions
 
 :::
 
+::: {.fragment}
+
+### :rocket: Optional: Git essentials
+
+{{< include ../objectives/_objectives-essentials.qmd >}}
+
+:::
+
 ## Cheatsheet
 
 ### Configuration
@@ -113,7 +121,7 @@ Thanks to [Eamon Caddigan](https://social.coop/@eamon/112434377857903339) for th
 
 In this session, you will work on the following tasks:
 
-1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
+1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) and, optional, ["Git Essentials"](https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html) in the Version Control Book.
 1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter.
 1. {{< fa laptop-code >}} **Exercises**: Work on the [exercises](#exercises) for the [`recipes` project](#recipes-project).
 1. {{< fa clipboard-question >}} **Quiz**: Test your knowledge with the [quiz]({{< meta quiz-url >}}).
@@ -131,9 +139,54 @@ As always:
 
 ## Exercises
 
+### Configure Git
+
 {{< include ../exercises/_exercises-setup.qmd >}}
 
 {{< include ../exercises/_exercises-first-steps-git.qmd >}}
+
+## :rocket: Bonus exercises
+
+### Amend a commit
+
+{{< include ../exercises/_exercises-essentials-amend.qmd >}}
+
+### Create a `.gitignore` file
+
+{{< include ../exercises/_exercises-essentials-gitignore.qmd >}}
+
+## Solutions: Setup
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-setup.sh
+```
+{{< include ../exercises/_solutions-setup.qmd >}}
+
+## Solutions: First steps with Git
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-first-steps-git.sh
+```
+{{< include ../exercises/_solutions-first-steps-git.qmd >}}
+
+## Solutions: Amend a commit
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-essentials-amend.sh
+```
+{{< include ../exercises/_solutions-essentials-amend.qmd >}}
+
+## Solutions: Create a `.gitignore` file
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-essentials-gitignore.sh
+```
+{{< include ../exercises/_solutions-essentials-gitignore.qmd >}}
+
 
 # Appendix
 

@@ -11,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-mpib-2024//sessions/slides_session02.html
+      href: https://lennartwittkuhn.com/version-control-course-uhh-2024//sessions/slides_session02.html
       aria-label: display
     - icon: book
       text: Chapter
@@ -136,11 +136,11 @@ mv *.txt text_files
 
 ## Slides
 
-{{< include _print-to-pdf.qmd >}}
-
 ```{=html}
 <iframe width="100%" height=500 src="slides_session02.html"></iframe>
 ```
+
+{{< include _print-to-pdf.qmd >}}
 
 ## Cheatsheet
 

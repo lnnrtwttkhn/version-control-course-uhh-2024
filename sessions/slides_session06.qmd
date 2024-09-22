@@ -58,9 +58,77 @@ knitr::kable(table_cheatsheet(name = "remote_intro"), format = "markdown", row.n
 
 {{< include recipes/recipes-github-intro.qmd >}}
 
-## Exercises
+## Exercises 1
 
-{{< include exercises/exercise-github-intro.qmd >}}
+### Connect to remote repositories using SSH
+
+{{< include ../exercises/_exercises-remotes-ssh.qmd >}}
+
+### Upload your local repository to a remote repository
+
+{{< include ../exercises/_exercises-remotes-push.qmd >}}
+
+## Exercises 2
+
+### "Private" collaboration with pull requests (using GitHub Flow)
+
+{{< include ../exercises/_exercises-remotes-collaboration.qmd >}}
+
+## :rocket: Bonus exercises
+
+### Add a `README.md`
+
+{{< include ../exercises/_exercises-remotes-readme.qmd >}}
+
+### Clone and sync your repository
+
+{{< include ../exercises/_exercises-remotes-clone.qmd >}}
+
+## Solutions
+
+### Connect to remote repositories using SSH
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-remotes-ssh.sh
+```
+{{< include ../exercises/_solutions-remotes-ssh.qmd >}}
+
+## Solutions
+
+### Upload your local repository to a remote repository
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-remotes-push.sh
+```
+{{< include ../exercises/_solutions-remotes-push.qmd >}}
+
+## Solutions
+
+### "Private" collaboration with pull requests (using GitHub Flow)
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-remotes-collaboration.sh
+```
+{{< include ../exercises/_solutions-remotes-collaboration.qmd >}}
+
+## Solutions
+
+### Add a `README.md`
+
+{{< include ../exercises/_solutions-remotes-readme.qmd >}}
+
+## Solutions
+
+### Clone and sync your repository
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-remotes-clone.sh
+```
+{{< include ../exercises/_solutions-remotes-clone.qmd >}}
 
 # Appendix
 

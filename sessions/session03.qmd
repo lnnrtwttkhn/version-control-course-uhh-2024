@@ -11,7 +11,7 @@ about:
   links:
     - icon: display
       text: Slides
-      href: https://lennartwittkuhn.com/version-control-course-mpib-2024/sessions/slides_session03.html
+      href: https://lennartwittkuhn.com/version-control-course-uhh-2024/sessions/slides_session03.html
       aria-label: display
     # - icon: book
     #   text: "Chapter: Installation"
@@ -25,6 +25,10 @@ about:
       text: "Chapter: First steps with Git"
       href: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
       aria-label: book
+    - icon: book
+      text: "Chapter: Git Essentials"
+      href: https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html
+      aria-label: book
     # - icon: input-cursor-text
     #   text: "Survey: Installation"
     #   href: https://version-control-installation.formr.org
@@ -33,8 +37,8 @@ about:
       text: "Survey: Git Basics"
       href: https://version-control-basics.formr.org/
       aria-label: input-cursor-text
-chapter-title: "First steps with Git"
-chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html
+chapter: |
+  ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) and ["Git Essentials"](https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html)
 quiz-url: https://version-control-basics.formr.org/
 ---
 
@@ -45,7 +49,7 @@ quiz-url: https://version-control-basics.formr.org/
 
 In this session, you will work on the following tasks:
 
-1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html) and ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) in the Version Control Book.
+1. {{< fa book-open >}} **Reading**: Read the chapters ["Setup"](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) and, optional, ["Git Essentials"](https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html) in the Version Control Book.
 1. {{< fa laptop-code >}} **Implementation**: Try out the commands in the chapter.
 1. {{< fa laptop-code >}} **Exercises**: Work on the [exercises](#exercises) for the [`recipes` project](#recipes-project).
 1. {{< fa clipboard-question >}} **Quiz**: Test your knowledge with the [quiz]({{< meta quiz-url >}}).
@@ -67,23 +71,39 @@ As always:
 
 {{< include ../objectives/_objectives-firststeps.qmd >}}
 
+### :rocket: Optional: Git essentials
+
+{{< include ../objectives/_objectives-essentials.qmd >}}
+
 ## `recipes` project
 
 {{< include recipes/recipes-basics.qmd >}}
 
 ## Exercises
 
+### Configure Git
+
 {{< include ../exercises/_exercises-setup.qmd >}}
 
 {{< include ../exercises/_exercises-first-steps-git.qmd >}}
 
-## Slides
+## :rocket: Bonus exercises
 
-{{< include _print-to-pdf.qmd >}}
+### Amend a commit
+
+{{< include ../exercises/_exercises-essentials-amend.qmd >}}
+
+### Create a `.gitignore` file
+
+{{< include ../exercises/_exercises-essentials-gitignore.qmd >}}
+
+## Slides
 
 ```{=html}
 <iframe width="100%" height=500 src="slides_session03.html"></iframe>
 ```
+
+{{< include _print-to-pdf.qmd >}}
 
 ## Cheatsheet
 
@@ -105,4 +125,14 @@ knitr::kable(table_cheatsheet(name = "config"), format = "markdown", row.names =
 #| message: false
 #| warning: false
 knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = FALSE)
+```
+
+### Git essentials
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+#| warning: false
+knitr::kable(table_cheatsheet(name = "essentials"), format = "markdown", row.names = FALSE)
 ```
