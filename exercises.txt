@@ -14,3 +14,5 @@ https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/main/exercise
 https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/exercises/_solutions-essentials-gitignore.qmd
 https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/code/code-exercises-essentials-gitignore.sh
 https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/main/exercises/_exercises-branches.qmd
+https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/exercises/_solutions-branches.qmd
+https://raw.githubusercontent.com/lnnrtwttkhn/version-control-book/refs/heads/main/code/code-exercises-branches.sh

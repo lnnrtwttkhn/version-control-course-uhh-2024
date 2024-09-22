@@ -44,6 +44,8 @@ quiz-url: https://version-control-branches.formr.org/
 
 ## Exercises
 
+### Branches
+
 {{< include ../exercises/_exercises-branches.qmd >}}
 
 ## Slides

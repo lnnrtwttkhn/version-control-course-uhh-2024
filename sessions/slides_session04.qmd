@@ -75,3 +75,15 @@ knitr::kable(table_cheatsheet(name = "branches"), format = "markdown", row.names
 ## Exercises
 
 {{< include ../exercises/_exercises-branches.qmd >}}
+
+## Exercises
+
+{{< include ../exercises/_exercises-branches.qmd >}}
+
+## Solutions: Branches
+
+```{zsh, filename="Code"}
+#| eval: false
+#| file: exercises/code-exercises-branches.sh
+```
+{{< include ../exercises/_solutions-branches.qmd >}}
