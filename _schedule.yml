@@ -4,7 +4,7 @@ session01:
   contents:
     - "Logistics and course admin"
     - "Results of course survey"
-    - "Introduction to Version Control"
+    - "Introduction to version control"
     - "Introduction to Git"
   reading:
     - "[Introduction to Version Control](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html)"
@@ -28,13 +28,14 @@ session03:
     - "Configuration and setup of Git"
     - "Initializing a Git repository"
     - "Fundamental Git commands"
+    - "Tracking changes wih Git"
   reading:
-    - "[Setup](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), [First steps with Git](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html)"
+    - "[Setup](https://lennartwittkuhn.com/version-control-book/chapters/setup.html), [First steps with Git](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html), [Git Essentials](https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html)"
   survey:
     - "[Git Basics Quiz](https://version-control-basics.formr.org)"
 session04:
   date: "11:30 - 12:15"
-  title: "Branches, Merging & Merge Conflicts"
+  title: "Branches, Merging Merge Conflicts"
   contents: 
     - "Understanding branches in Git"
     - "Creating and switching between branches"
@@ -51,10 +52,10 @@ session05:
     - "Enjoy your lunch!"
 session06:
   date: "13:30 - 14:15"
-  title: "Integration with GitLab / GitHub"
+  title: "Integration with GitHub / GitLab"
   contents:
     - "Introduction to remote repositories"
-    - "Creating and managing repositories on GitLab / GitHub"
+    - "Managing repositories on GitHub / GitLab"
     - "Pushing and pulling changes"
     - "Cloning a remote repository"
   reading:
@@ -63,13 +64,13 @@ session06:
     - "[GitHub Quiz](https://version-control-github.formr.org)"
 session07:
   date: "14:15 - 15:00"
-  title: "Collaboration on GitLab / GitHub"
+  title: "Collaboration on GitHub / GitLab"
   contents:
     - "Forking"
     - "Collaboration with GitHub Flow"
     - "Pull / Merge Requests"
     - "Issues"
-    - "README files"
+    - "Project Management"
   reading:
     - "[GitHub Advanced](https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html), [GitHub Issues](https://lennartwittkuhn.com/version-control-book/chapters/issues.html)"
   survey:
