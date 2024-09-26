@@ -1,5 +1,5 @@
 ---
-title: "Integration with GitLab / GitHub"
+title: "Integration with GitHub / GitLab"
 subtitle: "Session 06"
 date: 2024-09-27T13:30:00
 metadata-files:
@@ -21,7 +21,7 @@ about:
       text: Quiz
       href: https://version-control-github.formr.org/
       aria-label: input-cursor-text
-session-title: "Integration with GitLab / GitHub"
+session-title: "Integration with GitHub / GitLab"
 chapter-title: "Remotes - Introduction"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/remotes-intro.html
 quiz-url: https://version-control-github.formr.org/

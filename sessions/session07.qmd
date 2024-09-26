@@ -1,5 +1,5 @@
 ---
-title: "Collaboration on GitLab / GitHub"
+title: "Collaboration on GitHub / GitLab"
 subtitle: "Session 07"
 date: 2024-09-27T14:15:00
 metadata-files:
