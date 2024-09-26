@@ -30,7 +30,13 @@ After the last session, you should now be able to answer the following questions
 
 ![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
 
-## This session: Issues
+## This session: Forking & Issues
+
+![](../images/forking-example-adaptive-learning.png){width="80%"}
+
+[Link to Pull Request](https://github.com/rasmusbruckner/AdaptiveLearning/pull/2)
+
+## This session: Forking & Issues
 
 ![](../images/issue-example-recipes-tiramisu.png){width="80%"}
 
