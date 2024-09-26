@@ -19,7 +19,7 @@ chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/intro-ver
 1. Your name?
 1. Your preferred pronouns?
 1. Your research group?
-1. Your mood on a sheep scale?
+1. Optional: Your mood on a sheep scale?
 :::
 ::: {.column width="60%"}
 ::: {.fragment}
@@ -166,7 +166,7 @@ knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = 
 
 ## Breaks
 
-- We will have a one-hour lunch break at 1 p.m.
+- We will have a one-hour lunch break at 12:30.
 - Feel free to take short breaks in-between (sessions) when needed.
 
 # Survey results
@@ -223,7 +223,7 @@ knitr::kable(table_cheatsheet(name = "basic"), format = "markdown", row.names = 
 - computational reproducibility is hard
 - researchers lack training 
 - incentives are not (yet) aligned ^[see e.g., @poldrack2019]
-- "natural selection of bad science" ^[see @smaldino2016]
+- *more ...*
 :::
 ::::
 :::::

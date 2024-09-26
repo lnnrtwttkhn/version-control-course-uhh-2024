@@ -29,11 +29,15 @@ create_schedule()
 
 {{< include ../objectives/_objectives-cli.qmd >}}
 
-### Session 3: First steps with Git
+### Session 3: Setup, First steps with Git & Git Essentials
+
+{{< include ../objectives/_objectives-setup.qmd >}}
 
 {{< include ../objectives/_objectives-firststeps.qmd >}}
 
 ## Learning Objectives (continued)
+
+{{< include ../objectives/_objectives-essentials.qmd >}}
 
 ### Session 4: Branches
 
@@ -60,6 +64,12 @@ Test your Git knowledge with **quizzes** (also after the course):
 Feel free to **enter your personal and course codeword**!
 
 # There's more ...
+
+## Rewriting history
+
+See chapter ["Rewriting History"](https://lennartwittkuhn.com/version-control-book/chapters/rewriting-history.html)
+
+![Credit: [tech_kody](https://www.tiktok.com/@tech_kody) via TikTok](../images/git-revert-meme.png)
 
 ## Tags, releases, DOIs: Integration with Zenodo
 
