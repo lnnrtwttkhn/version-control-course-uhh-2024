@@ -1,6 +1,6 @@
 At the end of this session, you should have accomplished the following:
 
-1. You created a new branch and merged changes toto your default branch.
+1. You created a new branch and merged changes to your default branch.
 1. :rocket: Optional: You created and resolved a merge conflict.
 
 Please keep the `recipes` folder!

@@ -4,7 +4,7 @@ date: 2024-09-27T14:15:00
 format: revealjs
 metadata-files:
   - _slides.yml
-session-title: "Collaboration on GitLab / GitHub"
+session-title: "Collaboration on GitHub / GitLab"
 chapter-title: "GitHub - Advanced"
 chapter-url: https://lennartwittkuhn.com/version-control-book/chapters/github-advanced.html
 reading: |
@@ -12,7 +12,7 @@ reading: |
 quiz-url: https://version-control-github.formr.org/  
 ---
 
-# Last session: Integration with GitLab / GitHub
+# Last session: Integration with GitHub / GitLab
 
 ## Last session: Learning objectives
 
@@ -30,7 +30,13 @@ After the last session, you should now be able to answer the following questions
 
 ![Image from [Techdobz](https://medium.com/analytics-vidhya/version-control-using-git-github-ff4c3f7c752e)](../images/git-github-integration.png){width="70%"}
 
-## This session: Issues
+## This session: Forking & Issues
+
+![](../images/forking-example-adaptive-learning.png){width="80%"}
+
+[Link to Pull Request](https://github.com/rasmusbruckner/AdaptiveLearning/pull/2)
+
+## This session: Forking & Issues
 
 ![](../images/issue-example-recipes-tiramisu.png){width="80%"}
 

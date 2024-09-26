@@ -80,9 +80,7 @@ knitr::kable(table_cheatsheet(name = "branches"), format = "markdown", row.names
 
 ## Exercises
 
-{{< include ../exercises/_exercises-branches.qmd >}}
-
-## Exercises
+### Create and merge a new branch
 
 {{< include ../exercises/_exercises-branches.qmd >}}
 
